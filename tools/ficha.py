@@ -31,7 +31,10 @@ def render(pages,outdir,slug):
         hp=os.path.join(outdir,f"{i}.html"); open(hp,"w").write(h)
         png=os.path.join(outdir,f"urgenciasen60-{slug}-{i}.png")
         subprocess.run(["google-chrome","--headless=new","--no-sandbox","--disable-gpu","--hide-scrollbars","--window-size=1080,1350",f"--screenshot={png}","--virtual-time-budget=3000","file://"+hp],capture_output=True)
-        out.append(png)
+        from PIL import Image
+        jpg=png[:-4]+".jpg"   # TikTok no admite PNG: se entrega siempre JPG
+        Image.open(png).convert("RGB").save(jpg,quality=95,subsampling=0); os.remove(png)
+        out.append(jpg)
     from PIL import Image
     cols=4; rows_=(len(out)+cols-1)//cols
     sheet=Image.new("RGB",(cols*550+10,rows_*685+10),"#888888")
