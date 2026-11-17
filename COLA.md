@@ -12,6 +12,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 01 | Anafilaxia | `anafilaxia/` | Publicada | Lunes 16/11/2026, 21:00 (Instagram); TikTok reprogramada en JPG |
 | 02 | Hiperpotasemia | `hiperpotasemia/` | Programada | Miércoles 18/11/2026, 21:00 |
 | 01 (reel) | Anafilaxia, reel de 26 s | `anafilaxia/` | Programada | Martes 17/11/2026, 21:00 |
+| 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Programada | Jueves 19/11/2026, 21:00 |
 
 Próximo número de ficha libre: 03.
 
