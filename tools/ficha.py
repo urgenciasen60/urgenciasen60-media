@@ -21,9 +21,10 @@ def num(i,t): return f'<div style="display:flex;gap:32px;align-items:baseline"><
 def line(t,bold=False): return f'<div style="border-top:4px solid {K};padding-top:22px;font-size:42px;font-weight:{800 if bold else 600};line-height:1.3">{t}</div>'
 def kicker(t): return f'<div style="font-size:40px;font-weight:800;letter-spacing:6px;color:{G}">{t}</div>'
 def big(t,size,color=K,nowrap=False): return f'<div style="{A};font-size:{size}px;color:{color};{"white-space:nowrap" if nowrap else ""}">{t}</div>'
-def frow(k,v,red=False): return f'<div style="border-top:4px solid {K};padding-top:16px;display:flex;gap:28px;align-items:baseline"><div style="width:250px;flex-shrink:0;font-size:28px;font-weight:800;letter-spacing:2px;color:{G}">{k}</div><div style="font-size:36px;font-weight:800;line-height:1.25;color:{R if red else K}">{v}</div></div>'
-def ficha_body(titulo,ambito,rows,fuentes,size=136):
-    r="".join(frow(*x) for x in rows)
+def frow(k,v,red=False,fs=36): return f'<div style="border-top:4px solid {K};padding-top:16px;display:flex;gap:28px;align-items:baseline"><div style="width:250px;flex-shrink:0;font-size:28px;font-weight:800;letter-spacing:2px;color:{G}">{k}</div><div style="font-size:{fs}px;font-weight:800;line-height:1.25;color:{R if red else K}">{v}</div></div>'
+def ficha_body(titulo,ambito,rows,fuentes,size=136,fs=36):
+    """fs: tamaño del texto de las filas (36 por defecto; bajar a 32-33 si la ficha lleva mucho texto)."""
+    r="".join(frow(*x,fs=fs) if len(x)==2 else frow(x[0],x[1],x[2],fs) for x in rows)
     return f'<div style="display:flex;align-items:baseline;justify-content:space-between"><div style="{A};font-size:{size}px;white-space:nowrap">{titulo}</div><div style="font-size:34px;font-weight:800;color:{G}">{ambito}</div></div><div style="display:flex;flex-direction:column;gap:16px">{r}</div><div style="font-size:21px;line-height:1.4;color:{G}">Fuentes: {fuentes}. Contenido formativo para profesionales sanitarios; no sustituye a los protocolos de tu centro.</div>'
 def render(pages,outdir,slug):
     os.makedirs(outdir,exist_ok=True); out=[]
