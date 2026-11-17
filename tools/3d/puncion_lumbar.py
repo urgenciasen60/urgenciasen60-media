@@ -9,8 +9,8 @@ def mat(name,col,rough=0.55,metal=0.0,emit=0.0):
     if emit: b.inputs["Emission Color"].default_value=(*col,1); b.inputs["Emission Strength"].default_value=emit
     return m
 SKIN=mat("maniqui",(0.16,0.165,0.18),0.42)          # silueta grafito
-BED=mat("camilla",(0.30,0.31,0.33),0.6)
-SHEET=mat("sabana",(0.62,0.66,0.70),0.85)
+BED=mat("camilla",(0.10,0.105,0.115),0.6)
+SHEET=mat("sabana",(0.20,0.22,0.25),0.85)
 YEL=mat("amarillo",(1.0,0.78,0.02),0.4,emit=0.8)
 RED=mat("rojo",(0.90,0.03,0.04),0.4,emit=0.9)
 STEEL=mat("acero",(0.92,0.92,0.95),0.12,1.0)
@@ -25,8 +25,8 @@ def caps(p1,p2,r1,m,r2=None):
 def ell(p,r,m,s=(1,1,1),rot=(0,0,0)):
     bpy.ops.mesh.primitive_uv_sphere_add(radius=r,location=p,segments=48,ring_count=24,rotation=rot); o=bpy.context.object; o.scale=s; sm(); return link(o,m)
 # ----- camilla: eje X longitudinal (cabeza en -X). Paciente en decúbito lateral izquierdo, espalda hacia -Y
-bpy.ops.mesh.primitive_cube_add(location=(0,0.15,0.40)); o=bpy.context.object; o.scale=(1.10,0.45,0.05); link(o,BED)
-bpy.ops.mesh.primitive_cube_add(location=(0,0.15,0.46)); o=bpy.context.object; o.scale=(1.08,0.44,0.012); link(o,SHEET)
+bpy.ops.mesh.primitive_cube_add(location=(0,0.33,0.40)); o=bpy.context.object; o.scale=(1.10,0.50,0.05); link(o,BED)
+bpy.ops.mesh.primitive_cube_add(location=(0,0.33,0.46)); o=bpy.context.object; o.scale=(1.08,0.49,0.012); link(o,SHEET)
 bpy.ops.mesh.primitive_cylinder_add(radius=0.11,depth=0.30,location=(-0.80,0.15,0.54),rotation=(0,math.pi/2,0)); link(bpy.context.object,SHEET); sm()
 Z=0.66
 import bmesh
@@ -76,8 +76,9 @@ along=lambda p1,p2: Vector((1,0,0)).rotation_difference(Vector(p2)-Vector(p1))
 # tronco: del sacro a la base del cuello, en C (flexión)
 loft([(0.40,0.175,Z),(0.30,0.160,Z),(0.15,0.135,Z),(0.00,0.130,Z),(-0.16,0.145,Z),(-0.30,0.180,Z),(-0.38,0.205,Z)],
      [(0.00,0.050,0.070),(0.06,0.105,0.150),(0.16,0.118,0.172),(0.30,0.106,0.158),(0.45,0.096,0.138),(0.60,0.108,0.150),(0.76,0.118,0.165),(0.88,0.110,0.190),(0.96,0.085,0.150),(1.00,0.055,0.060)],"tronco")
-loft([(-0.36,0.205,Z),(-0.41,0.232,Z),(-0.46,0.262,Z)],[(0,0.064,0.064),(1,0.056,0.058)],"cuello",n=6)
-E((-0.545,0.308,Z),(0.112,0.096,0.088),along((-0.47,0.26,Z),(-0.62,0.35,Z)))    # cabeza lisa, sin cara
+loft([(-0.36,0.205,Z),(-0.41,0.232,Z),(-0.46,0.262,Z)],[(0,0.072,0.074),(1,0.062,0.066)],"cuello",n=6)
+for dz in (0.068,-0.068): E((0.335,0.135,Z+dz),(0.085,0.080,0.082))
+E((-0.535,0.300,Z),(0.118,0.100,0.092),along((-0.47,0.26,Z),(-0.62,0.35,Z)))    # cabeza lisa, sin cara
 for dz in (0.088,-0.088):                  # piernas en flexión
     loft([(0.24,0.17,Z+dz*0.7),(0.22,0.33,Z+dz),(0.10,0.50,Z+dz),(0.00,0.62,Z+dz),(0.10,0.70,Z+dz),(0.24,0.745,Z+dz*0.92),(0.33,0.77,Z+dz*0.9)],
          [(0,0.115,0.100),(0.12,0.098,0.096),(0.35,0.078,0.076),(0.47,0.050,0.050),(0.55,0.052,0.050),(0.66,0.056,0.052),(0.85,0.036,0.034),(1,0.030,0.030)],"pierna",n=8,seg=32)
@@ -161,7 +162,7 @@ bpy.context.view_layer.update(); dg=bpy.context.evaluated_depsgraph_get()
 for th in range(-78,79,13):
     loc,nor=surf(X4,th)
     if not loc: continue
-    bpy.ops.mesh.primitive_cylinder_add(radius=0.0045,depth=0.022,location=loc+nor*0.004,vertices=12); o=bpy.context.object
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.0032,depth=0.016,location=loc+nor*0.003,vertices=12); o=bpy.context.object
     tang=Vector((0,math.sin(math.radians(th)),math.cos(math.radians(th))))
     o.rotation_mode='QUATERNION'; o.rotation_quaternion=Vector((0,0,1)).rotation_difference(tang); link(o,YEL)
 TOP,_=surf(X4,80)
@@ -214,6 +215,18 @@ bpy.ops.mesh.primitive_cylinder_add(radius=0.013,depth=0.003,location=P+Nn*0.003
 nd=bpy.data.objects.new("aguja",None); bpy.context.collection.objects.link(nd)
 for prim,kw,m in [("cyl",dict(radius=0.0016,depth=0.09,location=(0,0,0.045)),STEEL),("cone",dict(radius1=0.0016,radius2=0,depth=0.006,location=(0,0,-0.003),rotation=(math.pi,0,0)),STEEL),("cyl",dict(radius=0.0065,depth=0.024,location=(0,0,0.102)),HUB)]:
     (bpy.ops.mesh.primitive_cylinder_add if prim=="cyl" else bpy.ops.mesh.primitive_cone_add)(vertices=16,**kw); o=bpy.context.object; link(o,m); o.parent=nd
+GLOVE=mat("guante",(0.30,0.55,0.85),0.45)
+def gpart(obj): obj.parent=nd; link(obj,GLOVE); bpy.ops.object.shade_smooth(); return obj
+def gcaps(p1,p2,r):
+    p1=Vector(p1);p2=Vector(p2);d=p2-p1
+    bpy.ops.mesh.primitive_cylinder_add(radius=r,depth=d.length,location=(p1+p2)/2,vertices=24); c=bpy.context.object
+    c.rotation_mode='QUATERNION'; c.rotation_quaternion=Vector((0,0,1)).rotation_difference(d); gpart(c)
+    for p in (p1,p2): bpy.ops.mesh.primitive_uv_sphere_add(radius=r,location=p,segments=24,ring_count=12); gpart(bpy.context.object)
+# mano enguantada en pinza sobre el cono de la aguja (coordenadas locales de la aguja: +Z hacia fuera)
+bpy.ops.mesh.primitive_uv_sphere_add(radius=1,location=(0.050,0.0,0.170),segments=32,ring_count=16); o=bpy.context.object; o.scale=(0.026,0.011,0.034); gpart(o)
+gcaps((0.040,0.008,0.150),(0.012,0.008,0.112),0.0085)      # índice
+gcaps((0.040,-0.010,0.150),(0.012,-0.010,0.112),0.0085)    # pulgar
+gcaps((0.055,0.0,0.140),(0.050,0.0,0.118),0.008)           # medio, flexionado
 ang=math.radians(12); dirv=Vector((math.sin(ang),-math.cos(ang),0)).normalized()   # eje de la aguja hacia fuera
 nd.rotation_mode='QUATERNION'; nd.rotation_quaternion=Vector((0,0,1)).rotation_difference(dirv)
 # ----- luz: estudio oscuro, principal fría suave, contraluz amarillo que recorta la silueta
@@ -241,8 +254,9 @@ SHOTS={
  "crestas":((X4+0.03,-0.45,Z+0.62),(X4,yc(X4)-0.02,Z+0.09),30,0.6),
  "rayos":((X4+0.02,-0.62,Z+0.22),(X4+0.03,yc(X4)-0.03,Z),34,0.6),
  "marca":((xm,-0.40,0.95),(xm,P.y,Z),42,0.6),
- "aguja_lejos":((xm+0.04,-0.30,Z+0.36),(xm,P.y-0.05,Z),40,0.16),
- "aguja_piel":((xm+0.05,-0.24,Z+0.26),(xm,P.y-0.03,Z),50,0.004),
+ "gotas":((xm+0.10,-0.30,Z+0.10),tuple(P+dirv*0.10),45,-0.03),
+ "aguja_lejos":((xm+0.10,-0.40,Z+0.30),tuple(P+dirv*0.11),30,0.16),
+ "aguja_piel":((xm+0.09,-0.32,Z+0.22),tuple(P+dirv*0.06),36,0.004),
 }
 def setshot(name):
     xr=(name=='rayos')
@@ -263,4 +277,30 @@ if A and A[0]=="anim":
         d=0.18+(0.004-0.18)*ease(min(1,u/0.6)) if u<0.6 else (0.004 if u<0.72 else 0.004+(-0.03-0.004)*ease((u-0.72)/0.28))
         nd.location=P+dirv*d
         r.filepath=f"/home/claude/v3d/fr/n_{f:03d}.jpg"; bpy.ops.render.render(write_still=True)
+    print("ok",a0,a1,flush=True)
+
+if A and A[0]=="orbit":
+    a0,a1,N=int(A[3]),int(A[4]),58
+    ease=lambda u: u*u*(3-2*u)
+    c=Vector((-0.05,0.30,Z))
+    for f in range(a0,a1):
+        u=ease(f/(N-1)); el=math.radians(25+53*u); R=1.80-0.15*u
+        pos=c+Vector((0.15*(1-u),-R*math.cos(el),R*math.sin(el)))
+        aim(pos,c,26,up=Vector((0,0,1)) if u<0.5 else Vector((-1,0,0)).lerp(Vector((0,0,1)),0.0)); nd.location=Vector((0,0,-5))
+        r.filepath=f"/home/claude/v3d/fo/o_{f:03d}.jpg"; bpy.ops.render.render(write_still=True)
+    print("ok",a0,a1,flush=True)
+if A and A[0]=="gotas":
+    a0,a1,N=int(A[3]),int(A[4]),36
+    setshot("gotas")
+    hubtip=P+dirv*(-0.03+0.112)
+    drops=[]
+    for i in range(3):
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.0022,location=(0,0,-5),segments=16,ring_count=8); d=bpy.context.object; d.scale=(1,1,1.35)
+        link(d,mat("lcr",(0.75,0.88,1.0),0.05,emit=0.4)); bpy.ops.object.shade_smooth(); drops.append(d)
+    for f in range(a0,a1):
+        for i,d in enumerate(drops):
+            t=(f-i*12)/30.0
+            d.location=hubtip+Vector((0,0,-(0.5*9.8*0.06*t*t))) if t>=0 else Vector((0,0,-5))
+            if t>0.9: d.location=Vector((0,0,-5))
+        r.filepath=f"/home/claude/v3d/fg/g_{f:03d}.jpg"; bpy.ops.render.render(write_still=True)
     print("ok",a0,a1,flush=True)
