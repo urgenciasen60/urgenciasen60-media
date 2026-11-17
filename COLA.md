@@ -42,3 +42,4 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - **Papers:** de médico de urgencias, de 2026. Candidato: PRESC1SE-MI (Lancet 2026; doi:10.1016/S0140-6736(26)01654-5), pendiente del texto completo.
 - **Sepsis:** no publicar dos piezas seguidas.
 - **Voz del canal:** voz sintética castellana `es_ES-davefx-medium` (Piper; datos CC0), elegida por Eduardo el 17/11. Script en `tools/voz/locucion.py`; textos de locución en `tools/voz/*.txt`. Se descartaron la clonación de su voz (seseo/acento americano) y el modelo F5-Spanish (licencia no comercial).
+- **18/11 (render nocturno):** vídeo 3D de 60 s de la punción lumbar en `borradores/tecnica-puncion-lumbar/*-video60.mp4` (borrador, sin programar). Epistaxis: solo escenas 3D de prueba en `borradores/tecnica-epistaxis/escenas-3d/`; locución y montaje a la espera de la revisión de contenido de Eduardo.
