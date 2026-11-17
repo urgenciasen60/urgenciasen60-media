@@ -13,12 +13,14 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 02 | Hiperpotasemia | `hiperpotasemia/` | Programada | Miércoles 18/11/2026, 21:00 |
 | 01 (reel) | Anafilaxia, reel de 26 s | `anafilaxia/` | Programada | Martes 17/11/2026, 21:00 |
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Programada | Jueves 19/11/2026, 21:00 |
+| 03 | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | Pendiente de revisión | — |
 
-Próximo número de ficha libre: 03.
+Próximo número de ficha libre: 04.
 
 ## Reels
 Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba y marca abajo; un color de fondo por escena; varios elementos entran a la vez; golpe de zoom, transición deslizante y barra de progreso; ficha al final) que se publica al día siguiente: martes, jueves y sábado. Se generan con `tools/reel.py` (modelo: `tools/reel_anafilaxia.py`). Plantilla aprobada por Eduardo el 17/11/2026: intensidad suave (valores por defecto de `build`), unos 26 s, un color de fondo por escena, ficha al final. El reel reutiliza el contenido ya aprobado del carrusel, así que no necesita revisión clínica aparte: genera y programa el reel de cada carrusel aprobado para el día siguiente a las 21:00 (Instagram tipo REEL y TikTok).
 
 ## Notas de revisión
+- Ficha 03 (dolor torácico): el ECG en menos de 10 minutos y la troponina ultrasensible a las 0 h y 1 h (o 2 h) proceden de la guía ESC 2023 de SCA (Byrne RA, et al. Eur Heart J 2023;44(38):3720-826), consultada a través de resúmenes en español, no del texto original. La lista de seis causas y las pistas semiológicas proceden de revisiones y material docente, no de una guía. Dudas para Eduardo: si mantener la rotura esofágica entre las seis y si añadir la ecografía a pie de cama.
 - Ficha 02: aprobada por Eduardo el 16/11/2026. Criterios fijados por él: gluconato cálcico 1 ampolla de 10 ml, repetible si persiste el ECG alterado; glucosa 25-50 g individualizando, con menos volumen en estado de hipervolemia; bicarbonato 1 M 50-100 mEq solo si hay acidosis metabólica. Fuente principal: Ortiz A, et al. Nefrología 2023;43(5):765-82. doi:10.1016/j.nefro.2023.05.004.
 - Criterio general de Eduardo: cuando las guías dan pautas distintas, mostrar el rango que recogen e indicar que se individualiza.

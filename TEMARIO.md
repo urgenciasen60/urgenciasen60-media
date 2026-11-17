@@ -34,7 +34,7 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 |---|---|---|---|
 | 1 | Anafilaxia | Ficha | Ficha 01 |
 | 2 | Hiperpotasemia | Ficha | Ficha 02 |
-| 3 | Dolor torácico: qué descartar primero | Ficha | |
+| 3 | Dolor torácico: qué descartar primero | Ficha | Ficha 03 (pendiente de revisión) |
 | 4 | Sepsis: la primera hora | Ficha | |
 | 5 | Crisis asmática | Ficha | |
 | 6 | Cólico nefrítico | Ficha | |

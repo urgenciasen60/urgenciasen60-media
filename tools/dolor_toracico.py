@@ -1,0 +1,15 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ficha import *
+T="DOLOR TORÁCICO"; N=7
+def pista(a,b): return f'<div style="border-top:4px solid {K};padding-top:20px;display:flex;flex-direction:column;gap:8px"><div style="font-size:38px;font-weight:600;color:{G};line-height:1.25">{a}</div><div style="font-size:46px;font-weight:800;line-height:1.2">{b}</div></div>'
+P=[
+page(1,N,T,big("DOLOR TORÁCICO",134,nowrap=True)+big(f'<span style="color:{R}">SEIS</span> CAUSAS QUE NO SE PUEDEN ESCAPAR',112)+'<div style="font-size:40px;font-weight:600;line-height:1.3;max-width:820px">Qué descartar primero y con qué, con ficha final para guardar.</div>',cover=True),
+page(2,N,T,big("LAS SEIS",150)+f'<div style="display:flex;flex-direction:column;gap:20px">{num(1,"Síndrome coronario agudo")}{num(2,"Síndrome aórtico agudo")}{num(3,"Tromboembolismo pulmonar")}{num(4,"Neumotórax a tensión")}{num(5,"Taponamiento cardiaco")}{num(6,"Rotura esofágica")}</div>'),
+page(3,N,T,kicker("LO PRIMERO")+big("ECG EN 10 MINUTOS",116,R,True)+'<div style="font-size:52px;font-weight:800;line-height:1.2">12 derivaciones, hecho e interpretado desde el primer contacto médico</div>'+f'<div style="border-top:4px solid {K};padding-top:28px;font-size:38px;line-height:1.4;color:{G}">Recomendación de clase I en la guía europea de síndrome coronario agudo.</div>'),
+page(4,N,T,kicker("DESPUÉS")+big("TROPONINA ULTRASENSIBLE",92,R,True)+'<div style="font-size:52px;font-weight:800;line-height:1.2">A las 0 h y a la hora (o a las 2 h)</div>'+f'<div style="display:flex;flex-direction:column;gap:22px">{row("Muy baja o sin cambio","Descarta")}{row("Alta o en ascenso","Confirma")}{row("El resto","Observación")}</div>'),
+page(5,N,T,big("PISTAS QUE ORIENTAN",106,nowrap=True)+f'<div style="display:flex;flex-direction:column;gap:24px">{pista("Opresivo, hacia el brazo o la mandíbula, con sudoración","Síndrome coronario agudo")}{pista("Desgarrador, hacia la espalda, de inicio súbito","Disección aórtica")}{pista("Pleurítico, súbito y con disnea","Tromboembolismo o neumotórax")}</div>'),
+page(6,N,T,kicker("SI EL ECG NO LO EXPLICA")+big("SIGUE BUSCANDO",128,nowrap=True)+f'<div style="display:flex;flex-direction:column;gap:22px">{line("Radiografía de tórax: disección, neumotórax, neumomediastino, derrame")}{line("Taquicardia sinusal sin causa clara: piensa en tromboembolismo, taponamiento, disección o neumotórax a tensión",True)}</div>'),
+page(7,N,T,ficha_body("DOLOR TORÁCICO","Adulto",[("DESCARTA","Coronario agudo, aórtico agudo, tromboembolismo, neumotórax a tensión, taponamiento y rotura esofágica"),("PRIMERO","ECG de 12 derivaciones en menos de 10 minutos",True),("DESPUÉS","Troponina ultrasensible a las 0 h y a la hora (o a las 2 h)"),("ORIENTA","Carácter del dolor, irradiación y forma de inicio"),("AMPLÍA","Radiografía de tórax si el ECG no lo explica")],"Byrne RA, et al. Guía ESC 2023 de síndromes coronarios agudos. Eur Heart J 2023;44(38):3720-826",size=112),ficha="03"),
+]
+out = sys.argv[1] if len(sys.argv)>1 else "out"
+render(P,out,"dolor-toracico")
