@@ -8,7 +8,7 @@ from piper import PiperVoice, SynthesisConfig
 N="es/es_ES/davefx/medium/es_ES-davefx-medium"
 onnx=hf_hub_download("rhasspy/piper-voices",N+".onnx"); hf_hub_download("rhasspy/piper-voices",N+".onnx.json")
 v=PiperVoice.load(onnx); sr=v.config.sample_rate
-ls=float(sys.argv[3]) if len(sys.argv)>3 else 1.0
+ls=float(sys.argv[3]) if len(sys.argv)>3 else 0.95   # «entonación 1», elegida por Eduardo
 out=[]; marcas=[]; t=0.0
 for linea in open(sys.argv[1],encoding="utf-8").read().split("\n"):
     linea=linea.strip()

@@ -55,12 +55,26 @@ for dz in (0.095,-0.095):
 skin_obj("cuello",[[((-0.38,0.22,Z),0.055),((-0.50,0.29,Z),0.05)]])
 ell((-0.60,0.35,Z),1.0,SKIN,(0.105,0.095,0.09))   # cabeza lisa, sin cara
 bpy.context.view_layer.update()
-for o in list(bpy.data.objects):
-    if any(m.type=="SKIN" for m in o.modifiers):
-        bpy.context.view_layer.objects.active=o
-        for o2 in bpy.context.selected_objects: o2.select_set(False)
-        o.select_set(True)
-        for m in list(o.modifiers): bpy.ops.object.modifier_apply(modifier=m.name)
+# ----- fundir todas las piezas del cuerpo en una sola superficie continua
+parts=[o for o in bpy.data.objects if o.type=='MESH' and any(m.type=="SKIN" for m in o.modifiers)]
+for o in parts:
+    bpy.context.view_layer.objects.active=o
+    for o2 in bpy.context.selected_objects: o2.select_set(False)
+    o.select_set(True)
+    for m in list(o.modifiers): bpy.ops.object.modifier_apply(modifier=m.name)
+head=[o for o in bpy.data.objects if o.type=='MESH' and o.location.x<-0.55 and o.location.z>0.5]
+for o2 in bpy.context.selected_objects: o2.select_set(False)
+for o in parts+head: o.select_set(True)
+bpy.context.view_layer.objects.active=parts[0]; bpy.ops.object.join(); BODY=bpy.context.object; BODY.name="cuerpo"
+bpy.ops.object.transform_apply(location=True,rotation=True,scale=True)
+rm=BODY.modifiers.new("fusion","REMESH"); rm.mode='VOXEL'; rm.voxel_size=0.006
+bpy.ops.object.modifier_apply(modifier="fusion")
+sm_=BODY.modifiers.new("suave","CORRECTIVE_SMOOTH"); sm_.iterations=25; sm_.factor=0.8; sm_.use_only_smooth=True
+bpy.ops.object.modifier_apply(modifier="suave")
+lp=BODY.modifiers.new("lap","LAPLACIANSMOOTH"); lp.iterations=12; lp.lambda_factor=1.2
+bpy.ops.object.modifier_apply(modifier="lap")
+bpy.ops.object.shade_smooth(); BODY.data.materials.clear(); BODY.data.materials.append(SKIN)
+T=BODY
 bpy.context.view_layer.update()
 dg=bpy.context.evaluated_depsgraph_get()
 def skin_at(x,z=Z):
