@@ -1,7 +1,8 @@
 """Generador de reels Urgencias en 60 (v2): 1080x1920, 30 fps.
 - Título arriba; marca y @ abajo, dentro de la zona segura.
 - Cada escena tiene su color de fondo y 1-2 pasos (varios elementos entran a la vez).
-- Efectos: golpe de zoom al entrar cada paso, transición deslizante entre escenas y barra de progreso roja.
+- Efectos sutiles: entrada con zoom leve y frenada, transición suave entre escenas y barra de progreso.
+- Duración objetivo: unos 26 s.
 Un solo render con ffmpeg."""
 import os, subprocess
 HERE=os.path.dirname(os.path.abspath(__file__))
@@ -27,7 +28,7 @@ def shot(h,png):
     hp=png[:-4]+".html"; open(hp,"w").write(h)
     subprocess.run(["google-chrome","--headless=new","--no-sandbox","--disable-gpu","--hide-scrollbars","--window-size=1080,1920",f"--screenshot={png}","--virtual-time-budget=3000","file://"+hp],capture_output=True)
     os.remove(hp)
-def build(scenes,tema,outdir,name,frames_only=False,xf=0.3):
+def build(scenes,tema,outdir,name,frames_only=False,xf=0.5):
     """scenes: lista de (fondo, bloques, [(n_bloques_visibles, segundos), ...])."""
     os.makedirs(outdir,exist_ok=True); pngs=[]; meta=[]
     for si,(bg,blocks,steps) in enumerate(scenes):
@@ -42,11 +43,11 @@ def build(scenes,tema,outdir,name,frames_only=False,xf=0.3):
         labs=[]; tot=0
         for idx,(s,ti,d) in enumerate(meta):
             if s!=si: continue
-            n=int(round(d*30)); amp=0.14 if ti==0 else 0.05
-            fc.append(f"[{idx}:v]zoompan=z='if(lt(on,7),1+{amp}*(1-on/7),1)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v{idx}]")
+            n=int(round(d*30)); amp=0.045 if ti==0 else 0.02   # entrada suave: 2/3 de segundo, con frenada
+            fc.append(f"[{idx}:v]zoompan=z='if(lt(on,20),1+{amp}*pow(1-on/20,2),1)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v{idx}]")
             labs.append(f"[v{idx}]"); tot+=n/30
         fc.append("".join(labs)+f"concat=n={len(labs)}:v=1:a=0,fps=30,settb=1/30[s{si}]"); scene_lab.append(f"[s{si}]"); scene_dur.append(tot)
-    trans=["slideup","slideleft","slideup","slideright","slideup"]
+    trans=["smoothup","smoothleft","smoothup","smoothright","smoothup"]
     cur=scene_lab[0]; acc=scene_dur[0]
     for i in range(1,len(scene_lab)):
         off=acc-xf; out=f"[x{i}]"

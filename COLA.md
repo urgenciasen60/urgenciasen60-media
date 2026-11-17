@@ -3,13 +3,15 @@
 Estados: **Pendiente de revisión** → **Aprobada** → **Programada** → **Publicada**.
 Solo se programa lo que Eduardo ha aprobado. Las imágenes van siempre en JPG (TikTok no admite PNG). Los borradores no están revisados clínicamente.
 
+**Qué tema toca:** sigue el orden de `TEMARIO.md` (Fase A), que sustituye a cualquier otra lista de temas. Las familias Técnica, Paper, Prueba y Fármaco tienen numeración y estructura propias, descritas allí; hasta que Eduardo apruebe un prototipo de cada familia, produce solo fichas clínicas.
+
 Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), en Instagram y TikTok.
 
 | Ficha | Tema | Carpeta | Estado | Publicación |
 |---|---|---|---|---|
 | 01 | Anafilaxia | `anafilaxia/` | Publicada | Lunes 16/11/2026, 21:00 (Instagram); TikTok reprogramada en JPG |
 | 02 | Hiperpotasemia | `hiperpotasemia/` | Programada | Miércoles 18/11/2026, 21:00 |
-| 01 (reel) | Anafilaxia, reel de 21 s (versión 2) | `borradores/anafilaxia-reel/` | Pendiente de revisión | Prototipo de formato; sin música todavía |
+| 01 (reel) | Anafilaxia, reel de 26 s (versión 3, efectos suaves) | `borradores/anafilaxia-reel/` | Pendiente de revisión | Prototipo de formato; sin música todavía |
 
 Próximo número de ficha libre: 03.
 
