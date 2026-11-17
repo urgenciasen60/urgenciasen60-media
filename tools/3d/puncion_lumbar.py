@@ -30,49 +30,70 @@ bpy.ops.mesh.primitive_cube_add(location=(0,0.15,0.46)); o=bpy.context.object; o
 bpy.ops.mesh.primitive_cylinder_add(radius=0.11,depth=0.30,location=(-0.80,0.15,0.54),rotation=(0,math.pi/2,0)); link(bpy.context.object,SHEET); sm()
 Z=0.66
 import bmesh
-def skin_obj(name,chains,sz=1.0):
-    me=bpy.data.meshes.new(name); ob=bpy.data.objects.new(name,me); bpy.context.collection.objects.link(ob)
-    bm=bmesh.new(); rad=[]
-    for ch in chains:
-        vs=[]
-        for (p,r) in ch:
-            v=bm.verts.new(p); vs.append(v); rad.append(r)
-        for v1,v2 in zip(vs,vs[1:]): bm.edges.new((v1,v2))
-    bm.to_mesh(me); bm.free()
-    mod=ob.modifiers.new("skin","SKIN"); mod.use_smooth_shade=True
-    for sv,r in zip(me.skin_vertices[0].data,rad): sv.radius=(r,r)
-    me.skin_vertices[0].data[0].use_root=True
-    ss=ob.modifiers.new("sub","SUBSURF"); ss.levels=2; ss.render_levels=3
-    me.materials.append(SKIN); return ob
-# tronco (se escala en Z: de lado, hombro a hombro es más ancho que de delante a atrás)
-T=skin_obj("tronco",[[((0.34,0.20,Z),0.105),((0.24,0.155,Z),0.115),((0.12,0.125,Z),0.10),((0.0,0.115,Z),0.10),((-0.14,0.13,Z),0.115),((-0.28,0.17,Z),0.12),((-0.38,0.215,Z),0.10)]])
-T.scale=(1,1,1.32); T.location.z=Z*(1-1.32)
-# hombros, caderas, cuello, extremidades
-for dz in (0.16,-0.16):
-    skin_obj("brazo",[[((-0.33,0.215,Z+dz*0.65),0.055),((-0.33,0.215,Z+dz),0.05),((-0.19,0.48,Z+dz*0.55),0.042),((0.00,0.62,Z+dz*0.25),0.034)]])
-for dz in (0.095,-0.095):
-    skin_obj("pierna",[[((0.27,0.20,Z+dz*0.4),0.10),((0.30,0.24,Z+dz),0.095),((-0.02,0.58,Z+dz),0.065),((0.29,0.75,Z+dz*0.9),0.042),((0.36,0.84,Z+dz*0.9),0.03)]])
-skin_obj("cuello",[[((-0.38,0.22,Z),0.055),((-0.50,0.29,Z),0.05)]])
-ell((-0.60,0.35,Z),1.0,SKIN,(0.105,0.095,0.09))   # cabeza lisa, sin cara
+PARTS=[]
+def spl(P,n=10):
+    P=[Vector(p) for p in P]; out=[]
+    for i in range(len(P)-1):
+        p0=P[max(i-1,0)];p1=P[i];p2=P[i+1];p3=P[min(i+2,len(P)-1)]
+        for k in range(n):
+            t=k/n; out.append(0.5*((2*p1)+(-p0+p2)*t+(2*p0-5*p1+4*p2-p3)*t*t+(-p0+3*p1-3*p2+p3)*t**3))
+    out.append(P[-1]); return out
+def interp(prof,u):
+    for (u0,a0,b0),(u1,a1,b1) in zip(prof,prof[1:]):
+        if u0<=u<=u1:
+            f=(u-u0)/(u1-u0); f=f*f*(3-2*f); return a0+(a1-a0)*f, b0+(b1-b0)*f
+    return prof[-1][1],prof[-1][2]
+def loft(ctrl,prof,name,n=12,seg=40,yoff=None):
+    """tubo continuo: ctrl = puntos del eje; prof = [(u, semieje profundidad, semieje ancho)] con u de 0 a 1"""
+    pts=spl(ctrl,n); L=[0]
+    for p,q in zip(pts,pts[1:]): L.append(L[-1]+(q-p).length)
+    me=bpy.data.meshes.new(name); bm=bmesh.new(); rings=[]
+    for i,p in enumerate(pts):
+        t=(pts[min(i+1,len(pts)-1)]-pts[max(i-1,0)]).normalized()
+        wz=Vector((0,0,1)); dep=wz.cross(t).normalized()
+        if dep.y>0: dep=-dep          # "profundidad" apunta hacia la espalda (-Y)
+        a,b=interp(prof,L[i]/L[-1])
+        off=yoff(L[i]/L[-1]) if yoff else 0.0
+        ring=[]
+        for k in range(seg):
+            ang=2*math.pi*k/seg; c,s_=math.cos(ang),math.sin(ang)
+            # sección algo aplanada por detrás (espalda) y redonda por delante
+            ra=a*(0.92 if c>0 else 1.0)
+            ring.append(bm.verts.new(p+dep*(ra*c+off)+wz*(b*s_)))
+        rings.append(ring)
+    for r0,r1 in zip(rings,rings[1:]):
+        for k in range(seg): bm.faces.new((r0[k],r0[(k+1)%seg],r1[(k+1)%seg],r1[k]))
+    for r,rev in ((rings[0],True),(rings[-1],False)):
+        c=bm.verts.new(sum((v.co for v in r),Vector())/len(r))
+        for k in range(seg):
+            f=(r[k],r[(k+1)%seg],c) if not rev else (r[(k+1)%seg],r[k],c); bm.faces.new(f)
+    bm.to_mesh(me); bm.free(); o=bpy.data.objects.new(name,me); bpy.context.collection.objects.link(o); PARTS.append(o); return o
+def E(c,sem,rot=None):
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=1,location=c,segments=40,ring_count=20); o=bpy.context.object; o.scale=sem
+    if rot is not None: o.rotation_mode='QUATERNION'; o.rotation_quaternion=rot
+    PARTS.append(o); return o
+along=lambda p1,p2: Vector((1,0,0)).rotation_difference(Vector(p2)-Vector(p1))
+# tronco: del sacro a la base del cuello, en C (flexión)
+loft([(0.40,0.175,Z),(0.30,0.160,Z),(0.15,0.135,Z),(0.00,0.130,Z),(-0.16,0.145,Z),(-0.30,0.180,Z),(-0.38,0.205,Z)],
+     [(0.00,0.050,0.070),(0.06,0.105,0.150),(0.16,0.118,0.172),(0.30,0.106,0.158),(0.45,0.096,0.138),(0.60,0.108,0.150),(0.76,0.118,0.165),(0.88,0.110,0.190),(0.96,0.085,0.150),(1.00,0.055,0.060)],"tronco")
+loft([(-0.36,0.205,Z),(-0.41,0.232,Z),(-0.46,0.262,Z)],[(0,0.064,0.064),(1,0.056,0.058)],"cuello",n=6)
+E((-0.545,0.308,Z),(0.112,0.096,0.088),along((-0.47,0.26,Z),(-0.62,0.35,Z)))    # cabeza lisa, sin cara
+for dz in (0.088,-0.088):                  # piernas en flexión
+    loft([(0.24,0.17,Z+dz*0.7),(0.22,0.33,Z+dz),(0.10,0.50,Z+dz),(0.00,0.62,Z+dz),(0.10,0.70,Z+dz),(0.24,0.745,Z+dz*0.92),(0.33,0.77,Z+dz*0.9)],
+         [(0,0.115,0.100),(0.12,0.098,0.096),(0.35,0.078,0.076),(0.47,0.050,0.050),(0.55,0.052,0.050),(0.66,0.056,0.052),(0.85,0.036,0.034),(1,0.030,0.030)],"pierna",n=8,seg=32)
+    E((0.375,0.83,Z+dz*0.9),(0.072,0.028,0.036),along((0.33,0.77,Z),(0.41,0.89,Z)))   # pie
+for dz in (0.125,-0.105):                  # brazos que abrazan las rodillas
+    loft([(-0.31,0.205,Z+dz*1.05),(-0.29,0.33,Z+dz),(-0.20,0.47,Z+dz*0.7),(-0.11,0.53,Z+dz*0.55),(0.00,0.60,Z+dz*0.42),(0.07,0.625,Z+dz*0.35)],
+         [(0,0.058,0.060),(0.15,0.048,0.050),(0.42,0.040,0.042),(0.55,0.040,0.040),(0.75,0.034,0.036),(1,0.026,0.030)],"brazo",n=8,seg=28)
+    E((0.11,0.640,Z+dz*0.3),(0.056,0.022,0.040),along((0.07,0.625,Z),(0.15,0.65,Z)))  # mano
 bpy.context.view_layer.update()
-# ----- fundir todas las piezas del cuerpo en una sola superficie continua
-parts=[o for o in bpy.data.objects if o.type=='MESH' and any(m.type=="SKIN" for m in o.modifiers)]
-for o in parts:
-    bpy.context.view_layer.objects.active=o
-    for o2 in bpy.context.selected_objects: o2.select_set(False)
-    o.select_set(True)
-    for m in list(o.modifiers): bpy.ops.object.modifier_apply(modifier=m.name)
-head=[o for o in bpy.data.objects if o.type=='MESH' and o.location.x<-0.55 and o.location.z>0.5]
-for o2 in bpy.context.selected_objects: o2.select_set(False)
-for o in parts+head: o.select_set(True)
-bpy.context.view_layer.objects.active=parts[0]; bpy.ops.object.join(); BODY=bpy.context.object; BODY.name="cuerpo"
+for o in bpy.context.selected_objects: o.select_set(False)
+for o in PARTS: o.select_set(True)
+bpy.context.view_layer.objects.active=PARTS[0]; bpy.ops.object.join(); BODY=bpy.context.object; BODY.name="cuerpo"
 bpy.ops.object.transform_apply(location=True,rotation=True,scale=True)
-rm=BODY.modifiers.new("fusion","REMESH"); rm.mode='VOXEL'; rm.voxel_size=0.006
-bpy.ops.object.modifier_apply(modifier="fusion")
-sm_=BODY.modifiers.new("suave","CORRECTIVE_SMOOTH"); sm_.iterations=25; sm_.factor=0.8; sm_.use_only_smooth=True
-bpy.ops.object.modifier_apply(modifier="suave")
-lp=BODY.modifiers.new("lap","LAPLACIANSMOOTH"); lp.iterations=12; lp.lambda_factor=1.2
-bpy.ops.object.modifier_apply(modifier="lap")
+rm=BODY.modifiers.new("fusion","REMESH"); rm.mode='VOXEL'; rm.voxel_size=0.004; bpy.ops.object.modifier_apply(modifier="fusion")
+lp=BODY.modifiers.new("lap","LAPLACIANSMOOTH"); lp.iterations=8; lp.lambda_factor=1.5; lp.use_volume_preserve=True; bpy.ops.object.modifier_apply(modifier="lap")
+cs=BODY.modifiers.new("cs","CORRECTIVE_SMOOTH"); cs.iterations=10; cs.factor=0.6; bpy.ops.object.modifier_apply(modifier="cs")
 bpy.ops.object.shade_smooth(); BODY.data.materials.clear(); BODY.data.materials.append(SKIN)
 T=BODY
 bpy.context.view_layer.update()
@@ -83,10 +104,10 @@ def skin_at(x,z=Z):
 # apófisis espinosas L1-L5 + sacro: pequeños relieves sobre la línea media
 L={}
 for i,x in enumerate([-0.15,-0.075,0.0,0.075,0.15]):  # L1..L5; L4 = 0.075
-    loc,nor=skin_at(x); L[i+1]=(x,loc); ell(loc-nor*0.003,1.0,SKIN,(0.014,0.008,0.008))
+    loc,nor=skin_at(x); L[i+1]=(x,loc)
 # ----- anatomía de superficie: crestas ilíacas, escápulas y línea de Tuffier
 import numpy as np
-SKX=[-0.38,-0.28,-0.14,0.0,0.12,0.24,0.34]; SKY=[0.215,0.17,0.13,0.115,0.125,0.155,0.20]
+SKX=[-0.38,-0.30,-0.16,0.0,0.15,0.30,0.40]; SKY=[0.205,0.18,0.145,0.13,0.135,0.16,0.175]
 yc=lambda x: float(np.interp(x,SKX,SKY))
 from mathutils.bvhtree import BVHTree
 _te=T.evaluated_get(dg); _me=_te.to_mesh()
@@ -102,15 +123,39 @@ def ridge(pts,r,m):
     sp.use_endpoint_u=True; sp.order_u=4; cu.bevel_depth=r; cu.bevel_resolution=6; cu.use_fill_caps=True
     o=bpy.data.objects.new("cresta",cu); bpy.context.collection.objects.link(o); cu.materials.append(m); return o
 X4=0.075
+import numpy as np
+feat=[]   # (punto, amplitud, sigma) relieves puntuales
+lines=[]  # (polilínea, amplitud, sigma) relieves lineales
+CR=[(22,0.215),(42,0.15),(62,0.10),(80,X4),(100,0.085),(120,0.125),(132,0.165)]
 for sgn in (1,-1):
-    pts=[]
-    for th,x in [(22,0.215),(40,0.15),(60,0.10),(80,X4),(100,0.085),(118,0.12),(132,0.17)]:
+    pl=[]
+    for k in range(60):
+        u=k/59*(len(CR)-1); i=min(int(u),len(CR)-2); f=u-i
+        th=CR[i][0]+(CR[i+1][0]-CR[i][0])*f; x=CR[i][1]+(CR[i+1][1]-CR[i][1])*f
         loc,nor=surf(x,sgn*th)
-        if loc: pts.append(tuple(loc-nor*0.008))
-    ridge(pts,0.0135,SKIN)
-    for th in (30,45):        # relieve de la escápula
-        loc,nor=surf(-0.27,sgn*th)
-        if loc: ell(loc-nor*0.012,1.0,SKIN,(0.075,0.02,0.045))
+        if loc: pl.append(np.array(loc))
+    lines.append((np.array(pl),0.0065,0.011))                       # cresta ilíaca: reborde continuo
+    for x in (-0.27,):
+        loc,nor=surf(x,sgn*40)
+        if loc: feat.append((loc,0.0030,0.045))                    # escápula: relieve amplio y suave
+for x in [-0.15,-0.075,0.0,0.075,0.15]:
+    loc,nor=surf(x,0)
+    if loc: feat.append((loc,0.0035,0.007))                        # apófisis espinosas
+def segdist(V,pl):
+    A=pl[:-1]; B=pl[1:]; AB=B-A; L2=(AB**2).sum(1)+1e-12
+    t=np.clip(((V[:,None,:]-A[None])*AB[None]).sum(2)/L2[None],0,1)
+    C=A[None]+t[...,None]*AB[None]; return np.sqrt(((V[:,None,:]-C)**2).sum(2)).min(1)
+bm=bmesh.new(); bm.from_mesh(BODY.data); bm.normal_update()
+V=np.array([v.co[:] for v in bm.verts]); N=np.array([v.normal[:] for v in bm.verts]); W=np.zeros(len(V))
+for p,A_,S_ in feat: W=np.maximum(W,A_*np.exp(-((V-np.array(p))**2).sum(1)/S_**2))
+for pl,A_,S_ in lines:
+    near=np.where(((V[:,0]>pl[:,0].min()-0.05)&(V[:,0]<pl[:,0].max()+0.05)))[0]
+    d=segdist(V[near],pl); W[near]=np.maximum(W[near],A_*np.exp(-(d/S_)**2))
+for i,v in enumerate(bm.verts):
+    w=W[i]; t=math.atan2(v.co.z-Z, -(v.co.y-yc(v.co.x)))
+    if -0.36<v.co.x<0.22 and abs(t)<0.35 and v.co.y<yc(v.co.x): w-=0.0035*math.exp(-(t/0.12)**2)   # surco paravertebral
+    if w!=0: v.co+=v.normal*w
+bm.to_mesh(BODY.data); bm.free(); BODY.data.update()
 bpy.context.view_layer.update(); dg=bpy.context.evaluated_depsgraph_get()
 # línea amarilla discontinua de cresta a cresta, sobre la piel, cruzando L4
 for th in range(-78,79,13):
@@ -124,6 +169,7 @@ print("crest-top",TOP,flush=True)
 # ----- esqueleto simplificado (solo visible en el plano de rayos X)
 BONE=mat("hueso",(0.95,0.90,0.78),0.5,emit=0.25)
 BONES=[]
+
 def keep(): BONES.append(bpy.context.object); return bpy.context.object
 for i,x in enumerate([-0.15,-0.075,0.0,0.075,0.15]):
     by=yc(x)-0.025
