@@ -28,7 +28,8 @@ def shot(h,png):
     hp=png[:-4]+".html"; open(hp,"w").write(h)
     subprocess.run(["google-chrome","--headless=new","--no-sandbox","--disable-gpu","--hide-scrollbars","--window-size=1080,1920",f"--screenshot={png}","--virtual-time-budget=3000","file://"+hp],capture_output=True)
     os.remove(hp)
-def build(scenes,tema,outdir,name,frames_only=False,xf=0.5):
+def build(scenes,tema,outdir,name,frames_only=False,xf=0.5,amp=(0.045,0.02),nz=20,trans=("smoothup","smoothleft","smoothup","smoothright","smoothup")):
+    """Intensidad: suave = valores por defecto; intermedia = xf=0.4, amp=(0.085,0.035), nz=13 y transiciones slide*."""
     """scenes: lista de (fondo, bloques, [(n_bloques_visibles, segundos), ...])."""
     os.makedirs(outdir,exist_ok=True); pngs=[]; meta=[]
     for si,(bg,blocks,steps) in enumerate(scenes):
@@ -43,11 +44,10 @@ def build(scenes,tema,outdir,name,frames_only=False,xf=0.5):
         labs=[]; tot=0
         for idx,(s,ti,d) in enumerate(meta):
             if s!=si: continue
-            n=int(round(d*30)); amp=0.045 if ti==0 else 0.02   # entrada suave: 2/3 de segundo, con frenada
-            fc.append(f"[{idx}:v]zoompan=z='if(lt(on,20),1+{amp}*pow(1-on/20,2),1)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v{idx}]")
+            n=int(round(d*30)); a=amp[0] if ti==0 else amp[1]   # entrada con zoom leve y frenada
+            fc.append(f"[{idx}:v]zoompan=z='if(lt(on,{nz}),1+{a}*pow(1-on/{nz},2),1)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v{idx}]")
             labs.append(f"[v{idx}]"); tot+=n/30
         fc.append("".join(labs)+f"concat=n={len(labs)}:v=1:a=0,fps=30,settb=1/30[s{si}]"); scene_lab.append(f"[s{si}]"); scene_dur.append(tot)
-    trans=["smoothup","smoothleft","smoothup","smoothright","smoothup"]
     cur=scene_lab[0]; acc=scene_dur[0]
     for i in range(1,len(scene_lab)):
         off=acc-xf; out=f"[x{i}]"

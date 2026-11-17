@@ -11,4 +11,8 @@ S=[
  (Y,[big("FICHA 01",130),f'<img src="{ficha}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.4)">',txt("Completa en el perfil. Guárdala.",50)],[(3,6.0)]),
 ]
 out=sys.argv[1] if len(sys.argv)>1 else "out_reel"
-print(build(S,T,out,"urgenciasen60-anafilaxia-reel.mp4",frames_only=(len(sys.argv)>2)))
+modo=sys.argv[2] if len(sys.argv)>2 else "suave"
+if modo=="intermedio":
+    print(build(S,T,out,"urgenciasen60-anafilaxia-reel-intermedio.mp4",xf=0.4,amp=(0.085,0.035),nz=13,trans=("slideup","slideleft","slideup","slideright","slideup")))
+else:
+    print(build(S,T,out,"urgenciasen60-anafilaxia-reel.mp4"))

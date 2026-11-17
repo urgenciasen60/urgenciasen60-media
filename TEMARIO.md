@@ -26,7 +26,6 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 - **¿Y ahora qué?:** destino del paciente: alta, observación, ingreso o UCI, con sus criterios.
 - **Caso del box:** caso breve con una pregunta de decisión; la respuesta, al día siguiente.
 - **Escala en 60:** una escala con utilidad real (HEART, Wells, CURB-65, qSOFA, Canadian CT Head, Ottawa, HINTS, Glasgow-Blatchford).
-- **No te vayas sin…:** lo que debe constar en el informe de alta de una patología.
 - **Guardia del R1:** lo básico que nadie explica (cómo presentar un paciente, SBAR, qué pedir y qué no).
 
 ## Fase A: los 60 primeros (orden de publicación)
@@ -110,7 +109,6 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 - **Ecografía:** eFAST, ecocardiografía básica, vena cava inferior, aorta, vía urinaria, vesícula, trombosis venosa, protocolo RUSH.
 - **Pruebas:** ECG sistemático, ECG en alteraciones electrolíticas y arritmias, radiografía de tórax, TC craneal urgente, lactato, procalcitonina, troponina, sedimento urinario.
 - **Fármacos:** opioides, sedación para procedimientos, inductores y relajantes, anticoagulantes, antiarrítmicos, antiepilépticos, corticoides, antídotos, fármacos para la agitación.
-- **Decisiones:** criterios de ingreso, de alta y de UCI, observación, SBAR, informe de alta, paciente frágil, paciente paliativo, limitación del esfuerzo terapéutico.
 
 ## Fase C: menos frecuentes, pero importantes
 
@@ -125,6 +123,8 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 - **Trauma específico:** pelvis, fractura abierta, vertebral, ocular, facial, amputaciones.
 - **Técnicas avanzadas:** cricotiroidotomía, catéter venoso central y arterial, pericardiocentesis, VExUS, taponamiento posterior, extracción de cuerpos extraños, lavado ocular, hematoma subungueal.
 - **Críticos:** transfusión masiva, gran quemado, potencial donante, comunicación de malas noticias.
+
+**Fuera del canal por decisión de Eduardo (17/11/2026):** el bloque de gestión clínica (triaje, gestión de camas, consentimiento, documentación, seguridad del paciente y similares). Queda solo para el libro. Las decisiones de destino del paciente se tratan dentro de cada ficha clínica.
 
 ## Proyecto de libro: «Urgencias en 1 ficha»
 
