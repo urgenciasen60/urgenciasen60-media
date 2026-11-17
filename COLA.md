@@ -13,7 +13,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 02 | Hiperpotasemia | `hiperpotasemia/` | Programada | Miércoles 18/11/2026, 21:00 |
 | 01 (reel) | Anafilaxia, reel de 26 s | `anafilaxia/` | Programada | Martes 17/11/2026, 21:00 |
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Programada | Jueves 19/11/2026, 21:00 |
-| 03 | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | Pendiente de revisión | — |
+| 03 | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
 
 Próximo número de ficha libre: 04.
 
@@ -23,4 +23,6 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 ## Notas de revisión
 - Ficha 03 (dolor torácico): el ECG en menos de 10 minutos y la troponina ultrasensible a las 0 h y 1 h (o 2 h) proceden de la guía ESC 2023 de SCA (Byrne RA, et al. Eur Heart J 2023;44(38):3720-826), consultada a través de resúmenes en español, no del texto original. La lista de seis causas y las pistas semiológicas proceden de revisiones y material docente, no de una guía. Dudas para Eduardo: si mantener la rotura esofágica entre las seis y si añadir la ecografía a pie de cama.
 - Ficha 02: aprobada por Eduardo el 16/11/2026. Criterios fijados por él: gluconato cálcico 1 ampolla de 10 ml, repetible si persiste el ECG alterado; glucosa 25-50 g individualizando, con menos volumen en estado de hipervolemia; bicarbonato 1 M 50-100 mEq solo si hay acidosis metabólica. Fuente principal: Ortiz A, et al. Nefrología 2023;43(5):765-82. doi:10.1016/j.nefro.2023.05.004.
+- Criterio de Eduardo (17/11/2026): las fichas pueden llevar alguna palabra más si evita tener que buscar el dato con el paciente delante; tras un grupo farmacológico, poner un ejemplo entre paréntesis, como «diurético de asa (furosemida)».
+- Música de los reels: en Instagram se añade al programar con `audioConfiguration` (catálogo de Instagram; funciona pasando el identificador numérico). TikTok no admite esa vía.
 - Criterio general de Eduardo: cuando las guías dan pautas distintas, mostrar el rango que recogen e indicar que se individualiza.
