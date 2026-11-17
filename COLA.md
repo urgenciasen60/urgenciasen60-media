@@ -20,8 +20,8 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 07 | Hipoglucemia | `borradores/hipoglucemia/` | Pendiente de revisión | — |
 | Técnica 01 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
 | Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión | — |
-| Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Pendiente de revisión (prototipo de la familia Guía) | — |
-| Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | Pendiente de revisión (prototipo de la familia Paper) | — |
+| Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Aplazada: no publicar cerca de la Ficha 04. Rehacer a 10 diapositivas + reel de 60 s | — |
+| Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
 
 Próximo número libre: Ficha 08, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
@@ -34,3 +34,10 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - Criterio de Eduardo (17/11/2026): las fichas pueden llevar alguna palabra más si evita tener que buscar el dato con el paciente delante; tras un grupo farmacológico, poner un ejemplo entre paréntesis, como «diurético de asa (furosemida)».
 - Música de los reels: en Instagram se añade al programar con `audioConfiguration` (catálogo de Instagram; funciona pasando el identificador numérico). TikTok no admite esa vía, así que todos los reels llevan incrustada la base instrumental propia del canal (`tools/musica.py`: guitarra con distorsión, bajo y percusión electrónica, 120 pulsos por minuto); por ahora también suena en Instagram (sin `audioConfiguration`), porque las pistas del catálogo no se pueden escuchar ni verificar desde aquí. Si Eduardo elige de oído una pista del catálogo, se añade con `audioConfiguration` y `videoVolume: 0`.
 - Criterio general de Eduardo: cuando las guías dan pautas distintas, mostrar el rango que recogen e indicar que se individualiza.
+
+## Decisiones del 17/11/2026
+- **Vídeos de técnica:** animación 3D (Blender) con maniquí sin cara, unos 60 s, voz explicando y subtítulos. Guiones en `guiones/tecnicas-video-60s.md`; escena en `tools/3d/`.
+- **Render:** la noche del martes (los créditos se renuevan el miércoles).
+- **Guías:** carrusel de unas 10 diapositivas + reel de 60 s.
+- **Papers:** de médico de urgencias, de 2026. Candidato: PRESC1SE-MI (Lancet 2026; doi:10.1016/S0140-6736(26)01654-5), pendiente del texto completo.
+- **Sepsis:** no publicar dos piezas seguidas.
