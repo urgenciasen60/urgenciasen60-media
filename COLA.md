@@ -14,8 +14,16 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 01 (reel) | Anafilaxia, reel de 26 s | `anafilaxia/` | Programada | Martes 17/11/2026, 21:00 |
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Programada | Jueves 19/11/2026, 21:00 |
 | 03 | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
+| 04 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión | — |
+| 05 | Crisis de asma | `borradores/crisis-asma/` | Pendiente de revisión | — |
+| 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión | — |
+| 07 | Hipoglucemia | `borradores/hipoglucemia/` | Pendiente de revisión | — |
+| Técnica 01 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
+| Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión | — |
+| Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Pendiente de revisión (prototipo de la familia Guía) | — |
+| Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | Pendiente de revisión (prototipo de la familia Paper) | — |
 
-Próximo número de ficha libre: 04.
+Próximo número libre: Ficha 08, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
 ## Reels
 Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba y marca abajo; un color de fondo por escena; varios elementos entran a la vez; golpe de zoom, transición deslizante y barra de progreso; ficha al final) que se publica al día siguiente: martes, jueves y sábado. Se generan con `tools/reel.py` (modelo: `tools/reel_anafilaxia.py`). Plantilla aprobada por Eduardo el 17/11/2026: intensidad suave (valores por defecto de `build`), unos 26 s, un color de fondo por escena, ficha al final. El reel reutiliza el contenido ya aprobado del carrusel, así que no necesita revisión clínica aparte: genera y programa el reel de cada carrusel aprobado para el día siguiente a las 21:00 (Instagram tipo REEL y TikTok).

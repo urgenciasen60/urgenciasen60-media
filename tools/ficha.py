@@ -3,15 +3,20 @@ import os, subprocess, sys
 Y="#FFD60A"; K="#111111"; R="#D7141A"; G="#4A4A4A"
 FONT=os.path.join(os.path.dirname(os.path.abspath(__file__)),"fonts","anton-latin-400-normal.woff2")
 A="font-family: Anton, sans-serif; line-height: 1.02"
-def page(n,total,tema,body,cover=False,ficha=None):
+B="#0B4F9E"
+def page(n,total,tema,body,cover=False,ficha=None,strip=None,fam="FICHA",dark=False):
+    """strip: color de la franja superior (rojo por defecto; negro = Técnica; azul B = Paper/Guía). fam: FICHA, TÉCNICA, PAPER, GUÍA."""
+    strip = strip or R
     bg = Y if cover else "#FFFFFF"; fb = K if cover else Y; ff = Y if cover else K
-    right = f"FICHA {ficha}" if ficha else f"{n} / {total}"
+    fg=K; tb=K; tf="#FFF"
+    if dark: bg=K; fg="#FFFFFF"; fb=Y; ff=K; tb=Y; tf=K   # portada negra: familia Técnica
+    right = f"{fam} {ficha}" if ficha else f"{n} / {total}"
     last = "Guárdalo" if ficha else "Desliza →"
     return f'''<!doctype html><html><head><meta charset="utf-8"><style>@font-face{{font-family:Anton;src:url("file://{FONT}") format("woff2")}}body{{margin:0}}</style></head><body>
-<div style="width:1080px;height:1350px;box-sizing:border-box;display:flex;flex-direction:column;background:{bg};color:{K};font-family:Inter,sans-serif">
-<div style="height:28px;background:{R}"></div>
+<div style="width:1080px;height:1350px;box-sizing:border-box;display:flex;flex-direction:column;background:{bg};color:{fg};font-family:Inter,sans-serif">
+<div style="height:28px;background:{strip}"></div>
 <div style="display:flex;justify-content:space-between;align-items:center;padding:48px 80px 0 80px">
-<div style="background:{K};color:#FFF;padding:12px 24px;border-radius:8px;font-size:26px;font-weight:800;letter-spacing:3px">URGENCIAS EN 60 · {tema}</div>
+<div style="background:{tb};color:{tf};padding:12px 24px;border-radius:8px;font-size:26px;font-weight:800;letter-spacing:3px">URGENCIAS EN 60 · {tema}</div>
 <div style="font-size:30px;font-weight:800">{right}</div></div>
 <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:40px;padding:0 80px">{body}</div>
 <div style="height:108px;background:{fb};color:{ff};display:flex;justify-content:space-between;align-items:center;padding:0 80px;font-size:32px;font-weight:800"><div>@urgenciasen60</div><div>{last}</div></div>
@@ -27,7 +32,7 @@ def ficha_body(titulo,ambito,rows,fuentes,size=136,fs=36):
     r="".join(frow(*x,fs=fs) if len(x)==2 else frow(x[0],x[1],x[2],fs) for x in rows)
     return f'<div style="display:flex;align-items:baseline;justify-content:space-between"><div style="{A};font-size:{size}px;white-space:nowrap">{titulo}</div><div style="font-size:34px;font-weight:800;color:{G}">{ambito}</div></div><div style="display:flex;flex-direction:column;gap:16px">{r}</div><div style="font-size:21px;line-height:1.4;color:{G}">Fuentes: {fuentes}. Contenido formativo para profesionales sanitarios; no sustituye a los protocolos de tu centro.</div>'
 def render(pages,outdir,slug):
-    os.makedirs(outdir,exist_ok=True); out=[]
+    outdir=os.path.abspath(outdir); os.makedirs(outdir,exist_ok=True); out=[]
     for i,h in enumerate(pages,1):
         hp=os.path.join(outdir,f"{i}.html"); open(hp,"w").write(h)
         png=os.path.join(outdir,f"urgenciasen60-{slug}-{i}.png")

@@ -1,0 +1,15 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ficha import *
+T="CÓLICO NEFRÍTICO"; N=7
+note=lambda t: f'<div style="font-size:36px;line-height:1.4;color:{G}">{t}</div>'
+rows=lambda *x: '<div style="display:flex;flex-direction:column;gap:22px">'+"".join(x)+'</div>'
+P=[
+page(1,N,T,big("CÓLICO NEFRÍTICO",120,nowrap=True)+big(f'CON FIEBRE <span style="color:{R}">YA NO ES</span> UN CÓLICO SIMPLE',116)+'<div style="font-size:40px;font-weight:600;line-height:1.3;max-width:820px">Analgesia por escalones, qué imagen pedir y cuándo llamar a Urología. Con ficha final.</div>',cover=True),
+page(2,N,T,kicker("PASO 1 · ANALGESIA")+big("AINE PRIMERO",170,R,True)+rows(row("Diclofenaco","75 mg IM"),row("Repetir","A los 30–60 min si no cede"))+note("Los antiinflamatorios controlan el dolor mejor que los opioides y con menos vómitos. Valora el riesgo cardiovascular y la función renal antes de darlos.")),
+page(3,N,T,kicker("PASO 2 · SI NO BASTA")+big("SEGUNDO ESCALÓN",122,nowrap=True)+rows(line("Metamizol 1–2 g IV en 20 min, asociado al antiinflamatorio"),line("Opioide (tramadol) si el dolor persiste",True),line("Antiemético si hay vómitos (metoclopramida)"))+note("No fuerces la hidratación en la fase aguda: aumenta el dolor y no acelera la expulsión.")),
+page(4,N,T,kicker("PASO 3 · IMAGEN")+big("¿A QUIÉN Y QUÉ?",132,nowrap=True)+rows(row("Primera prueba","Ecografía"),row("Para confirmar","TC sin contraste (baja dosis)"))+f'<div style="border-top:4px solid {K};padding-top:28px;font-size:44px;font-weight:800;line-height:1.3;color:{R}">Imagen inmediata si hay fiebre, riñón único o dudas diagnósticas</div>'),
+page(5,N,T,kicker("LA URGENCIA REAL")+big("OBSTRUIDO E INFECTADO",104,R)+'<div style="font-size:50px;font-weight:800;line-height:1.2">Riñón obstruido + infección = descompresión urgente</div>'+rows(line("Cultivos, antibiótico y aviso a Urología"),line("Catéter doble J o nefrostomía; la litiasis se trata después",True))),
+page(6,N,T,kicker("ALTA O INGRESO")+big("AVISA A UROLOGÍA SI…",104)+rows(line("Fiebre o signos de sepsis",True),line("Anuria, riñón único o deterioro de la función renal"),line("Dolor que no cede con la analgesia"))+note("Al alta: antiinflamatorio pautado y, en litiasis ureteral distal de 5–10 mm, tamsulosina 0,4 mg al día (uso fuera de ficha técnica).")),
+page(7,N,T,ficha_body("CÓLICO NEFRÍTICO","Adulto",[("1. ANALGESIA","AINE (diclofenaco 75 mg IM), repetible a los 30–60 min",True),("2. SI NO CEDE","Metamizol 1–2 g IV. Opioide (tramadol) de segunda línea"),("IMAGEN","Ecografía; TC sin contraste para confirmar. Inmediata si fiebre, riñón único o duda"),("UROLOGÍA YA","Fiebre o sepsis, anuria, riñón único, fracaso renal, dolor refractario",True),("AL ALTA","AINE pautado. Tamsulosina 0,4 mg/día si litiasis distal de 5–10 mm"),("EVITA","Sobrehidratar en la fase aguda")],"EAU Guidelines on Urolithiasis 2026; García Sierra A, et al. Cólico nefrítico en Atención Primaria",size=100,fs=32),ficha="06"),
+]
+render(P,sys.argv[1] if len(sys.argv)>1 else "out","colico-nefritico")

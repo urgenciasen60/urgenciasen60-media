@@ -35,14 +35,14 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 1 | Anafilaxia | Ficha | Ficha 01 |
 | 2 | Hiperpotasemia | Ficha | Ficha 02 |
 | 3 | Dolor torácico: qué descartar primero | Ficha | Ficha 03 (pendiente de revisión) |
-| 4 | Sepsis: la primera hora | Ficha | |
-| 5 | Crisis asmática | Ficha | |
-| 6 | Cólico nefrítico | Ficha | |
+| 4 | Sepsis: la primera hora | Ficha | Ficha 04 y Guía 01, pendientes de revisión |
+| 5 | Crisis asmática | Ficha | Ficha 05, pendiente de revisión |
+| 6 | Cólico nefrítico | Ficha | Ficha 06, pendiente de revisión |
 | 7 | Fibrilación auricular en Urgencias | Ficha | |
-| 8 | Hipoglucemia | Ficha | |
+| 8 | Hipoglucemia | Ficha | Ficha 07, pendiente de revisión |
 | 9 | Síncope: estratificación del riesgo | Ficha | |
 | 10 | Código ictus | Ficha | |
-| 11 | Epistaxis y taponamiento nasal | Técnica | |
+| 11 | Epistaxis y taponamiento nasal | Técnica | Técnica 01, pendiente de revisión |
 | 12 | Insuficiencia cardiaca aguda y edema agudo de pulmón | Ficha | |
 | 13 | Exacerbación de EPOC | Ficha | |
 | 14 | Vértigo periférico frente a central (HINTS) | Ficha | |
@@ -71,7 +71,7 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 37 | Cefalea: banderas rojas | Ficha | |
 | 38 | Intoxicación por paracetamol | Ficha | |
 | 39 | Abstinencia alcohólica | Ficha | |
-| 40 | Punción lumbar | Técnica | |
+| 40 | Punción lumbar | Técnica | Técnica 02, pendiente de revisión |
 | 41 | SCASEST | Ficha | |
 | 42 | Celulitis y fascitis necrotizante | Ficha | |
 | 43 | Meningitis aguda | Ficha | |

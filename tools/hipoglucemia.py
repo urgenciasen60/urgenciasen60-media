@@ -1,0 +1,15 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ficha import *
+T="HIPOGLUCEMIA"; N=7
+note=lambda t: f'<div style="font-size:36px;line-height:1.4;color:{G}">{t}</div>'
+rows=lambda *x: '<div style="display:flex;flex-direction:column;gap:22px">'+"".join(x)+'</div>'
+P=[
+page(1,N,T,big("HIPOGLUCEMIA",150,nowrap=True)+big(f'TRATARLA ES FÁCIL. LO DIFÍCIL ES <span style="color:{R}">CUÁNDO DAR EL ALTA</span>',98)+'<div style="font-size:40px;font-weight:600;line-height:1.3;max-width:820px">Niveles, dosis y a quién dejar en observación. Con ficha final para guardar.</div>',cover=True),
+page(2,N,T,big("TRES NIVELES",150,nowrap=True)+rows(row("Nivel 1","&lt; 70 y ≥ 54 mg/dl"),row("Nivel 2","&lt; 54 mg/dl"),f'<div style="border-top:4px solid {K};padding-top:22px;display:flex;justify-content:space-between;gap:32px;font-size:40px;color:{R}"><div style="font-weight:800">Nivel 3</div><div style="font-weight:800;text-align:right">Necesita ayuda de otra persona</div></div>')+note("El nivel 3 lo define la situación clínica (alteración mental o física), no la cifra de glucemia.")),
+page(3,N,T,kicker("SI ESTÁ CONSCIENTE")+big("REGLA 15 / 15",165,R,True)+'<div style="font-size:50px;font-weight:800;line-height:1.2">15–20 g de glucosa oral y nueva glucemia a los 15 min</div>'+rows(line("Si sigue &lt; 70 mg/dl, repite la dosis"),line("Al recuperarse: hidratos de absorción lenta para evitar la recaída",True))),
+page(4,N,T,kicker("SI NO PUEDE TRAGAR")+big("GLUCOSA IV",190,R,True)+rows(row("Dosis","10–25 g de glucosa IV"),row("Glucosado al 10 %","100–250 ml"),row("Glucosado al 50 %","20–50 ml"))+note("Glucemia de control a los 15 min y repite si sigue baja. Las concentraciones altas irritan la vena: usa una vía gruesa.")),
+page(5,N,T,kicker("SIN VÍA VENOSA")+big("GLUCAGÓN",220,R,True)+'<div style="font-size:50px;font-weight:800;line-height:1.2">1 mg intramuscular o subcutáneo</div>'+rows(line("También existe la presentación intranasal"),line("Responde peor si no hay reservas de glucógeno: desnutrición, alcohol, hepatopatía",True))),
+page(6,N,T,kicker("ANTES DEL ALTA")+big("¿POR QUÉ HA PASADO?",112)+rows(line("Sulfonilureas o insulina de acción prolongada: observación larga, la hipoglucemia recurre",True),line("Insuficiencia renal, ayuno, alcohol, error de dosis"),line("Sin diabetes: sepsis, insuficiencia suprarrenal o hepática"))+note("Tras un nivel 2 o 3 hay que revisar el tratamiento de la diabetes.")),
+page(7,N,T,ficha_body("HIPOGLUCEMIA","Adulto",[("NIVELES","1: &lt; 70 mg/dl. 2: &lt; 54 mg/dl. 3: necesita ayuda externa"),("CONSCIENTE","15–20 g de glucosa oral. Glucemia a los 15 min; repetir si &lt; 70",True),("NO TRAGA","Glucosa IV 10–25 g (100–250 ml al 10 % o 20–50 ml al 50 %)",True),("SIN VÍA","Glucagón 1 mg IM o SC"),("DESPUÉS","Hidratos de absorción lenta. Buscar la causa"),("OBSERVAR","Sulfonilureas, insulina prolongada o insuficiencia renal: recurre")],"ADA. Standards of Care in Diabetes 2025–2026 (hipoglucemia)",size=124,fs=32),ficha="07"),
+]
+render(P,sys.argv[1] if len(sys.argv)>1 else "out","hipoglucemia")
