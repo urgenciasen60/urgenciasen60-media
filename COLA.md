@@ -26,6 +26,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | **Programada** lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
 | 09 | Fibrilación auricular en Urgencias | `borradores/fibrilacion-auricular/` | Pendiente de revisión (18/11) | — |
 | 10 | Síncope: estratificación del riesgo | `borradores/sincope/` | Pendiente de revisión (18/11) | — |
+| MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | **Programada** dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
 
 Próximo número libre: Ficha 11, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
@@ -55,3 +56,8 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - **18/11 (decisiones de Eduardo):** técnicas = carrusel + vídeo 60 s el MISMO día (primero el vídeo) y al día siguiente el reel corto, que termina remitiendo al carrusel y al vídeo. Vídeo PL v4 (próxima noche de render): ~60 s, máximo realismo, varón musculado, paño quirúrgico, cara visible permitida, corte sagital realista, plano del LCR con la mano retirando el fiador y luego las gotas, música del canal bajita. Ficha 08: solo adultos, hemocultivos antes, infección local y anticoagulación como contraindicaciones, con cifras (plaquetas > 40.000–50.000/µl, INR < 1,5; ABN 2026).
 - **18/11:** los números de ficha se asignan por orden de publicación (para el libro): asma = Ficha 03. Dolor torácico y Ficha 08 (PL) se renumerarán al publicarse.
 - **Plan 23/11–6/12 (propuesto 18/11):** lun 23 Ficha 04 PL ¿sí o no?; mié 25 Ficha 05 hipoglucemia (revisar antes del lun 23); vie 27 Técnica 01 PL: vídeo 60 s 14:00 + carrusel 21:00 (render mar 24, revisar antes del jue 26); lun 30 Ficha 06 sepsis (revisar antes del vie 27); mié 2/12 Ficha 07 cólico nefrítico (revisar antes del lun 30); vie 4/12 Técnica 02 epistaxis (contenido antes del lun 30, render mar 1) o, si no llega, dolor torácico. Reels al día siguiente de cada carrusel.
+
+## Serie Cuenta atrás MIR (decidida el 18/11/2026)
+- Serie independiente de las fichas (no lleva ficha ni consume numeración; remite a la ficha si existe). Verde quirófano #0E4A37 + logo del canal en amarillo. Planificación y casos en el proyecto (`serie-mir-cuenta-atras`).
+- Ritmo: domingo 20:00 y miércoles 14:00 (carrusel); reel al día siguiente a las 14:00 (lunes y jueves). Las fichas siguen a las 21:00.
+- Carrusel de 7: portada, caso 1, pausa, solución 1, caso 2, solución 2, clave MIR. Reel: `tools/reel_mir_ep01.py` como modelo (caso → «piensa» 3 s → respuesta), con la música del canal.
