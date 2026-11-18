@@ -13,9 +13,9 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 02 | Hiperpotasemia | `hiperpotasemia/` | Programada | Miércoles 18/11/2026, 21:00 |
 | 01 (reel) | Anafilaxia, reel de 26 s | `anafilaxia/` | Programada | Martes 17/11/2026, 21:00 |
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Programada | Jueves 19/11/2026, 21:00 |
-| 03 | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
+| — | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
 | 04 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión | — |
-| 05 | Crisis de asma (rehecha con GEMA 5.5, 18/11) | `borradores/crisis-asma/` | Pendiente de revisión | — |
+| 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
 | 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión | — |
 | 07 | Hipoglucemia | `borradores/hipoglucemia/` | Pendiente de revisión | — |
 | Técnica 01 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
@@ -46,3 +46,4 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - **18/11 (render nocturno):** vídeo 3D de 60 s de la punción lumbar en `borradores/tecnica-puncion-lumbar/*-video60.mp4` (borrador, sin programar). Epistaxis: solo escenas 3D de prueba en `borradores/tecnica-epistaxis/escenas-3d/`; locución y montaje a la espera de la revisión de contenido de Eduardo.
 - **18/11:** Eduardo decide separar técnica y clínica: el vídeo y el carrusel de Técnica 02 son solo técnica; indicaciones, TC previa y contraindicaciones pasan a la Ficha 08 (fuentes que aportó: Herlihy 2024 vía cbseram y Preevid 25020).
 - **18/11 (decisiones de Eduardo):** técnicas = carrusel + vídeo 60 s el MISMO día (primero el vídeo) y al día siguiente el reel corto, que termina remitiendo al carrusel y al vídeo. Vídeo PL v4 (próxima noche de render): ~60 s, máximo realismo, varón musculado, paño quirúrgico, cara visible permitida, corte sagital realista, plano del LCR con la mano retirando el fiador y luego las gotas, música del canal bajita. Ficha 08: solo adultos, hemocultivos antes, infección local y anticoagulación como contraindicaciones, con cifras (plaquetas > 40.000–50.000/µl, INR < 1,5; ABN 2026).
+- **18/11:** los números de ficha se asignan por orden de publicación (para el libro): asma = Ficha 03. Dolor torácico y Ficha 08 (PL) se renumerarán al publicarse.
