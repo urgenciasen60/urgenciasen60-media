@@ -48,3 +48,4 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
 ## Técnica 02 · Punción lumbar (actualizada el 18/11)
 - Ahora solo técnica: se quitan las diapositivas de TC previa y contraindicaciones. Nuevas: «La aguja» (atraumática; Nath S, et al. Lancet. 2018;391(10126):1197-204) y «Al terminar».
 - Vídeo de 63,5 s rehecho con locución solo de técnica.
+- 18/11: Eduardo confirma hemocultivos antes de la TC, infección local y anticoagulación como contraindicaciones, cifras y solo adultos. Cifras de la guía ABN 2026 (Dodd KC, et al. Periprocedural antithrombotic management for lumbar puncture: ABN 2026 guideline update) y AABB (50.000/µl).
