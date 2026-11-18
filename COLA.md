@@ -14,7 +14,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 01 (reel) | Anafilaxia, reel de 26 s | `anafilaxia/` | Programada | Martes 17/11/2026, 21:00 |
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Programada | Jueves 19/11/2026, 21:00 |
 | — | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
-| 11 | HTA en Urgencias: ¿200/110? No corras (9 diapos + reel «¿220 y a casa?») | `borradores/hta/` | Pendiente de revisión (18/11) | — |
+| 08 | HTA en Urgencias: ¿200/110? No corras (9 diapos + reel «¿220 y a casa?») | `hta/` | **Programada** vie 4/12 21:00 (carrusel) y sáb 5/12 21:00 (reel) | — |
 | 04 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión | — |
 | 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
 | 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión | — |
@@ -55,7 +55,7 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - **18/11:** Eduardo decide separar técnica y clínica: el vídeo y el carrusel de Técnica 02 son solo técnica; indicaciones, TC previa y contraindicaciones pasan a la Ficha 08 (fuentes que aportó: Herlihy 2024 vía cbseram y Preevid 25020).
 - **18/11 (decisiones de Eduardo):** técnicas = carrusel + vídeo 60 s el MISMO día (primero el vídeo) y al día siguiente el reel corto, que termina remitiendo al carrusel y al vídeo. Vídeo PL v4 (próxima noche de render): ~60 s, máximo realismo, varón musculado, paño quirúrgico, cara visible permitida, corte sagital realista, plano del LCR con la mano retirando el fiador y luego las gotas, música del canal bajita. Ficha 08: solo adultos, hemocultivos antes, infección local y anticoagulación como contraindicaciones, con cifras (plaquetas > 40.000–50.000/µl, INR < 1,5; ABN 2026).
 - **18/11:** los números de ficha se asignan por orden de publicación (para el libro): asma = Ficha 03. Dolor torácico y Ficha 08 (PL) se renumerarán al publicarse.
-- **Plan 23/11–6/12 (propuesto 18/11):** lun 23 Ficha 04 PL ¿sí o no?; mié 25 Ficha 05 hipoglucemia (revisar antes del lun 23); vie 27 Técnica 01 PL: vídeo 60 s 14:00 + carrusel 21:00 (render mar 24, revisar antes del jue 26); lun 30 Ficha 06 sepsis (revisar antes del vie 27); mié 2/12 Ficha 07 cólico nefrítico (revisar antes del lun 30); vie 4/12 Técnica 02 epistaxis (contenido antes del lun 30, render mar 1) o, si no llega, dolor torácico. Reels al día siguiente de cada carrusel.
+- **Plan 23/11–6/12 (propuesto 18/11):** lun 23 Ficha 04 PL ¿sí o no?; mié 25 Ficha 05 hipoglucemia (revisar antes del lun 23); vie 27 Técnica 01 PL: vídeo 60 s 14:00 + carrusel 21:00 (render mar 24, revisar antes del jue 26); lun 30 Ficha 06 sepsis (revisar antes del vie 27); mié 2/12 Ficha 07 cólico nefrítico (revisar antes del lun 30); vie 4/12 Ficha 08 HTA (aprobada 19/11; la técnica de epistaxis pasa a la siguiente semana). Reels al día siguiente de cada carrusel.
 
 ## Serie Cuenta atrás MIR (decidida el 18/11/2026)
 - Serie independiente de las fichas (no lleva ficha ni consume numeración; remite a la ficha si existe). Verde quirófano #0E4A37 + logo del canal en amarillo. Planificación y casos en el proyecto (`serie-mir-cuenta-atras`).
