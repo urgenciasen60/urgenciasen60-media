@@ -5,7 +5,7 @@ ficha="file://"+os.path.join(ROOT,"asma","urgenciasen60-asma-7.jpg")
 sp=lambda h: f'<div style="height:{h}px"></div>'
 S=[
  (Y,[big("CRISIS DE ASMA",190),big("DECIDE EN<br>3 HORAS",170,R)],[(2,3.4)]),
- (W,[kicker("¿GRAVE? SIN PEF",G)+sp(30)+big("MIRA CÓMO HABLA",190,R),txt("Habla con palabras · FR &gt; 25 · FC &gt; 120 · SatO2 &lt; 90 %",62)],[(1,1.8),(2,3.0)]),
+ (W,[kicker("¿ES GRAVE?",G)+sp(30)+big("MIDE",230,R),txt("SatO2 &lt; 90 % · FR &gt; 25 · FC &gt; 120",64)+sp(24)+txt("PaCO2 &gt; 45: riesgo vital",60,R)],[(1,1.8),(2,3.0)]),
  (R,[kicker("1 · NEBULIZA")+sp(30)+f'<div style="{A};font-size:200px;white-space:nowrap">SALBUTAMOL</div>',txt("+ ipratropio + budesonida",72,Y)+sp(24)+txt("2,5–5 mg · 0,5 mg · 0,5 mg<br>cada 20 min, 1.ª hora",64)],[(1,2.0),(2,3.2)]),
  (K,[kicker("2 · CORTICOIDE")+sp(30)+big("PRONTO",230,Y),txt("Prednisona 50 mg oral o metilprednisolona IV",64)],[(1,1.8),(2,2.8)]),
  (Y,[kicker("3 · SI NO CEDE")+sp(30)+big("MAGNESIO IV",210,R),txt("2 g en 20 minutos, dosis única",66)+sp(24)+txt("Fracaso: VMNI sin retrasar la intubación",58)],[(1,1.6),(2,3.0)]),
