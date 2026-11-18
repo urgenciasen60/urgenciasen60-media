@@ -22,8 +22,9 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión | — |
 | Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Aplazada: no publicar cerca de la Ficha 04. Rehacer a 10 diapositivas + reel de 60 s | — |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
+| 08 | Punción lumbar: ¿TC antes? (cuándo y por qué) | `borradores/pl-tc-antes/` | Pendiente de revisión | — |
 
-Próximo número libre: Ficha 08, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
+Próximo número libre: Ficha 09, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
 ## Reels
 Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba y marca abajo; un color de fondo por escena; varios elementos entran a la vez; golpe de zoom, transición deslizante y barra de progreso; ficha al final) que se publica al día siguiente: martes, jueves y sábado. Se generan con `tools/reel.py` (modelo: `tools/reel_anafilaxia.py`). Plantilla aprobada por Eduardo el 17/11/2026: intensidad suave (valores por defecto de `build`), unos 26 s, un color de fondo por escena, ficha al final. El reel reutiliza el contenido ya aprobado del carrusel, así que no necesita revisión clínica aparte: genera y programa el reel de cada carrusel aprobado para el día siguiente a las 21:00 (Instagram tipo REEL y TikTok).
@@ -43,3 +44,4 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - **Sepsis:** no publicar dos piezas seguidas.
 - **Voz del canal:** voz sintética castellana `es_ES-davefx-medium` (Piper; datos CC0), elegida por Eduardo el 17/11. Script en `tools/voz/locucion.py`; textos de locución en `tools/voz/*.txt`. Se descartaron la clonación de su voz (seseo/acento americano) y el modelo F5-Spanish (licencia no comercial).
 - **18/11 (render nocturno):** vídeo 3D de 60 s de la punción lumbar en `borradores/tecnica-puncion-lumbar/*-video60.mp4` (borrador, sin programar). Epistaxis: solo escenas 3D de prueba en `borradores/tecnica-epistaxis/escenas-3d/`; locución y montaje a la espera de la revisión de contenido de Eduardo.
+- **18/11:** Eduardo decide separar técnica y clínica: el vídeo y el carrusel de Técnica 02 son solo técnica; indicaciones, TC previa y contraindicaciones pasan a la Ficha 08 (fuentes que aportó: Herlihy 2024 vía cbseram y Preevid 25020).

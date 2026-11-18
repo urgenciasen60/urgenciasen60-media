@@ -1,0 +1,22 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ficha import *
+T="PUNCIÓN LUMBAR"; N=7
+note=lambda t: f'<div style="font-size:34px;line-height:1.4;color:{G}">{t}</div>'
+rows=lambda *x: '<div style="display:flex;flex-direction:column;gap:22px">'+"".join(x)+'</div>'
+def tabla():
+    H=["","IDSA","R. Unido","ESCMID"]
+    D=[("Consciencia","GCS &lt; 15","GCS ≤ 12","GCS ≤ 10"),("Focalidad","Sí","Sí","Sí"),("Crisis","Última semana","Continuas o no controladas","Nueva"),
+       ("Papiledema","Sí","Sí","—"),("Inmunodepresión","Sí","—","Grave"),("Lesión previa SNC","Sí","—","—")]
+    th="".join(f'<div style="font-weight:800;font-size:30px;color:{G if i==0 else K}">{h}</div>' for i,h in enumerate(H))
+    tr="".join("".join(f'<div style="font-size:30px;font-weight:{800 if j==0 else 600};border-top:3px solid {K};padding-top:12px;{"color:"+R if c=="Sí" else ""}">{c}</div>' for j,c in enumerate(r)) for r in D)
+    return f'<div style="display:grid;grid-template-columns:1.25fr 1fr 1.1fr 1fr;gap:12px 18px;align-items:start">{th}{tr}</div>'
+P=[
+page(1,N,T,big("¿TC ANTES DE LA PUNCIÓN LUMBAR?",128)+big(f'CASI <span style="color:{R}">NUNCA</span> DE RUTINA',118)+'<div style="font-size:40px;font-weight:600;line-height:1.3;max-width:820px">Cuándo pedirla en la sospecha de meningitis, qué dicen las guías y qué no debe retrasarse. Con ficha final.</div>',cover=True),
+page(2,N,T,kicker("LA IDEA CLAVE")+big("SOLO SI SOSPECHAS HIPERTENSIÓN INTRACRANEAL",104)+rows(line("La TC rutinaria no ha demostrado reducir el riesgo de herniación",True),line("Retrasa el diagnóstico y el antibiótico"),line("En pacientes de bajo riesgo, no está indicada"))),
+page(3,N,T,kicker("¿QUÉ DICEN LAS GUÍAS?")+big("TC SI HAY…",130)+tabla()+note("GCS: escala de coma de Glasgow. SNC: sistema nervioso central (masa, ictus, infección focal).")),
+page(4,N,T,kicker("¿CUÁL ELEGIR?")+big("LAS TRES DETECTAN LO MISMO",108)+rows(row("Pacientes analizados","196"),row("TC normal","92 %"),row("TC que contraindicó la punción","2 (edema difuso)"))+f'<div style="border-top:4px solid {K};padding-top:24px;font-size:40px;font-weight:800;line-height:1.3">Las 3 guías detectaban esos 2 casos. La IDSA pidió más TC (33 % frente a 10–14 %) sin encontrar ninguno más.</div>'),
+page(5,N,T,kicker("SI LA PUNCIÓN SE RETRASA")+big("EL ANTIBIÓTICO NO ESPERA",116,R)+rows(line("Hemocultivos y antibiótico empírico antes de la TC",True),line("Después, TC y punción lumbar cuando sea seguro"))+note("Esperar a la TC para empezar el antibiótico puede empeorar el pronóstico de la meningitis bacteriana.")),
+page(6,N,T,kicker("CONTRAINDICACIONES")+big("NINGUNA ABSOLUTA",128)+rows(line("Relativa: hipertensión intracraneal, por riesgo de herniación",True),line("Infección de la piel en la zona de punción"),line("Coagulopatía, plaquetopenia o anticoagulación: según el protocolo de tu centro"))),
+page(7,N,T,ficha_body("¿TC ANTES DE LA PL?","Adulto",[("REGLA","TC solo si hay datos de hipertensión intracraneal; no de rutina",True),("PIDE TC SI","Bajo nivel de consciencia, focalidad, crisis nueva o no controlada, papiledema, inmunodepresión grave"),("UMBRAL GCS","IDSA &lt; 15 · Reino Unido ≤ 12 · ESCMID ≤ 10: individualiza"),("NO RETRASES","Hemocultivos + antibiótico antes de la TC si la PL se demora",True),("CONTRAIND.","Ninguna absoluta. Relativa: hipertensión intracraneal"),("REVISA","Infección local y coagulación según tu protocolo")],"Herlihy FO, et al. Emerg Radiol 2024;31(3):373-9; Preevid (Murciasalud) 25020, 2023",size=96,fs=29),ficha="08"),
+]
+render(P,sys.argv[1] if len(sys.argv)>1 else "out","pl-tc-antes")

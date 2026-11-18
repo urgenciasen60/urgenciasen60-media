@@ -39,3 +39,12 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
 - Fuente (texto completo leído, acceso abierto CC BY-NC-ND): Goyal A, Kacchap S, Singla K, Samra T, Bhatia N, Kant KR, et al. Bougie guided versus endotracheal tube with stylet guided intubation in critically injured patients with difficult airway characteristics (BEST trial): randomised clinical trial. Scand J Trauma Resusc Emerg Med. 2026;34:171. doi:10.1186/s13049-026-01670-w.
 - La licencia no permite uso comercial ni obras derivadas: el carrusel usa redacción propia y ninguna figura; habrá que revisarlo si la cuenta se monetiza.
 - Preguntas: ¿traducimos «bougie» como «guía de Eschmann/introductor»?; ¿es lo bastante relevante para vuestra práctica o preferís papers de médico de puerta (no de anestesia)?
+
+## Ficha 08 · Punción lumbar: ¿TC antes? (`pl-tc-antes/`)
+- Fuentes (aportadas por Eduardo): Herlihy FO, Dempsey PJ, Gorman D, Muldoon EG, Gibney B. Comparison of international guidelines for CT prior to lumbar puncture in patients with suspected meningitis. Emerg Radiol. 2024;31(3):373-9. doi:10.1007/s10140-024-02234-0 (leído a través del resumen del Club Bibliográfico SERAM, no el texto completo). Banco de Preguntas Preevid. TC previa a la punción lumbar. Murciasalud; 2023 (pregunta 25020).
+- [VERIFICAR] «Hemocultivos y antibiótico antes de la TC» no aparece en estas dos fuentes (es la recomendación clásica de la IDSA 2004 y de ESCMID 2016); las contraindicaciones de infección local y coagulación tampoco (Preevid dice que sus fuentes no las abordan).
+- Preguntas: ¿añadimos la cifra de plaquetas o INR de vuestro protocolo?; ¿incluimos la recomendación NICE de no fiarse de la TC en menores de 16 años o lo dejamos solo en adultos?
+
+## Técnica 02 · Punción lumbar (actualizada el 18/11)
+- Ahora solo técnica: se quitan las diapositivas de TC previa y contraindicaciones. Nuevas: «La aguja» (atraumática; Nath S, et al. Lancet. 2018;391(10126):1197-204) y «Al terminar».
+- Vídeo de 63,5 s rehecho con locución solo de técnica.
