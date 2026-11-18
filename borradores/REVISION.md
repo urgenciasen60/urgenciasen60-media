@@ -72,3 +72,12 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
 - La tabla de alto riesgo (tabla 6) se ha condensado con redacción propia; no se distinguen criterios mayores y menores (los menores solo cuentan con cardiopatía o ECG anormal). [VERIFICAR] la asignación mayor/menor de los bloqueos de rama y ondas Q.
 - No he encontrado un consenso SEMES reciente de síncope en abierto. La ESC 2018 desaconseja usar escalas (Canadian Syncope Risk Score, San Francisco) de forma aislada: no se incluyen.
 - Preguntas: ¿añadimos la Canadian Syncope Risk Score en una pieza aparte («Escala en 60»)?; ¿vuestro hospital tiene unidad de síncope o el destino «alto riesgo» debería decir «ingreso»?; ¿diapositiva «CLAVE MIR»?
+
+
+## Ficha 11 — HTA en Urgencias (borrador 18/11/2026)
+Fuentes: ESC 2024 (McEvoy JW, et al. Eur Heart J 2024;45(38):3912-4018): umbral ≥ 180/110 para valorar emergencia, HTA grave sin daño con tratamiento oral y revisión ambulatoria, confirmar preferiblemente en una semana, ictus (reperfusión < 185/110 antes y < 180/105 24 h; sin reperfusión solo si ≥ 220/110-120, −15 % en 24 h) y HIC (PAS 140–160 en 6 h; no bajar > 70 mmHg en 1 h). La tabla de emergencias concretas de la ESC 2024 está en material suplementario (tabla S13), así que los objetivos y fármacos por cuadro (SCA, EAP, disección, encefalopatía, HTA maligna, preeclampsia) se han tomado de la tabla 24 de la ESH 2023 (idéntica a la ESC/ESH 2018). ACEP 2013/2025: no buscar daño de rutina en asintomático, no bajar rápido, valorar oral al alta y seguimiento. Dosis: fichas técnicas AEMPS de labetalol (50 mg IV en ≥ 1 min, repetir cada 5 min, máx 200 mg) y urapidilo (25 mg en 20 s, repetir a los 5 min).
+Dudas para Eduardo:
+- ¿Ponemos dosis de nitroglicerina en perfusión (la habitual de vuestra guardia) y de esmolol? Ahora mismo solo dice «perfusión, titulando» [VERIFICAR DATO CLÍNICO].
+- Nicardipino IV no aparece porque no se usa habitualmente en España; confirmar.
+- «Fármacos sublinguales» es genérico (captopril/nifedipino): ¿quieres nombrarlos?
+- Son 9 diapositivas (las fichas anteriores tienen 7). ¿Lo dejamos así o fusionamos 3 y 4?
