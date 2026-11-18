@@ -17,31 +17,32 @@ def sub(text):
             w=d.textlength(l,font=IN(52,"Black")); d.rectangle([60-16,y-8,60+w+16,y+62],fill=(17,17,17,225)); d.text((60,y),l,font=IN(52,"Black"),fill=(255,255,255)); y+=70
     return f
 def key(text,col=Y):
-    return lambda d: d.text((60,330),text,font=AN(118),fill=col)
+    return lambda d: d.text((60,330),text,font=AN(118),fill=col,stroke_width=6,stroke_fill=(17,17,17))
 def pill(text):
     def f(d):
         w=d.textlength(text,font=IN(44,"Black")); d.rounded_rectangle([60,505,60+w+44,573],10,fill=Y); d.text((82,513),text,font=IN(44,"Black"),fill=K)
     return f
 def tclist(d):
-    d.text((60,330),"¿TC ANTES?",font=AN(130),fill=Y)
+    d.text((60,330),"¿TC ANTES?",font=AN(130),fill=Y,stroke_width=6,stroke_fill=(17,17,17))
     items=["Bajo nivel de consciencia","Focalidad neurológica","Papiledema","Crisis reciente","Inmunodepresión","60 años o más"]
     y=520
-    for it in items: d.rectangle([60,y+14,84,y+38],fill=R); d.text((104,y),it,font=IN(50,"Black"),fill=(255,255,255)); y+=82
+    for it in items: d.rectangle([60,y+14,84,y+38],fill=R); d.text((104,y),it,font=IN(50,"Black"),fill=(255,255,255),stroke_width=4,stroke_fill=(17,17,17)); y+=82
 OVL=[(png("base",base),0,END)]
 for i,(t,txt) in enumerate(T):
     t1=T[i+1][0] if i+1<len(T) else END-0.5
     txt=txt.replace("te ce","TC").replace("ele cuatro, ele cinco","L4–L5").replace("ele cuatro","L4").replace("sesenta segundos","60 segundos").replace("sesenta años","60 años")
+    if txt.startswith("Antes de pinchar"): continue
     OVL.append((png(f"s{i:02d}",sub(txt)),t,t1))
 OVL+=[(png("k_titulo",key("PUNCIÓN LUMBAR")),0,5.95),(png("k_tc",tclist),5.95,21.1),(png("k_pos",key("POSICIÓN")),21.1,28.78),
-      (png("k_ref",key("REFERENCIA")),28.78,39.42),(png("k_l4",pill("Línea de las crestas = L4")),30.9,39.42),(png("k_ase",key("ASEPSIA")),39.42,42.82),
+      (png("k_ref",key("REFERENCIA")),28.78,39.42),(png("k_l4",pill("Línea de las crestas = L4")),30.9,39.42),(png("k_ase",key("ASEPSIA")),39.42,42.82),(png("k_esp",pill("Pinchar en L4–L5 o en L3–L4")),39.42,42.82),
       (png("k_agu",key("AGUJA")),42.82,54.45),(png("k_lcr",key("LCR")),54.45,59.93)]
 cut0,cutd=46.21,8.24; ft=lambda f: cut0+f/60*cutd
 for a,b,txt in [(0,12,"Piel y tejido subcutáneo"),(12,32,"Ligamentos supra e interespinoso"),(32,38,"Ligamento amarillo"),(38,43,"Espacio epidural"),(43,49,"Duramadre"),(49,60,"Espacio subaracnoideo: LCR")]:
     OVL.append((png(f"capa{a}",pill(txt)),ft(a),ft(b)))
 # segmentos de vídeo
-SEG=[("still",f"{V}/s2_general.jpg",0,5.95,0),("still",f"{V}/s2_general.jpg",5.95,21.1,1),("anim",f"{V}/fo/o_%03d.jpg",21.1,28.78,58),
-     ("still",f"{V}/s2_crestas.jpg",28.78,30.9,0),("still",f"{V}/s2_rayos.jpg",30.9,39.42,0),("still",f"{V}/s2_marca.jpg",39.42,42.82,0),
-     ("anim",f"{V}/fr/n_%03d.jpg",42.82,46.21,60),("anim",f"{V}/fc/c_%03d.jpg",46.21,54.45,60),("anim",f"{V}/fg/g_%03d.jpg",54.45,59.93,36),
+SEG=[("still","/home/claude/v3d/mh/s_general.jpg",0,5.95,0),("still","/home/claude/v3d/mh/s_general.jpg",5.95,21.1,1),("anim","/home/claude/v3d/mh/f_orbit/o_%03d.jpg",21.1,28.78,58),
+     ("still","/home/claude/v3d/mh/s_crestas.jpg",28.78,30.9,0),("still","/home/claude/v3d/mh/s_rayos.jpg",30.9,39.42,0),("still","/home/claude/v3d/mh/s_marca.jpg",39.42,42.82,0),
+     ("anim","/home/claude/v3d/mh/f_aguja/a_%03d.jpg",42.82,46.21,60),("anim",f"{V}/fc/c_%03d.jpg",46.21,54.45,60),("anim","/home/claude/v3d/mh/f_gotas/g_%03d.jpg",54.45,59.93,36),
      ("ficha","/home/claude/urgenciasen60-media/borradores/tecnica-puncion-lumbar/urgenciasen60-tecnica-puncion-lumbar-7.jpg",59.93,END,0)]
 os.makedirs("seg",exist_ok=True); files=[]
 for i,(kind,src,a,b,x) in enumerate(SEG):
@@ -67,5 +68,5 @@ for k in range(0,len(OVL),12):
 subprocess.run(["python3","/home/claude/urgenciasen60-media/tools/musica.py","musica.wav",str(END)],check=True,capture_output=True)
 subprocess.run(["ffmpeg","-y","-loglevel","error","-i",cur,"-i","pl_voz.wav","-i","musica.wav","-filter_complex",
   "[1:a]loudnorm=I=-16:TP=-1.5,apad[v];[2:a]volume=0.10,afade=t=out:st=64.5:d=2.5[m];[v][m]amix=inputs=2:duration=first:normalize=0[a]",
-  "-map","0:v","-map","[a]","-c:v","copy","-c:a","aac","-b:a","192k","-t",str(END),"urgenciasen60-tecnica-puncion-lumbar-video60.mp4"],check=True)
+  "-map","0:v","-map","[a]","-c:v","copy","-c:a","aac","-b:a","192k","-t",str(END),"urgenciasen60-tecnica-puncion-lumbar-video60-v2.mp4"],check=True)
 print("hecho")
