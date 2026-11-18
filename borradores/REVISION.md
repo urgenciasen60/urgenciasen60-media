@@ -55,3 +55,20 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
 ## Ficha 05 · Crisis de asma (rehecha 18/11)
 - Fuente: GEMA 5.5 (2025), cap. 4: tabla 4.2 (gravedad), tabla 4.3 (dosis), tabla 4.4 (ingreso), págs. 101-112. Protocolo HUPM (sesión de Eduardo y Gemma Cubero) como contraste.
 - Diferencias con el protocolo HUPM: metilprednisolona 80 mg en bolo (HUPM) frente a 20–40 mg cada 8–12 h (GEMA); budesonida nebulizada junto a salbutamol e ipratropio desde el inicio (HUPM) frente a escalón si no responde (en el borrador).
+
+# Lote del 18/11/2026 (ejecución programada)
+
+## Ficha 09 · Fibrilación auricular (`fibrilacion-auricular/`)
+- Fuente principal (texto completo leído): Martín A, Calvo D, Llamas P, Roldán V, Cózar R, Fernández de Simón A, et al. Manejo de la fibrilación auricular en los servicios de urgencias hospitalarios: actualización a 2023 del consenso SEMES, SEC y SETH. Emergencias. 2023;35:359-77. [VERIFICAR DOI: no figura en el PDF consultado].
+- Contraste: Van Gelder IC, et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J. 2024;45(36):3314-414. doi:10.1093/eurheartj/ehae176.
+- Discrepancias de dosis (se usa la española): diltiazem 0,25 mg/kg en 2 min (SEMES) frente a 5 min (ESC); digoxina 0,25 mg y 0,25/6 h, máx. 1 mg (SEMES) frente a bolo de 0,5 mg y 0,75–1,5 mg/24 h (ESC); flecainida IV 1,5–3 mg/kg en 20 min (SEMES) frente a 1–2 mg/kg en 10 min (ESC); propafenona IV en 20 min (SEMES) frente a 10 min (ESC); amiodarona 5–7 mg/kg en 30 min (SEMES) frente a 300 mg en 30–60 min (ESC).
+- Metoprolol: la tabla 4 del consenso dice «2,5–5 mg/kg», casi seguro errata por mg; se pone 2,5–5 mg hasta 3 dosis (coincide con la ESC: máx. 15 mg).
+- Anticoagulación: el consenso usa CHA2DS2-VASc (≥ 2 varón, ≥ 3 mujer); la ESC 2024 usa CHA2DS2-VA ≥ 2 (umbral equivalente). Se pone la española y una nota de equivalencia.
+- [VERIFICAR] Matiz de la FA < 24 h: el consenso permite omitir la anticoagulación previa solo si CHA2DS2-VASc es 0; en el resto, anticoagular antes de cardiovertir. La diapositiva 3 dice «cardioversión posible en Urgencias» sin detallarlo.
+- Preguntas: ¿añadimos la energía de la cardioversión eléctrica (el consenso no la da)?; ¿mantenemos vernakalant (disponibilidad irregular en España)?; ¿preferís bisoprolol/atenolol oral como alternativa al metoprolol IV?; ¿diapositiva «CLAVE MIR» (no cabe sin quitar otra)?
+
+## Ficha 10 · Síncope (`sincope/`)
+- Fuente (versión española, leída): Brignole M, Moya A, de Lange FJ, Deharo JC, Elliott PM, Fanciulli A, et al. Guía ESC 2018 sobre el diagnóstico y el tratamiento del síncope. Rev Esp Cardiol. 2018;71(10):837.e1-e92. doi:10.1016/j.recesp.2018.08.018.
+- La tabla de alto riesgo (tabla 6) se ha condensado con redacción propia; no se distinguen criterios mayores y menores (los menores solo cuentan con cardiopatía o ECG anormal). [VERIFICAR] la asignación mayor/menor de los bloqueos de rama y ondas Q.
+- No he encontrado un consenso SEMES reciente de síncope en abierto. La ESC 2018 desaconseja usar escalas (Canadian Syncope Risk Score, San Francisco) de forma aislada: no se incluyen.
+- Preguntas: ¿añadimos la Canadian Syncope Risk Score en una pieza aparte («Escala en 60»)?; ¿vuestro hospital tiene unidad de síncope o el destino «alto riesgo» debería decir «ingreso»?; ¿diapositiva «CLAVE MIR»?

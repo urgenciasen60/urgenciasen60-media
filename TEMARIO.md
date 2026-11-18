@@ -38,9 +38,9 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 4 | Sepsis: la primera hora | Ficha | Ficha 04 y Guía 01, pendientes de revisión |
 | 5 | Crisis asmática | Ficha | Ficha 05, pendiente de revisión |
 | 6 | Cólico nefrítico | Ficha | Ficha 06, pendiente de revisión |
-| 7 | Fibrilación auricular en Urgencias | Ficha | |
+| 7 | Fibrilación auricular en Urgencias | Ficha | Ficha 09, pendiente de revisión |
 | 8 | Hipoglucemia | Ficha | Ficha 07, pendiente de revisión |
-| 9 | Síncope: estratificación del riesgo | Ficha | |
+| 9 | Síncope: estratificación del riesgo | Ficha | Ficha 10, pendiente de revisión |
 | 10 | Código ictus | Ficha | |
 | 11 | Epistaxis y taponamiento nasal | Técnica | Técnica 01, pendiente de revisión |
 | 12 | Insuficiencia cardiaca aguda y edema agudo de pulmón | Ficha | |
