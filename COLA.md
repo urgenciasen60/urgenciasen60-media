@@ -15,14 +15,14 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Programada | Jueves 19/11/2026, 21:00 |
 | 03 | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
 | 04 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión | — |
-| 05 | Crisis de asma | `borradores/crisis-asma/` | Pendiente de revisión | — |
+| 05 | Crisis de asma (rehecha con GEMA 5.5, 18/11) | `borradores/crisis-asma/` | Pendiente de revisión | — |
 | 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión | — |
 | 07 | Hipoglucemia | `borradores/hipoglucemia/` | Pendiente de revisión | — |
 | Técnica 01 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
 | Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión | — |
 | Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Aplazada: no publicar cerca de la Ficha 04. Rehacer a 10 diapositivas + reel de 60 s | — |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
-| 08 | Punción lumbar: ¿TC antes? (cuándo y por qué) | `borradores/pl-tc-antes/` | Pendiente de revisión | — |
+| 08 | Punción lumbar: ¿sí o no? (indicaciones y contraindicaciones) | `borradores/pl-tc-antes/` | **Aprobada** (18/11) | — |
 
 Próximo número libre: Ficha 09, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
