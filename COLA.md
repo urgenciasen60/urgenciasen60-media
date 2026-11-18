@@ -17,7 +17,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 04 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión | — |
 | 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
 | 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión | — |
-| 07 | Hipoglucemia | `borradores/hipoglucemia/` | Pendiente de revisión | — |
+| 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | **Programada** mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
 | Técnica 01 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
 | Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión | — |
 | Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Aplazada: no publicar cerca de la Ficha 04. Rehacer a 10 diapositivas + reel de 60 s | — |
