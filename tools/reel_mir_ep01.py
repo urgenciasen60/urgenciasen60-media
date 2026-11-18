@@ -14,7 +14,7 @@ S = [
  (Y, [kicker("RESPUESTA") + sp(24) + big("MARCA&shy;PASOS", 230, R), txt("BAV completo inestable: atropina como puente, marcapasos transcutáneo y definitivo", 62)], [(1, 1.4), (2, 3.0)]),
  (W, [kicker("CASO 2", G) + sp(24) + big("QRS ESTRECHO<br>A 180", 200, R), txt("28 años · palpitaciones bruscas · estable", 62) + sp(24) + txt("¿Cardioversión o vagales?", 66)], [(1, 1.6), (2, 2.8)]),
  (K, [big("PIENSA", 300, Y), txt("3 segundos", 80)], [(2, 3.0)]),
- (Y, [kicker("RESPUESTA") + sp(24) + big("VAGALES", 270, R), txt("Valsalva modificada. Si no cede, adenosina", 64)], [(1, 1.4), (2, 2.6)]),
+ (Y, [kicker("RESPUESTA") + sp(24) + big("VAGALES", 270, R), txt("Valsalva modificada. Si no cede, adenosina 6 → 12 → 18 mg en bolo rápido", 62)], [(1, 1.4), (2, 2.6)]),
  (MG, [big("¿CUÁNTAS ACERTASTE?", 130, Y), f'<img src="{portada}" style="width:440px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.5)">', txt("Solución justificada en el carrusel del perfil", 50)], [(3, 4.5)]),
 ]
 out = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else "out_reel")
