@@ -81,3 +81,4 @@ Dudas para Eduardo:
 - Nicardipino IV no aparece porque no se usa habitualmente en España; confirmar.
 - «Fármacos sublinguales» es genérico (captopril/nifedipino): ¿quieres nombrarlos?
 - Son 9 diapositivas (las fichas anteriores tienen 7). ¿Lo dejamos así o fusionamos 3 y 4?
+- 18/11 (Eduardo): fusionadas 3 y 4 (sin daño + evita) y añadida diapo 4 «¿Cefalea + HTA?». Dato de la nota de la diapo 3: Patel KK, Young L, Howell EH, et al. Characteristics and outcomes of patients presenting with hypertensive urgency in the office setting. JAMA Intern Med. 2016;176(7):981-8 (58 535 pacientes; MACE < 1 % a 6 meses; derivar al hospital no mejoró resultados). Ojo: es población de consulta ambulatoria, no de Urgencias.
