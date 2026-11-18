@@ -7,7 +7,7 @@ S=[
  (Y,[big("¿220 DE<br>SISTÓLICA?",190),big("¿LO MANDAS A CASA?",120,R)],[(1,1.8),(2,2.4)]),
  (W,[kicker("PRIMERO",G)+sp(30)+big("¿HAY DAÑO?",210,R),txt("Cerebro · corazón · aorta",62)+sp(18)+txt("Riñón · ojo · embarazo",62,G)],[(1,1.6),(2,3.0)]),
  (R,[kicker("SI NO LO HAY")+sp(30)+big("NO CORRAS",230),txt("Bajarla rápido puede hacer daño",62,Y)+sp(18)+txt("Ajusta el oral y control en una semana",56)],[(1,1.6),(2,3.4)]),
- (K,[big("&lt; 1 %",300,Y),txt("de eventos a los 6 meses en asintomáticos",60)+sp(18)+txt("Mandarlos al hospital no lo mejora",56,Y)],[(1,1.6),(2,3.4)]),
+ (K,[big("&lt; 1 %",300,Y),txt("de eventos a los 6 meses en asintomáticos con PA ≥ 180/110",60)+sp(18)+txt("Lo que le protege es el seguimiento",56,Y)],[(1,1.6),(2,3.4)]),
  (Y,[kicker("¿CEFALEA?")+sp(30)+big("ANALGESIA<br>PRIMERO",190,R),txt("Casi siempre el dolor sube la PA, no al revés",58)],[(1,1.8),(2,3.0)]),
  (K,[big("FICHA 11",130,Y),f'<img src="{ficha}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Objetivos en cada emergencia. Guárdala.",50)],[(3,6.0)]),
 ]
