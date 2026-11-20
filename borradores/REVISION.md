@@ -113,7 +113,7 @@ Cambios respecto al primer borrador (todos del consenso; tabla 1, tabla 2, figur
 - Destino: MEESSI-AHF o EHMRG; bajo riesgo, candidato a alta, y revisión a la semana. Se mantiene el tratamiento crónico de la IC.
 - 20/11 (Eduardo): nitroglicerina IV, inicio 10–20 µg/min con incrementos de 10–20 µg/min cada 5–10 min; preparación de su urgencia: 25 mg en 500 ml de SG 5 % (50 µg/ml; 10 µg/min = 12 ml/h). Sin noradrenalina en la ficha.
 Dudas que quedan:
-- ¿Diapositiva 2 («cuatro formas») sobra? Se podría cambiar por el destino (MEESSI-AHF, revisión en una semana).
+- 20/11 (Eduardo): la diapositiva 2 mantiene las cuatro formas con títulos clínicos (IC descompensada, edema agudo de pulmón, fallo derecho aislado, shock cardiogénico) y una línea de cómo se presenta y qué pide cada una. Se añade la diapositiva 7, «Destino» (MEESSI-AHF; bajo riesgo, alta posible con mortalidad < 2 % a 30 días; resto, ingreso; hipoperfusión, UCI o intermedios; al alta, mantener el tratamiento y revisión en 1 semana). Total: 8 diapositivas.
 
 ## Ficha 13 · Agudización de EPOC (`epoc/`)
 Fuentes (texto completo): Soler-Cataluña JJ, Piñera P, Trigueros JA, et al. Actualización 2021 de GesEPOC. Diagnóstico y tratamiento del síndrome de agudización de la EPOC. Arch Bronconeumol. 2022;58(2):159-70. doi:10.1016/j.arbres.2021.05.011. Global Initiative for Chronic Obstructive Lung Disease. GOLD 2026 Report, cap. 4. Rochwerg B, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J. 2017;50(2):1602426. doi:10.1183/13993003.02426-2016.

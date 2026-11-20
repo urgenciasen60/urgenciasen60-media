@@ -29,7 +29,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | **Programada** dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
 | MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (neumoperitoneo por úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | Pendiente de revisión (casos en `mir-ep02/CASOS.md`; validar antes del lun 23/11) | Previsto mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) |
 | 11 | Código ictus: la primera hora (+ reel) | `borradores/codigo-ictus/` | Pendiente de revisión (20/11) | — |
-| 12 | IC aguda y edema agudo de pulmón (+ reel) | `borradores/ica-eap/` | Pendiente de revisión (20/11) | — |
+| 12 | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `borradores/ica-eap/` | Pendiente de revisión (20/11) | — |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |
 
 Próximo número libre: Ficha 14, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.

@@ -3,9 +3,9 @@ import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from reel import *
 ROOT=os.path.dirname(HERE)
 sp=lambda h: f'<div style="height:{h}px"></div>'
-def fin(carpeta,slug,sello):
-    f="file://"+os.path.join(ROOT,"borradores",carpeta,f"urgenciasen60-{slug}-7.jpg")
-    if not os.path.exists(f[7:]): f="file://"+os.path.join(ROOT,carpeta,f"urgenciasen60-{slug}-7.jpg")
+def fin(carpeta,slug,sello,n=7):
+    f="file://"+os.path.join(ROOT,"borradores",carpeta,f"urgenciasen60-{slug}-{n}.jpg")
+    if not os.path.exists(f[7:]): f="file://"+os.path.join(ROOT,carpeta,f"urgenciasen60-{slug}-{n}.jpg")
     return (K,[big(sello,130,Y),f'<img src="{f}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Completa en el perfil. Guárdala.",50)],[(3,6.0)])
 L={
 "ictus":("CÓDIGO ICTUS","urgenciasen60-codigo-ictus-reel.mp4",[
@@ -21,7 +21,7 @@ L={
  (R,[kicker("2 · A LAS 2 HORAS")+sp(30)+big("MIDE LA ORINA",210),txt("Sodio &gt; 70 mEq/l a las 2 h o diuresis ≥ 100–150 ml/h",60,Y)+sp(22)+txt("Si no responde: dobla la dosis",60)],[(1,1.8),(2,3.4)]),
  (K,[kicker("3 · RESPIRA")+sp(30)+big("VMNI PRONTO",220,Y),txt("FR &gt; 25 y SatO2 &lt; 90 %",68)],[(1,1.6),(2,2.8)]),
  (Y,[kicker("4 · LA PRESIÓN DECIDE")+sp(30)+big("PAS &gt; 110",240,R),txt("Nitroglicerina IV desde 10–20 µg/min",64)+sp(22)+txt("Morfina: no de rutina",62)],[(1,1.8),(2,3.0)]),
- fin("ica-eap","ica-eap","FICHA 12")]),
+ fin("ica-eap","ica-eap","FICHA 12",8)]),
 "epoc":("AGUDIZACIÓN DE EPOC","urgenciasen60-epoc-reel.mp4",[
  (Y,[big("EPOC<br>AGUDIZADA",210),big("MÁS OXÍGENO<br>NO ES MEJOR",160,R)],[(2,3.4)]),
  (W,[kicker("1 · OBJETIVO",G)+sp(30)+big("88–92 %",220,R),txt("Venturi 24–28 % o gafas 2–4 l/min",64)],[(1,1.8),(2,3.0)]),
