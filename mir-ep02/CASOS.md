@@ -5,7 +5,7 @@ Etiqueta: «URGENCIAS EN 60 · MIR» · «CASOS 03-04 · EP. 02» · «Faltan 59
 Temas MIR de referencia (no copiados): 26-23 perforación; 25-18 gas portal; 26-3 isquemia intestinal.
 
 ### Caso 3 · Razonamiento clínico
-Varón de 58 años, fumador, que toma ibuprofeno desde hace tres semanas por una lumbalgia. Acude por dolor epigástrico brusco, «como una puñalada», de 4 horas de evolución, que se ha extendido a todo el abdomen. TA 105/65 mmHg, FC 112 lpm, T 37,8 °C. Abdomen en tabla, con defensa generalizada y ruidos ausentes. La radiografía de tórax en bipedestación muestra aire libre bajo ambos hemidiafragmas. ¿Cuál es la actitud más adecuada?
+Varón de 58 años, fumador, que toma ibuprofeno desde hace tres semanas por una lumbalgia. Acude por dolor epigástrico brusco, «como una puñalada», de 4 horas de evolución, que se ha extendido a todo el abdomen. TA 105/65 mmHg, FC 112 lpm, T 37,8 °C. Abdomen en tabla, con defensa generalizada y ruidos ausentes. La radiografía de tórax (portátil, sentado) muestra aire libre bajo ambos hemidiafragmas. ¿Cuál es la actitud más adecuada?
 - A) Sonda nasogástrica, IBP intravenoso y tratamiento conservador, con TC de control a las 24 horas.
 - B) Dieta absoluta, fluidoterapia, IBP intravenoso, antibiótico de amplio espectro y cirugía urgente.
 - C) Gastroscopia urgente para localizar y cerrar la perforación.
@@ -17,7 +17,7 @@ C: la WSES aconseja evitar el cierre endoscópico (clips, sellantes, prótesis) 
 D: el diagnóstico ya está hecho; repetir pruebas solo retrasa la cirugía.
 Perla: la radiografía muestra el neumoperitoneo solo en el 50-75 % de los casos; si es normal y la sospecha persiste, se pide TC, que es más sensible.
 
-Imagen: radiografía de tórax PA en bipedestación de elaboración propia con semiluna de aire bajo ambos hemidiafragmas (realista, no esquemática).
+Imagen real: Baker J, Patane J, Chandwani C. Perforated Duodenal Ulcer. J Educ Teach Emerg Med. 2016;1(2):V3-4. doi:10.5070/M512032465. CC BY 4.0 (recortada y con ajuste de contraste).
 
 ### Caso 4 · Imagen
 Mujer de 81 años con fibrilación auricular permanente; suspendió el anticoagulante hace 10 días por una extracción dental. Consulta por dolor periumbilical muy intenso de 6 horas, que no cede con metamizol; ha hecho una deposición diarreica. El abdomen está blando y apenas duele a la palpación. Lactato 4,8 mmol/l. En la TC con contraste se ve un defecto de repleción en la arteria mesentérica superior, neumatosis en asas de intestino delgado y gas en ramas portales intrahepáticas periféricas. ¿Cuál de las siguientes afirmaciones es correcta?
@@ -32,7 +32,7 @@ C: ningún parámetro de laboratorio confirma o descarta la isquemia; el lactato
 D: la colitis isquémica afecta al colon, suele dar dolor leve con rectorragia y no se acompaña de oclusión de la arteria mesentérica superior.
 Perla: el gas portal llega a la periferia del hígado (hasta cerca de la cápsula); la aerobilia se queda en el centro, cerca del hilio.
 
-Imagen: corte axial de TC de elaboración propia (hígado con gas portal periférico y asa con neumatosis), realista.
+Imagen real: Florim S, Almeida A, Rocha D, Portugal P. Acute mesenteric ischaemia: a pictorial review. Insights Imaging. 2018;9(5):673-82, fig. 5. doi:10.1007/s13244-018-0641-2. CC BY 4.0. Varón de 82 años con embolia de la AMS: (a) gas portal periférico; (b) asas de pared fina, neumatosis y gas mesentérico.
 
 ### Clave MIR (ep. 2)
 - Peritonitis con neumoperitoneo: cirugía urgente. Si la radiografía es normal y la sospecha persiste, TC.

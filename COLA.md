@@ -27,7 +27,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 09 | Fibrilación auricular en Urgencias | `borradores/fibrilacion-auricular/` | Pendiente de revisión (18/11) | — |
 | 10 | Síncope: estratificación del riesgo | `borradores/sincope/` | Pendiente de revisión (18/11) | — |
 | MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | **Programada** dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
-| MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | **Programada** mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) | Aprobada por Eduardo el 20/11; imágenes de Rx y TC de elaboración propia (`tools/mir_ep02_imagenes.py`) |
+| MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | **Programada** mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) | Aprobada por Eduardo el 20/11; imágenes reales CC BY 4.0 (Rx: Baker et al., JETEM 2016; TC: Florim et al., Insights Imaging 2018). Eduardo rechazó las imágenes sintéticas: «o imagen real o sin imagen» |
 | 11 | Código ictus: la primera hora (+ reel) | `borradores/codigo-ictus/` | Pendiente de revisión (20/11) | — |
 | 09 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** lun 7/12 21:00 (carrusel) y mar 8/12 21:00 (reel) | Aprobada por Eduardo el 20/11 |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |

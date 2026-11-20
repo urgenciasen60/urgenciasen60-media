@@ -1,6 +1,7 @@
 """Carrusel de Cuenta atrás MIR · Ep. 02 (abdomen agudo): python3 tools/mir_ep02.py <dir_salida>
 Mismo diseño que el ep. 01: portada verde quirófano, interiores blancos, amarillo para la respuesta, JPG 1080x1350.
-Imágenes radiológicas de elaboración propia: tools/mir_ep02_imagenes.py (en mir-ep02/assets/)."""
+Imágenes reales con licencia CC BY 4.0 (en mir-ep02/assets/): Rx de Baker J, Patane J, Chandwani C. JETEM 2016 (recortada y con ajuste de contraste);
+TC de Florim S, Almeida A, Rocha D, Portugal P. Insights Imaging 2018;9:673-82, fig. 5 (sin cambios salvo el tamaño)."""
 import os, sys, subprocess
 from PIL import Image
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
@@ -9,8 +10,8 @@ MG = "#0E4A37"; Y = "#FFD60A"; K = "#111111"; R = "#D7141A"; G = "#4A4A4A"; W = 
 A = "font-family:Anton,sans-serif;line-height:1.04"
 AS = os.path.join(ROOT, "mir-ep02", "assets")
 LOGO = "file://" + os.path.join(AS, "logo.png")
-RX = "file://" + os.path.join(AS, "rx_neumoperitoneo.png")
-TC = "file://" + os.path.join(AS, "tc_gas_portal.png")
+RX = "file://" + os.path.join(AS, "rx_real.jpg")
+TC = "file://" + os.path.join(AS, "tc_real.jpg")
 
 def page(body, right, foot, green=False):
     bg = MG if green else W; fg = W if green else K
@@ -28,8 +29,8 @@ def page(body, right, foot, green=False):
 def opts(items, fs=30):
     return "".join(f'<div style="border:3px solid {K};display:flex;align-items:center;gap:26px;padding:14px 22px;margin-top:-10px"><div style="{A};font-size:40px;width:24px">{l}</div><div style="font-size:{fs}px;font-weight:500;line-height:1.25">{t}</div></div>' for l, t in items)
 
-def img(src, h):
-    return f'<img src="{src}" style="width:920px;height:{h}px;object-fit:cover;display:block;border:2px solid #d9d9d9">'
+def img(src, h, credit):
+    return f'<div><div style="background:#000;display:flex;justify-content:center"><img src="{src}" style="height:{h}px;display:block"></div><div style="font-size:17px;color:{G};margin-top:6px">{credit}</div></div>'
 
 def sol(letter, title, text, why, perla):
     w = "".join(f'<div style="display:flex;gap:22px;align-items:baseline"><div style="{A};font-size:32px;color:{R};width:22px">{l}</div><div style="font-size:28px;line-height:1.35">{t}</div></div>' for l, t in why)
@@ -47,8 +48,8 @@ P.append(page(f'''<div style="display:flex;gap:26px;align-items:center"><img src
 <div style="font-size:34px;font-weight:500;margin-top:-6px">Perforación e isquemia mesentérica · ¿Cuántos aciertas?</div>''',
  "EP. 02 · CASOS 03-04", "Responde y desliza →", green=True))
 # 2 · Caso 3
-P.append(page(f'''<div style="font-size:28px;line-height:1.36">Varón de 58 años, fumador, que toma <b>ibuprofeno</b> desde hace 3 semanas por una lumbalgia. <b>Dolor epigástrico brusco, «en puñalada»</b>, de 4 h, ya difuso. <b>TA 105/65, FC 112, T 37,8 °C. Abdomen en tabla</b>, sin ruidos. Rx de tórax en bipedestación:</div>
-{img(RX, 320)}
+P.append(page(f'''<div style="font-size:28px;line-height:1.36">Varón de 58 años, fumador, que toma <b>ibuprofeno</b> desde hace 3 semanas por una lumbalgia. <b>Dolor epigástrico brusco, «en puñalada»</b>, de 4 h, ya difuso. <b>TA 105/65, FC 112, T 37,8 °C. Abdomen en tabla</b>, sin ruidos. Rx de tórax portátil, sentado:</div>
+{img(RX, 360, "Imagen real: Baker J, Patane J, Chandwani C. JETEM 2016 · CC BY 4.0 · recortada")}
 <div style="{A};font-size:40px">¿ACTITUD MÁS ADECUADA?</div>
 {opts([("A", "SNG, IBP IV, tratamiento conservador y TC de control a las 24 h"), ("B", "Dieta absoluta, fluidos, IBP IV, antibiótico de amplio espectro y cirugía urgente"), ("C", "Gastroscopia urgente para localizar y cerrar la perforación"), ("D", "Repetir la Rx en decúbito lateral antes de avisar a Cirugía")], 26)}''',
  "CASO 3 · 2/7", "Comenta A, B, C o D y desliza →"))
@@ -67,13 +68,13 @@ P.append(page(sol("B", "PERITONITIS + AIRE LIBRE:<br>CIRUGÍA URGENTE",
  "SOLUCIÓN 3 · 4/7", "Desliza →"))
 # 5 · Caso 4
 P.append(page(f'''<div style="font-size:28px;line-height:1.36">Mujer de 81 años con <b>FA permanente</b>; dejó el anticoagulante hace 10 días por una extracción dental. <b>Dolor periumbilical muy intenso</b> de 6 h que no cede con metamizol y una deposición diarreica. <b>Abdomen blando, apenas doloroso.</b> Lactato 4,8 mmol/l. TC con contraste:</div>
-{img(TC, 330)}
+{img(TC, 304, "Imagen real: Florim S, et al. Insights Imaging 2018;9:673-82, fig. 5 · CC BY 4.0")}
 <div style="{A};font-size:40px">¿QUÉ AFIRMACIÓN ES CORRECTA?</div>
 {opts([("A", "El gas portal suele ser benigno: anticoagular y observar"), ("B", "Isquemia mesentérica embólica con necrosis: heparina IV, revascularización y laparotomía urgente"), ("C", "Con un lactato normal se habría descartado la isquemia"), ("D", "Es una colitis isquémica: dieta, fluidos y colonoscopia a las 48 h")], 26)}''',
  "CASO 4 · 5/7", "Comenta A, B, C o D y desliza →"))
 # 6 · Solución 4
 P.append(page(sol("B", "DOLOR DESPROPORCIONADO + FA:<br>ISQUEMIA MESENTÉRICA",
- "FA sin anticoagular, dolor brusco que no cuadra con la exploración y vaciamiento intestinal: <b>embolia de la AMS</b>. La TC muestra el <b>defecto de repleción en la AMS</b>, neumatosis y <b>gas portal</b>: isquemia transmural. <b>Heparina IV</b> en cuanto se diagnostica, revascularización (embolectomía o endovascular) y laparotomía para resecar el intestino no viable, con segunda revisión si la viabilidad es dudosa.",
+ "FA sin anticoagular, dolor brusco que no cuadra con la exploración y vaciamiento intestinal: <b>embolia de la AMS</b>. La TC muestra <b>gas portal</b> hasta la periferia del hígado (a) y asas dilatadas de <b>pared fina</b>, con neumatosis y gas en venas mesentéricas (b): infarto transmural. <b>Heparina IV</b> en cuanto se diagnostica, revascularización (embolectomía o endovascular) y laparotomía para resecar el intestino no viable, con segunda revisión si la viabilidad es dudosa.",
  [("A", "La neumatosis aislada puede ser benigna, pero el gas portal sugiere con fuerza infarto intestinal, y más con la AMS ocluida."),
   ("C", "Ningún análisis descarta la isquemia: un lactato normal no la excluye. La angio-TC se hace aunque haya fracaso renal."),
   ("D", "La colitis isquémica afecta al colon, suele dar dolor leve con rectorragia y no ocluye la AMS.")],
@@ -85,7 +86,7 @@ P.append(page(f'''<div style="{A};font-size:92px;line-height:1">PRIMERO:<br><spa
 <div style="font-size:32px;font-weight:500;line-height:1.4">La exploración orienta antes que cualquier prueba: abdomen en tabla con aire libre, o dolor brutal con un abdomen blando.</div>
 <div style="display:flex;gap:24px">{card("ABDOMEN EN TABLA", "Perforación: <b>cirugía urgente</b>. Si la Rx es normal y la sospecha persiste, <b>TC</b>.")}{card("BLANDO, PERO DUELE MUCHO", "Isquemia mesentérica: <b>angio-TC ya</b>, sin esperar al lactato ni a la creatinina.")}</div>
 <div style="background:{Y};color:{K};padding:22px 26px;font-size:29px;line-height:1.4"><b>Neumatosis + gas portal en una isquemia = necrosis.</b> Gas portal en la periferia del hígado; aerobilia en el centro.</div>
-<div style="font-size:19px;line-height:1.4;color:#CFE3D9">Fuentes: guías WSES de úlcera péptica perforada y sangrante (Tarasconi et al., 2020) y de isquemia mesentérica aguda (Bala et al., 2022). Imágenes de elaboración propia para docencia. Contenido formativo; no sustituye a los protocolos de tu centro.</div>''',
+<div style="font-size:19px;line-height:1.4;color:#CFE3D9">Fuentes: guías WSES de úlcera péptica perforada y sangrante (Tarasconi et al., 2020) y de isquemia mesentérica aguda (Bala et al., 2022). Imágenes reales: Baker et al., JETEM 2016, y Florim et al., Insights Imaging 2018 (CC BY 4.0). Contenido formativo; no sustituye a los protocolos de tu centro.</div>''',
  "CLAVE MIR · 7/7", "Guárdalo para el repaso", green=True))
 
 def render(pages, outdir, slug):
