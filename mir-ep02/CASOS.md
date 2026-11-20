@@ -1,5 +1,5 @@
 
-## Episodio 2 · Abdomen agudo · PENDIENTE DE VALIDACIÓN (propuesto 19/11/2026)
+## Episodio 2 · Abdomen agudo · PENDIENTE DE VALIDACIÓN (propuesto 19/11/2026; datos verificados con el texto completo de WSES 2020 y 2022 el 20/11)
 Publicación prevista: miércoles 25/11 a las 14:00 (carrusel) y jueves 26/11 a las 14:00 (reel). Validar antes del lunes 23/11.
 Etiqueta: «URGENCIAS EN 60 · MIR» · «CASOS 03-04 · EP. 02» · «Faltan 59 días» (a 25/11; examen 23/01/2027).
 Temas MIR de referencia (no copiados): 26-23 perforación; 25-18 gas portal; 26-3 isquemia intestinal.
@@ -12,8 +12,8 @@ Varón de 58 años, fumador, que toma ibuprofeno desde hace tres semanas por una
 - D) Repetir la radiografía en decúbito lateral izquierdo antes de avisar a Cirugía.
 
 **Respuesta: B.** Dolor brusco, peritonitis difusa y neumoperitoneo: perforación de víscera hueca, probablemente úlcera péptica por AINE. Con esa clínica, el aire libre basta para indicar la cirugía (cierre de la perforación, habitualmente sutura con parche de epiplón, por laparoscopia si el paciente está estable), con reanimación, IBP y antibiótico desde Urgencias. Tras el alta: erradicar H. pylori si está presente y retirar el AINE.
-A: el tratamiento conservador solo se plantea en casos muy seleccionados (estables, sin peritonitis difusa y con la perforación ya sellada en el estudio con contraste hidrosoluble); este paciente tiene peritonitis y taquicardia [VERIFICAR DATO CLÍNICO: criterios de manejo no quirúrgico en WSES 2020].
-C: la endoscopia no tiene papel ante una perforación libre y la insuflación aumenta el neumoperitoneo.
+A: la WSES desaconseja el tratamiento conservador de rutina; solo se plantea en casos extremadamente seleccionados (estables, sin peritonitis ni sepsis y con la perforación sellada en el estudio con contraste hidrosoluble). Este paciente tiene peritonitis y taquicardia, y el retraso quirúrgico aumenta la mortalidad.
+C: la WSES aconseja evitar el cierre endoscópico (clips, sellantes, prótesis) en la úlcera perforada; en un ulcus el tejido fibrótico hace que los clips no sean eficaces.
 D: el diagnóstico ya está hecho; repetir pruebas solo retrasa la cirugía.
 Perla: la radiografía muestra el neumoperitoneo solo en el 50-75 % de los casos; si es normal y la sospecha persiste, se pide TC, que es más sensible.
 
@@ -26,9 +26,9 @@ Mujer de 81 años con fibrilación auricular permanente; suspendió el anticoagu
 - C) Si el lactato hubiera sido normal, se habría descartado la isquemia mesentérica.
 - D) Es una colitis isquémica: dieta, fluidoterapia y colonoscopia en 48 horas.
 
-**Respuesta: B.** Fibrilación auricular sin anticoagular, dolor brusco desproporcionado a la exploración y vaciamiento intestinal: la tríada de la embolia de la arteria mesentérica superior. La neumatosis con gas portal indica isquemia transmural. Se trata con heparina sódica IV en cuanto se diagnostica, fluidos, antibiótico y revascularización (embolectomía o endovascular) junto con exploración quirúrgica, resección del intestino no viable y, a menudo, revisión a las 24-48 horas [VERIFICAR DATO CLÍNICO: secuencia según WSES 2022].
-A: el gas portal puede ser benigno en otros contextos, pero junto a neumatosis y oclusión arterial es signo de necrosis.
-C: el lactato puede ser normal en fases precoces y no descarta la isquemia; no hay que esperar a él (ni a la creatinina) para pedir la angio-TC.
+**Respuesta: B.** Fibrilación auricular sin anticoagular, dolor brusco desproporcionado a la exploración y vaciamiento intestinal: la tríada de la embolia de la arteria mesentérica superior. La neumatosis con gas portal indica isquemia transmural. Se trata con heparina sódica IV en cuanto se diagnostica, fluidos, antibiótico y revascularización (embolectomía o endovascular) junto con exploración quirúrgica y resección del intestino no viable; si la viabilidad es dudosa, cierre temporal y segunda revisión (second look).
+A: la neumatosis aislada puede ser benigna (hasta un 60 % en una serie multicéntrica), pero el gas portal o mesentérico sugiere con fuerza infarto intestinal, y la combinación de ambos con oclusión arterial indica isquemia irreversible.
+C: ningún parámetro de laboratorio confirma o descarta la isquemia; el lactato elevado apoya la sospecha, pero uno normal no la excluye. La angio-TC se hace aunque haya insuficiencia renal aguda.
 D: la colitis isquémica afecta al colon, suele dar dolor leve con rectorragia y no se acompaña de oclusión de la arteria mesentérica superior.
 Perla: el gas portal llega a la periferia del hígado (hasta cerca de la cápsula); la aerobilia se queda en el centro, cerca del hilio.
 
