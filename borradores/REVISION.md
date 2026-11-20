@@ -111,9 +111,8 @@ Cambios respecto al primer borrador (todos del consenso; tabla 1, tabla 2, figur
 - Noradrenalina de elección en el shock (evitar con PAD > 65 mmHg, no incluido en la ficha); dobutamina con PAS < 90 e hipoperfusión.
 - Ecografía pulmonar: ≥ 3 líneas B en ≥ 2 espacios intercostales bilaterales.
 - Destino: MEESSI-AHF o EHMRG; bajo riesgo, candidato a alta, y revisión a la semana. Se mantiene el tratamiento crónico de la IC.
+- 20/11 (Eduardo): nitroglicerina IV, inicio 10–20 µg/min con incrementos de 10–20 µg/min cada 5–10 min; preparación de su urgencia: 25 mg en 500 ml de SG 5 % (50 µg/ml; 10 µg/min = 12 ml/h). Sin noradrenalina en la ficha.
 Dudas que quedan:
-- ¿Damos alguna dosis orientativa de nitroglicerina (sublingual o perfusión) según vuestro protocolo? El consenso no la da.
-- ¿Mencionamos la noradrenalina solo con PAD baja, o es demasiado matiz para la ficha?
 - ¿Diapositiva 2 («cuatro formas») sobra? Se podría cambiar por el destino (MEESSI-AHF, revisión en una semana).
 
 ## Ficha 13 · Agudización de EPOC (`epoc/`)
