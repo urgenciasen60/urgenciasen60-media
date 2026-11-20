@@ -17,10 +17,10 @@ L={
  fin("codigo-ictus","codigo-ictus","FICHA 11")]),
 "eap":("IC AGUDA Y EAP","urgenciasen60-ica-eap-reel.mp4",[
  (Y,[big("EDEMA AGUDO<br>DE PULMÓN",180),big("¿FUNCIONA LA<br>FUROSEMIDA?",150,R)],[(2,3.4)]),
- (W,[kicker("1 · FUROSEMIDA IV",G)+sp(30)+big("20–40 MG",210,R),txt("Si ya la tomaba: 1–2 veces su dosis oral",64)],[(1,1.8),(2,3.0)]),
- (R,[kicker("2 · A LAS 2 HORAS")+sp(30)+big("MIDE LA ORINA",210),txt("Sodio ≥ 50–70 mEq/l o diuresis ≥ 100–150 ml/h",62,Y)+sp(22)+txt("Si no responde: dobla la dosis",60)],[(1,1.8),(2,3.4)]),
+ (W,[kicker("1 · FUROSEMIDA IV",G)+sp(30)+big("40 MG",260,R),txt("Si ya la tomaba: 1–2 veces su dosis oral",64)],[(1,1.8),(2,3.0)]),
+ (R,[kicker("2 · A LAS 2 HORAS")+sp(30)+big("MIDE LA ORINA",210),txt("Sodio &gt; 70 mEq/l a las 2 h o diuresis ≥ 100–150 ml/h",60,Y)+sp(22)+txt("Si no responde: dobla la dosis",60)],[(1,1.8),(2,3.4)]),
  (K,[kicker("3 · RESPIRA")+sp(30)+big("VMNI PRONTO",220,Y),txt("FR &gt; 25 y SatO2 &lt; 90 %",68)],[(1,1.6),(2,2.8)]),
- (Y,[kicker("4 · LA PRESIÓN DECIDE")+sp(30)+big("PAS &gt; 110",240,R),txt("Nitroglicerina IV",68)+sp(22)+txt("Morfina: no de rutina",62)],[(1,1.8),(2,3.0)]),
+ (Y,[kicker("4 · LA PRESIÓN DECIDE")+sp(30)+big("PAS &gt; 110",240,R),txt("Nitratos: −25 % en la primera hora",64)+sp(22)+txt("Morfina: no de rutina",62)],[(1,1.8),(2,3.0)]),
  fin("ica-eap","ica-eap","FICHA 12")]),
 "epoc":("AGUDIZACIÓN DE EPOC","urgenciasen60-epoc-reel.mp4",[
  (Y,[big("EPOC<br>AGUDIZADA",210),big("MÁS OXÍGENO<br>NO ES MEJOR",160,R)],[(2,3.4)]),

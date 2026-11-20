@@ -100,17 +100,21 @@ Dudas y discrepancias:
 - Trombectomía con núcleo grande (ASPECTS 3-5): solo la recoge la AHA 2026; no la he puesto. ¿Añadir?
 - ¿Diapositiva «CLAVE MIR»? El ictus es preguntable, pero no cabe sin quitar otra.
 
-## Ficha 12 · IC aguda y EAP (`ica-eap/`)
-Fuentes (texto completo): Køber L, Adamo M, Ruwald AC, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J. 2026. doi:10.1093/eurheartj/ehag100 (sección 7). McDonagh TA, et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J. 2021;42(36):3599-726. doi:10.1093/eurheartj/ehab368. Llorens P, et al. Documento de consenso ICA-SEMES. Emergencias. 2011;23:119-39.
-Dudas y discrepancias:
-- No hay documento español de ICA en urgencias posterior a 2015. Existe un consenso ESC-ACVC/HFA/EUSEM de ICA en urgencias (Miró Ò, et al. Eur Heart J, 22/10/2026, doi:10.1093/eurheartj/ehag744) que no he leído: conviene contrastar la ficha con él (ver petición de PDF).
-- Furosemida sin diurético previo: 40 mg (ESC 2026) frente a 20-40 mg (ESC 2021, SEMES). Con diurético previo: 2 veces la dosis oral (ESC 2026) frente a 1-2 veces (ESC 2021). Se muestra el rango.
-- Respuesta diurética: ≥ 70 mEq/l y ≥ 100 ml/h (ESC 2026) frente a 50-70 mEq/l y 100-150 ml/h (ESC 2021). Se muestra el rango.
-- Oxígeno solo si SatO2 < 90 % (ESC 2021 y 2026) frente a «SatO2 > 95 %» del consenso SEMES 2011. Se sigue la ESC.
-- [VERIFICAR DATO CLÍNICO] Nitroglicerina 5-200 µg/min: la tabla de SEMES 2011 aparece como «mg/min» en el PDF extraído (casi seguro errata); la ESC 2026 no da dosis. ¿Quieres la pauta de vuestra guardia o la quitamos, como en la Ficha 08?
-- CPAP 7-15 cmH2O y BiPAP si hipercapnia proceden del consenso SEMES 2011.
-- Acetazolamida 500 mg IV: ESC 2026 (IIa).
-- ¿Añadimos destino (NT-proBNP > 5000 = muy alto riesgo; escala MEESSI-AHF)? No cabe sin otra diapositiva.
+## Ficha 12 · IC aguda y EAP (`ica-eap/`), revisada el 20/11 con el PDF del consenso que aportó Eduardo
+Fuente principal (texto completo leído): Miró Ò, Masip J, Chioncel O, et al. Acute heart failure in emergency settings. A clinical consensus statement of the ACVC and the HFA of the ESC and the EuSEM. Eur Heart J. 2026. doi:10.1093/eurheartj/ehag744. Contraste: Køber L, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J. 2026. doi:10.1093/eurheartj/ehag100.
+Cambios respecto al primer borrador (todos del consenso; tabla 1, tabla 2, figura 3 y apartados de oxígeno y ventilación, diuréticos, vasodilatadores, inotrópicos y tratamientos concomitantes):
+- Furosemida sin diurético previo: 40 mg IV (antes 20–40). Con diurético previo: 1–2 veces la dosis oral diaria.
+- Respuesta: sodio en orina > 70 mEq/l a las 2 h o diuresis ≥ 100–150 ml/h a las 6 h (figura 3). Si responde, misma dosis cada 12 h; si no, doblar hasta la dosis máxima (bolo máx. 250 mg; 400–600 mg/día, hasta 1000 mg en ERC grave) y valorar acetazolamida (dosis bajas de mantenimiento y alcalosis hipoclorémica) o tiazida (dosis altas previas).
+- CPAP 5–10 cmH2O (antes 7–15, de SEMES 2011); BiPAP si hipercapnia; alto flujo si no tolera; fracaso = sin mejoría de FR y oxigenación en la primera hora. Oxígeno si SatO2 < 90 %, evitando hiperoxia (objetivo SatO2 ≥ 94 %).
+- Vasodilatadores: PAS > 110 o EAP hipertensivo; nitratos sublinguales o IV. Objetivo: bajar la PAS ≤ 25 % en la primera hora y 130–140 mmHg en 6 h; suspender si PAS < 100 o hipotensión sintomática. El consenso no da dosis: se retira la perfusión 5–200 µg/min (resuelve la duda de la unidad).
+- Morfina no de rutina; alternativa para la ansiedad: midazolam 1 mg IV en bolos hasta 3 mg.
+- Noradrenalina de elección en el shock (evitar con PAD > 65 mmHg, no incluido en la ficha); dobutamina con PAS < 90 e hipoperfusión.
+- Ecografía pulmonar: ≥ 3 líneas B en ≥ 2 espacios intercostales bilaterales.
+- Destino: MEESSI-AHF o EHMRG; bajo riesgo, candidato a alta, y revisión a la semana. Se mantiene el tratamiento crónico de la IC.
+Dudas que quedan:
+- ¿Damos alguna dosis orientativa de nitroglicerina (sublingual o perfusión) según vuestro protocolo? El consenso no la da.
+- ¿Mencionamos la noradrenalina solo con PAD baja, o es demasiado matiz para la ficha?
+- ¿Diapositiva 2 («cuatro formas») sobra? Se podría cambiar por el destino (MEESSI-AHF, revisión en una semana).
 
 ## Ficha 13 · Agudización de EPOC (`epoc/`)
 Fuentes (texto completo): Soler-Cataluña JJ, Piñera P, Trigueros JA, et al. Actualización 2021 de GesEPOC. Diagnóstico y tratamiento del síndrome de agudización de la EPOC. Arch Bronconeumol. 2022;58(2):159-70. doi:10.1016/j.arbres.2021.05.011. Global Initiative for Chronic Obstructive Lung Disease. GOLD 2026 Report, cap. 4. Rochwerg B, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J. 2017;50(2):1602426. doi:10.1183/13993003.02426-2016.
