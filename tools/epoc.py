@@ -1,0 +1,17 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ficha import *
+T="AGUDIZACIÓN DE EPOC"; N=7; V="#1E8C45"   # franja verde: frecuente
+KW=dict(strip=V)
+pg=lambda *a,**k: page(*a,**KW,**k)
+note=lambda t: f'<div style="font-size:34px;line-height:1.4;color:{G}">{t}</div>'
+rows=lambda *x: '<div style="display:flex;flex-direction:column;gap:20px">'+"".join(x)+'</div>'
+P=[
+pg(1,N,T,big("EPOC AGUDIZADA",140,nowrap=True)+big(f'MÁS OXÍGENO NO ES MEJOR: <span style="color:{R}">88–92 %</span>',112)+'<div style="font-size:40px;font-weight:600;line-height:1.3;max-width:820px">Gravedad, broncodilatadores, corticoide, antibiótico, VMNI e ingreso. Con ficha final.</div>',cover=True),
+pg(2,N,T,kicker("ANTES DE NADA")+big("¿SEGURO QUE ES EPOC?",112)+rows(line("TEP",True),line("Neumonía · neumotórax · derrame pleural"),line("Insuficiencia cardiaca · arritmia · síndrome coronario"))+note("Radiografía de tórax, ECG y gasometría arterial. NT-proBNP, troponina o dímero D según la sospecha.")),
+pg(3,N,T,kicker("GRAVEDAD · CRITERIOS DE ROMA")+big("MODERADA",180,nowrap=True)+'<div style="font-size:46px;font-weight:800;line-height:1.2">Si cumple 3 de estos 5:</div>'+rows(row("Disnea (escala visual)","≥ 5 sobre 10"),row("FR · FC","≥ 24 · ≥ 95 lpm"),row("SatO2","&lt; 92 % o caída &gt; 3 %"),row("PCR","≥ 10 mg/l"))+f'<div style="border-top:4px solid {K};padding-top:20px;font-size:40px;font-weight:800;line-height:1.3;color:{R}">Grave: además, PaCO2 &gt; 45 mmHg y pH &lt; 7,35</div>'),
+pg(4,N,T,kicker("BRONCODILATA")+big("SALBUTAMOL + IPRATROPIO",104)+rows(row("Salbutamol nebulizado","2,5–5 mg"),row("Ipratropio nebulizado","0,5–1 mg"),row("Con cámara","Salbutamol 4–6 puls. + ipratropio 4–6 puls."),row("Después","Cada 4–6 h según respuesta"))+f'<div style="border-top:4px solid {K};padding-top:20px;font-size:42px;font-weight:800;line-height:1.3;color:{R}">Si retiene CO2, nebuliza con aire comprimido, no con oxígeno</div>'),
+pg(5,N,T,kicker("OXÍGENO Y VENTILACIÓN")+big("SatO2 88–92 %",136,R,True)+rows(row("Venturi","FiO2 24–28 %"),row("Gafas nasales","2–4 l/min"))+big("VMNI",150,nowrap=True)+rows(line("pH &lt; 7,35 y PaCO2 &gt; 45 mmHg pese al tratamiento",True),line("pH &lt; 7,25: valora intubación y UCI"))+note("Con hipercapnia sin acidosis, la VMNI no está indicada.")),
+pg(6,N,T,kicker("CORTICOIDE Y ANTIBIÓTICO")+big("5 DÍAS",200,R,True)+rows(row("Prednisona oral","40 mg/día o 0,5 mg/kg/día"),row("Antibiótico si","Esputo purulento, PCR ≥ 20 mg/l o soporte ventilatorio"),row("Primera línea","Amoxicilina-clavulánico"),row("Riesgo de Pseudomonas","Betalactámico antipseudomónico"))+note("La vía oral es tan eficaz como la IV. En la agudización grave, GesEPOC alarga el corticoide hasta 14 días. Sin teofilinas.")),
+pg(7,N,T,ficha_body("EPOC AGUDIZADA","Adulto",[("DESCARTA","TEP, neumonía, neumotórax, insuficiencia cardiaca, arritmia, SCA"),("GRAVE","pH &lt; 7,35 y PaCO2 &gt; 45 mmHg",True),("BRONCOD.","Salbutamol 2,5–5 mg + ipratropio 0,5–1 mg nebulizados. Con aire si retiene CO2"),("OXÍGENO","SatO2 88–92 %: Venturi 24–28 % o gafas 2–4 l/min",True),("VMNI","pH &lt; 7,35 y PaCO2 &gt; 45 pese a tratamiento. pH &lt; 7,25: valora UCI"),("CORTICOIDE","Prednisona 40 mg/día o 0,5 mg/kg/día, 5 días"),("ANTIBIÓTICO","Esputo purulento o PCR ≥ 20 mg/l: amoxicilina-clavulánico"),("INGRESO","Sin mejoría en 6–12 h, pH &lt; 7,35, PaO2 &lt; 55, VMNI o neumonía grave")],"GesEPOC 2021 (agudización); GOLD 2026; ERS/ATS 2017 (VMNI)",size=118,fs=27),ficha="13"),
+]
+render(P,sys.argv[1] if len(sys.argv)>1 else "out","epoc")

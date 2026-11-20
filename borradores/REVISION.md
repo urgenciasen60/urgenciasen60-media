@@ -83,3 +83,42 @@ Dudas para Eduardo:
 - Son 9 diapositivas (las fichas anteriores tienen 7). ¿Lo dejamos así o fusionamos 3 y 4?
 - 18/11 (Eduardo): fusionadas 3 y 4 (sin daño + evita) y añadida diapo 4 «¿Cefalea + HTA?». Dato de la nota de la diapo 3: Patel KK, Young L, Howell EH, et al. Characteristics and outcomes of patients presenting with hypertensive urgency in the office setting. JAMA Intern Med. 2016;176(7):981-8 (58 535 pacientes; MACE < 1 % a 6 meses; derivar al hospital no mejoró resultados). Ojo: es población de consulta ambulatoria, no de Urgencias.
 - 18/11 (Eduardo): sin dosis de nitroglicerina ni esmolol; nombrar captopril y nifedipino sublinguales en «evita»; nicardipino no se usa (no aparece). Quitado «derivar al hospital no lo mejora» (diapo 3 y reel): no aplica a quien ya está en Urgencias; se sustituye por «lo que le protege es el seguimiento» (Patel 2016: la mayoría seguía mal controlada a los 6 meses).
+
+# Lote del 20/11/2026 (ejecución programada)
+
+Nota de diseño común: siguiendo `TEMARIO.md`, las franjas van por color de urgencia (ictus naranja, IC aguda roja, EPOC verde). Las fichas anteriores llevan todas la roja: ¿mantenemos el código de colores o volvemos a la roja para todas?
+
+## Ficha 11 · Código ictus (`codigo-ictus/`)
+Fuentes (texto completo): Ministerio de Sanidad. Estrategia en Ictus del SNS. Actualización 2024 (activación, Rec. 5; tiempos, Rec. 6 y p. 74). Berge E, et al. ESO guidelines on intravenous thrombolysis for acute ischaemic stroke. Eur Stroke J. 2021;6(1):I-LXII. doi:10.1177/2396987321989865. Alamowitch S, et al. ESO expedited recommendation on tenecteplase. Eur Stroke J. 2023;8(1):8-54. doi:10.1177/23969873221150022. Turc G, et al. ESO-ESMINT guidelines on mechanical thrombectomy. J Neurointerv Surg. 2019. doi:10.1136/neurintsurg-2018-014569. Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke. Stroke. 2026;57(8):e316-e436. doi:10.1161/STR.0000000000000513. RACE: Pérez de la Ossa N, et al. Stroke. 2014;45(1):87-91. doi:10.1161/STROKEAHA.113.003071.
+Dudas y discrepancias:
+- [VERIFICAR DATO CLÍNICO] Tenecteplasa «máx. 25 mg»: el documento ESO 2023 no da el máximo; sale de la ficha técnica europea, que no he leído en esta ejecución.
+- PA antes de trombolizar: 185/110 (ESO, AHA) frente a 185/105 en la GEECV-SEN 2014 (versión inglesa). Se pone 185/110.
+- Glucemia > 400 mg/dl: la GEECV 2014 y la AHA la consideran exclusión; la ESO 2021 sugiere trombolizar. En la ficha solo figura «glucemia < 50» como contraindicación; ¿añadimos > 400?
+- Labetalol: dosis de la ficha técnica AEMPS (la misma que en la Ficha 08 HTA, ya aprobada). Ni la GEECV ni la Estrategia del SNS dan dosis. ¿Añadimos urapidilo (25 mg en 20 s)?
+- Imagen < 15 min y puerta-aguja de 30 min son objetivos de la Estrategia del SNS; la AHA 2026 dice 25 min para la imagen y no fija puerta-aguja.
+- Oxígeno si SatO2 < 95 % (GEECV/SNS) frente a > 94 % (AHA). Antitérmico > 37,5 °C (GEECV/SNS).
+- Trombectomía con núcleo grande (ASPECTS 3-5): solo la recoge la AHA 2026; no la he puesto. ¿Añadir?
+- ¿Diapositiva «CLAVE MIR»? El ictus es preguntable, pero no cabe sin quitar otra.
+
+## Ficha 12 · IC aguda y EAP (`ica-eap/`)
+Fuentes (texto completo): Køber L, Adamo M, Ruwald AC, et al. 2026 ESC Guidelines for the management of heart failure. Eur Heart J. 2026. doi:10.1093/eurheartj/ehag100 (sección 7). McDonagh TA, et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J. 2021;42(36):3599-726. doi:10.1093/eurheartj/ehab368. Llorens P, et al. Documento de consenso ICA-SEMES. Emergencias. 2011;23:119-39.
+Dudas y discrepancias:
+- No hay documento español de ICA en urgencias posterior a 2015. Existe un consenso ESC-ACVC/HFA/EUSEM de ICA en urgencias (Miró Ò, et al. Eur Heart J, 22/10/2026, doi:10.1093/eurheartj/ehag744) que no he leído: conviene contrastar la ficha con él (ver petición de PDF).
+- Furosemida sin diurético previo: 40 mg (ESC 2026) frente a 20-40 mg (ESC 2021, SEMES). Con diurético previo: 2 veces la dosis oral (ESC 2026) frente a 1-2 veces (ESC 2021). Se muestra el rango.
+- Respuesta diurética: ≥ 70 mEq/l y ≥ 100 ml/h (ESC 2026) frente a 50-70 mEq/l y 100-150 ml/h (ESC 2021). Se muestra el rango.
+- Oxígeno solo si SatO2 < 90 % (ESC 2021 y 2026) frente a «SatO2 > 95 %» del consenso SEMES 2011. Se sigue la ESC.
+- [VERIFICAR DATO CLÍNICO] Nitroglicerina 5-200 µg/min: la tabla de SEMES 2011 aparece como «mg/min» en el PDF extraído (casi seguro errata); la ESC 2026 no da dosis. ¿Quieres la pauta de vuestra guardia o la quitamos, como en la Ficha 08?
+- CPAP 7-15 cmH2O y BiPAP si hipercapnia proceden del consenso SEMES 2011.
+- Acetazolamida 500 mg IV: ESC 2026 (IIa).
+- ¿Añadimos destino (NT-proBNP > 5000 = muy alto riesgo; escala MEESSI-AHF)? No cabe sin otra diapositiva.
+
+## Ficha 13 · Agudización de EPOC (`epoc/`)
+Fuentes (texto completo): Soler-Cataluña JJ, Piñera P, Trigueros JA, et al. Actualización 2021 de GesEPOC. Diagnóstico y tratamiento del síndrome de agudización de la EPOC. Arch Bronconeumol. 2022;58(2):159-70. doi:10.1016/j.arbres.2021.05.011. Global Initiative for Chronic Obstructive Lung Disease. GOLD 2026 Report, cap. 4. Rochwerg B, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J. 2017;50(2):1602426. doi:10.1183/13993003.02426-2016.
+Dudas y discrepancias:
+- [VERIFICAR DATO CLÍNICO] GOLD 2027 salió el 18/11/2026; según la prensa no cambia el tratamiento de la agudización, pero no he leído su capítulo 4.
+- La gravedad se presenta con los criterios de Roma (GOLD), verificados en texto completo. Los umbrales de GesEPOC (4 niveles, figura 2) no se han podido leer en el original. ¿Prefieres la clasificación de GesEPOC?
+- Corticoide: 40 mg/día 5 días (GOLD) frente a 0,5 mg/kg/día, hasta 5 días en la moderada y hasta 14 en la grave (GesEPOC). Se muestra el rango.
+- Antibiótico: indicación de GesEPOC (cambio de color del esputo, PCR ≥ 20 mg/l, soporte ventilatorio). GOLD usa Anthonisen y ≤ 5 días. Sin dosis (GesEPOC no las da). ¿Ponemos dosis de amoxicilina-clavulánico?
+- «pH < 7,25: valora intubación y UCI» es de GesEPOC; la ERS/ATS no fija un pH mínimo para intentar la VMNI.
+- Parámetros iniciales de VMNI (IPAP/EPAP): ninguna fuente leída los da; no se incluyen.
+- Criterios de ingreso: tabla 9 de GesEPOC (se omiten PaCO2 > 50 sin hipercapnia previa, comorbilidad y soporte domiciliario por espacio).

@@ -41,10 +41,10 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 7 | Fibrilación auricular en Urgencias | Ficha | Ficha 09, pendiente de revisión |
 | 8 | Hipoglucemia | Ficha | Ficha 07, pendiente de revisión |
 | 9 | Síncope: estratificación del riesgo | Ficha | Ficha 10, pendiente de revisión |
-| 10 | Código ictus | Ficha | |
+| 10 | Código ictus | Ficha | Ficha 11, pendiente de revisión |
 | 11 | Epistaxis y taponamiento nasal | Técnica | Técnica 01, pendiente de revisión |
-| 12 | Insuficiencia cardiaca aguda y edema agudo de pulmón | Ficha | |
-| 13 | Exacerbación de EPOC | Ficha | |
+| 12 | Insuficiencia cardiaca aguda y edema agudo de pulmón | Ficha | Ficha 12, pendiente de revisión |
+| 13 | Exacerbación de EPOC | Ficha | Ficha 13, pendiente de revisión |
 | 14 | Vértigo periférico frente a central (HINTS) | Ficha | |
 | 15 | SCACEST | Ficha | |
 | 16 | Cetoacidosis diabética | Ficha | |
