@@ -29,10 +29,10 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | **Programada** dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
 | MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (neumoperitoneo por úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | Pendiente de revisión (casos en `mir-ep02/CASOS.md`; validar antes del lun 23/11) | Previsto mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) |
 | 11 | Código ictus: la primera hora (+ reel) | `borradores/codigo-ictus/` | Pendiente de revisión (20/11) | — |
-| 06 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** vie 27/11 21:00 (carrusel) y sáb 28/11 21:00 (reel) | Aprobada por Eduardo el 20/11 |
+| 09 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** lun 7/12 21:00 (carrusel) y mar 8/12 21:00 (reel) | Aprobada por Eduardo el 20/11 |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |
 
-Próximo número libre: Ficha 14, Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
+Próximo número libre: Ficha 14 (borradores; al publicarse se renumeran por orden: la siguiente publicada tras la 09 será la 10), Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
 ## Aviso del 18/11/2026 (ejecución programada)
 - Ninguna pieza en estado «Aprobada» sin programar. Publicaciones cubiertas hasta el jue 26/11 (reel de hipoglucemia). **Desde el vie 27/11 no hay nada aprobado.**
@@ -42,7 +42,7 @@ Próximo número libre: Ficha 14, Técnica 03, Guía 02, Paper 02. Las dudas cl�
 - Ninguna pieza «Aprobada» sin programar. Metricool coincide con esta cola. Publicaciones cubiertas hasta el **sáb 5/12** (reel de HTA), pero con **huecos el vie 27/11, el lun 30/11 y el mié 2/12** (y el mié 25/11 y jue 26/11 a las 14:00 de la serie MIR, si no se aprueba MIR 02).
 - Para cubrirlos, aprobar por este orden: MIR 02 (antes del lun 23/11), Técnica 02 PL (vie 27/11; falta el vídeo v4), Ficha 04 sepsis (lun 30/11) y Ficha 06 cólico nefrítico (mié 2/12).
 - Producidas hoy tres fichas de la Fase A con su reel: 11 código ictus, 12 IC aguda/EAP y 13 EPOC.
-- 20/11: Eduardo aprueba la IC aguda/EAP; se programa en el primer hueco libre (vie 27/11) y, por orden de publicación, pasa a ser la **Ficha 06**. El siguiente número que se publique antes de la HTA (Ficha 08, vie 4/12) será la Ficha 07. La Técnica 02 PL pasa al siguiente hueco cuando esté aprobada. Huecos que quedan: lun 30/11 y mié 2/12.
+- 20/11: Eduardo aprueba la IC aguda/EAP. Para respetar el plan rehecho (sepsis vie 27, cólico lun 30, técnica PL mié 2/12), elige programarla el lun 7/12; por orden de publicación pasa a ser la **Ficha 09**.
 
 ## Reels
 Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba y marca abajo; un color de fondo por escena; varios elementos entran a la vez; golpe de zoom, transición deslizante y barra de progreso; ficha al final) que se publica al día siguiente: martes, jueves y sábado. Se generan con `tools/reel.py` (modelo: `tools/reel_anafilaxia.py`). Plantilla aprobada por Eduardo el 17/11/2026: intensidad suave (valores por defecto de `build`), unos 26 s, un color de fondo por escena, ficha al final. El reel reutiliza el contenido ya aprobado del carrusel, así que no necesita revisión clínica aparte: genera y programa el reel de cada carrusel aprobado para el día siguiente a las 21:00 (Instagram tipo REEL y TikTok).
