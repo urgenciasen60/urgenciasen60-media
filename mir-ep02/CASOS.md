@@ -1,6 +1,6 @@
 
-## Episodio 2 · Abdomen agudo · PENDIENTE DE VALIDACIÓN (propuesto 19/11/2026; datos verificados con el texto completo de WSES 2020 y 2022 el 20/11)
-Publicación prevista: miércoles 25/11 a las 14:00 (carrusel) y jueves 26/11 a las 14:00 (reel). Validar antes del lunes 23/11.
+## Episodio 2 · Abdomen agudo · APROBADO por Eduardo el 20/11/2026 y PROGRAMADO (datos verificados con el texto completo de WSES 2020 y 2022)
+Publicación prevista: miércoles 25/11 a las 14:00 (carrusel) y jueves 26/11 a las 14:00 (reel). Programado en Metricool (Instagram y TikTok).
 Etiqueta: «URGENCIAS EN 60 · MIR» · «CASOS 03-04 · EP. 02» · «Faltan 59 días» (a 25/11; examen 23/01/2027).
 Temas MIR de referencia (no copiados): 26-23 perforación; 25-18 gas portal; 26-3 isquemia intestinal.
 
