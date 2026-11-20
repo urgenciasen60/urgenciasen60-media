@@ -15,12 +15,12 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Publicada | Jueves 19/11/2026, 21:00 |
 | — | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
 | 08 | HTA en Urgencias: ¿200/110? No corras (9 diapos + reel «¿220 y a casa?») | `hta/` | **Programada** vie 4/12 21:00 (carrusel) y sáb 5/12 21:00 (reel) | — |
-| 04 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión | — |
+| 06 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión (antes del mié 25; sale vie 27) | — |
 | 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
-| 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión | — |
+| 07 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión (antes del vie 27; sale lun 30) | — |
 | 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | **Programada** mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
 | Técnica 01 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
-| Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión | — |
+| Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión (vídeo v4 el mar 24; revisar antes del lun 30; sale mié 2/12) | — |
 | Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Aplazada: no publicar cerca de la Ficha 04. Rehacer a 10 diapositivas + reel de 60 s | — |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
 | 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | **Programada** lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
@@ -64,7 +64,7 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - **18/11:** Eduardo decide separar técnica y clínica: el vídeo y el carrusel de Técnica 02 son solo técnica; indicaciones, TC previa y contraindicaciones pasan a la Ficha 08 (fuentes que aportó: Herlihy 2024 vía cbseram y Preevid 25020).
 - **18/11 (decisiones de Eduardo):** técnicas = carrusel + vídeo 60 s el MISMO día (primero el vídeo) y al día siguiente el reel corto, que termina remitiendo al carrusel y al vídeo. Vídeo PL v4 (próxima noche de render): ~60 s, máximo realismo, varón musculado, paño quirúrgico, cara visible permitida, corte sagital realista, plano del LCR con la mano retirando el fiador y luego las gotas, música del canal bajita. Ficha 08: solo adultos, hemocultivos antes, infección local y anticoagulación como contraindicaciones, con cifras (plaquetas > 40.000–50.000/µl, INR < 1,5; ABN 2026).
 - **18/11:** los números de ficha se asignan por orden de publicación (para el libro): asma = Ficha 03. Dolor torácico y Ficha 08 (PL) se renumerarán al publicarse.
-- **Plan 23/11–6/12 (propuesto 18/11):** lun 23 Ficha 04 PL ¿sí o no?; mié 25 Ficha 05 hipoglucemia (revisar antes del lun 23); vie 27 Técnica 01 PL: vídeo 60 s 14:00 + carrusel 21:00 (render mar 24, revisar antes del jue 26); lun 30 Ficha 06 sepsis (revisar antes del vie 27); mié 2/12 Ficha 07 cólico nefrítico (revisar antes del lun 30); vie 4/12 Ficha 08 HTA (aprobada 19/11; la técnica de epistaxis pasa a la siguiente semana). Reels al día siguiente de cada carrusel.
+- **Plan 23/11–6/12 (rehecho 20/11 a petición de Eduardo: no concentrar la punción lumbar en una semana):** lun 23 Ficha 04 PL ¿sí o no? + reel mar 24; mié 25 Ficha 05 hipoglucemia + reel jue 26; vie 27 Ficha 06 sepsis + reel sáb 28 (revisar antes del mié 25); lun 30 Ficha 07 cólico nefrítico + reel mar 1 (revisar antes del vie 27); mié 2/12 Técnica PL: vídeo 60 s a las 17:00 (no a las 14:00, que es de la serie MIR) + carrusel 21:00, reel jue 3 (render v4 mar 24; revisar vídeo y carrusel antes del lun 30); vie 4/12 Ficha 08 HTA + reel sáb 5 (programada). Serie MIR: dom 22 Ep. 01 (programado); mié 25 Ep. 02 abdomen (validar antes del lun 23); dom 29 Ep. 03 trauma; mié 2/12 Ep. 04 shock (remite a la Ficha 06 sepsis). Texto de la Ficha 04 cambiado a «Muy pronto, la técnica paso a paso en vídeo».
 
 ## Serie Cuenta atrás MIR (decidida el 18/11/2026)
 - Serie independiente de las fichas (no lleva ficha ni consume numeración; remite a la ficha si existe). Verde quirófano #0E4A37 + logo del canal en amarillo. Planificación y casos en el proyecto (`serie-mir-cuenta-atras`).
