@@ -45,6 +45,7 @@ Próximo número libre: Ficha 14 (borradores; al publicarse se renumeran por ord
 - 20/11: Eduardo aprueba la IC aguda/EAP. Para respetar el plan rehecho (sepsis vie 27, cólico lun 30, técnica PL mié 2/12), elige programarla el lun 7/12; por orden de publicación pasa a ser la **Ficha 09**.
 
 ## Reels
+- **21/11 (Eduardo):** en la cuadrícula del perfil Instagram recorta los reels a 3:4 (quita unos 240 px arriba y abajo) y se cortaba la primera palabra. Desde ahora el contenido del reel empieza a 340 px del borde superior (`tools/reel.py`), dentro de la zona visible en la cuadrícula. Rehechos con este ajuste los reels ya programados de PL (mar 24), MIR Ep. 01 (lun 23), hipoglucemia (jue 26) y HTA (sáb 5/12).
 Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba y marca abajo; un color de fondo por escena; varios elementos entran a la vez; golpe de zoom, transición deslizante y barra de progreso; ficha al final) que se publica al día siguiente: martes, jueves y sábado. Se generan con `tools/reel.py` (modelo: `tools/reel_anafilaxia.py`). Plantilla aprobada por Eduardo el 17/11/2026: intensidad suave (valores por defecto de `build`), unos 26 s, un color de fondo por escena, ficha al final. El reel reutiliza el contenido ya aprobado del carrusel, así que no necesita revisión clínica aparte: genera y programa el reel de cada carrusel aprobado para el día siguiente a las 21:00 (Instagram tipo REEL y TikTok).
 
 ## Notas de revisión

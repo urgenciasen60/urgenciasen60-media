@@ -19,7 +19,7 @@ def html(bg,blocks,shown,tema):
     body="".join(f'<div style="visibility:{"visible" if i<shown else "hidden"}">{b}</div>' for i,b in enumerate(blocks))
     return f'''<!doctype html><html><head><meta charset="utf-8"><style>@font-face{{font-family:Anton;src:url("file://{FONT}") format("woff2")}}body{{margin:0}}</style></head><body>
 <div style="width:1080px;height:1920px;box-sizing:border-box;background:{bg};color:{fg};font-family:Inter,sans-serif;position:relative;overflow:hidden">
-<div style="position:absolute;top:230px;bottom:640px;left:90px;right:90px;display:flex;flex-direction:column;justify-content:flex-start;gap:44px">{body}</div>
+<div style="position:absolute;top:340px;bottom:600px;left:90px;right:90px;display:flex;flex-direction:column;justify-content:flex-start;gap:44px">{body}</div>
 <div style="position:absolute;bottom:420px;left:90px;display:flex;flex-direction:column;gap:22px;align-items:flex-start">
 <div style="background:{tb};color:{tf};padding:12px 24px;border-radius:10px;font-size:28px;font-weight:800;letter-spacing:4px">URGENCIAS EN 60 · {tema}</div>
 <div style="font-size:38px;font-weight:800">@urgenciasen60</div></div>
