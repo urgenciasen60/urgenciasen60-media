@@ -17,7 +17,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 08 | HTA en Urgencias: ¿200/110? No corras (9 diapos + reel «¿220 y a casa?») | `hta/` | **Programada** vie 4/12 21:00 (carrusel) y sáb 5/12 21:00 (reel) | — |
 | 25 | Sepsis: la primera hora (+ reel) | `sepsis/` | Aprobada el 21/11; en reserva hasta el vie 22/1 (rehacer con GT-LATINFURG). Desprogramada el 22/11 | — |
 | 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
-| 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión (antes del lun 23; sale vie 27) | — |
+| 06 | Cólico nefrítico (+ reel) | `colico-nefritico/` | **Programada** vie 27/11 21:00 (carrusel) y sáb 28/11 21:00 (reel) | Aprobada por Eduardo el 22/11 (base EAU 2026) |
 | 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | **Programada** mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
 | Técnica 02 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
 | Técnica 01 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión (vídeo v4 el mar 24; revisar antes del lun 30; sale mié 2/12) | — |

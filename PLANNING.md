@@ -16,7 +16,7 @@ Versión 3 (22/11/2026), aprobada por Eduardo. Los números de ficha se fijan aq
 
 | Semana | Lunes | Miércoles | Viernes | Revisar antes de |
 |---|---|---|---|---|
-| 23–29 nov | ✔ Ficha 04 · Punción lumbar ¿sí o no? | ✔ Ficha 05 · Hipoglucemia | Ficha 06 · Cólico nefrítico | Cólico: lun 23 |
+| 23–29 nov | ✔ Ficha 04 · Punción lumbar ¿sí o no? | ✔ Ficha 05 · Hipoglucemia | ✔ Ficha 06 · Cólico nefrítico | — |
 | 30 nov–6 dic | Ficha 07 · Fibrilación auricular | **Técnica 01** · Punción lumbar (vídeo 17:00 + carrusel) | ✔ Ficha 08 · HTA en Urgencias | FA: mié 25 · Técnica PL: vie 27 |
 | 7–13 dic | Ficha 09 · Síncope | Ficha 10 · Código ictus | Ficha 11 · IC aguda y EAP | Todo antes del mar 8 (viaje 9-13) |
 | 14–20 dic | Ficha 12 · Agudización de EPOC | **Técnica 02** · Epistaxis (vídeo 17:00 + carrusel; render mar 15) | Ficha 13 · Vértigo (HINTS) | EPOC: mar 8 · Epistaxis: lun 14 · Vértigo: dom 13 |
