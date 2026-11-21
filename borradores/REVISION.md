@@ -4,7 +4,8 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
 
 ## Ficha 04 · Sepsis (`sepsis/`, con reel)
 - Fuente: Prescott HC, Antonelli M, Alhazzani W, et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2026. Crit Care Med. 2026. doi:10.1097/CCM.0000000000007075. Consultada a través de la página de la SCCM y de resúmenes (UMEM), no del texto completo.
-- [VERIFICAR] Hemocultivos antes del antibiótico, vasopresina como segundo fármaco, hidrocortisona y uso del lactato/relleno capilar: redactados según práctica habitual y SSC 2021; no los vi en el texto de 2026.
+- Verificado 21/11 con el texto de la SSC 2026 (Intensive Care Med, doi:10.1007/s00134-026-08361-1, y página de la SCCM): hemocultivos lo antes posible e idealmente antes del antibiótico (recomendación fuerte); añadir vasopresina cuando la noradrenalina va en aumento; corticoide IV sugerido en shock séptico; relleno capilar como complemento; lactato seriado. Nuevo en 2026: con disfunción cardíaca, noradrenalina o adrenalina como primer vasopresor (no incluido en la ficha).
+- Renumerada como Ficha 06 (sale vie 27/11).
 - Preguntas: ¿añadimos dosis de hidrocortisona (200 mg/día) y noradrenalina?; ¿citamos el documento INFURG-SEMES 2026 del atlas (no lo he localizado en abierto)?; ¿«Ringer lactato» como ejemplo o el balanceado de vuestro hospital?
 
 ## Ficha 05 · Crisis de asma (`crisis-asma/`)
