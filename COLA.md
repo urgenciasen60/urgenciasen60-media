@@ -15,12 +15,12 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Publicada | Jueves 19/11/2026, 21:00 |
 | — | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
 | 08 | HTA en Urgencias: ¿200/110? No corras (9 diapos + reel «¿220 y a casa?») | `hta/` | **Programada** vie 4/12 21:00 (carrusel) y sáb 5/12 21:00 (reel) | — |
-| 06 | Sepsis: la primera hora (+ reel) | `sepsis/` | **Programada** vie 27/11 21:00 (carrusel) y sáb 28/11 21:00 (reel) | Aprobada por Eduardo el 21/11 |
+| 25 | Sepsis: la primera hora (+ reel) | `sepsis/` | Aprobada el 21/11; en reserva hasta el vie 22/1 (rehacer con GT-LATINFURG). Desprogramada el 22/11 | — |
 | 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
-| 07 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión (antes del vie 27; sale lun 30) | — |
+| 06 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión (antes del vie 27; sale lun 30) | — |
 | 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | **Programada** mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
-| Técnica 01 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
-| Técnica 02 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión (vídeo v4 el mar 24; revisar antes del lun 30; sale mié 2/12) | — |
+| Técnica 02 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
+| Técnica 01 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión (vídeo v4 el mar 24; revisar antes del lun 30; sale mié 2/12) | — |
 | Guía 01 | Sepsis 2026: ¿qué cambia? | `borradores/guia-sepsis-2026/` | Aplazada: no publicar cerca de la Ficha 04. Rehacer a 10 diapositivas + reel de 60 s | — |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
 | 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | **Programada** lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
@@ -43,6 +43,8 @@ Próximo número libre: Ficha 14 (borradores; al publicarse se renumeran por ord
 - Para cubrirlos, aprobar por este orden: Técnica 02 PL (vie 27/11; falta el vídeo v4), Ficha 04 sepsis (lun 30/11) y Ficha 06 cólico nefrítico (mié 2/12).
 - Producidas hoy tres fichas de la Fase A con su reel: 11 código ictus, 12 IC aguda/EAP y 13 EPOC.
 - 20/11: Eduardo aprueba la IC aguda/EAP. Para respetar el plan rehecho (sepsis vie 27, cólico lun 30, técnica PL mié 2/12), elige programarla el lun 7/12; por orden de publicación pasa a ser la **Ficha 09**.
+
+**Planning vigente:** `PLANNING.md` (versión 3, aprobada el 22/11/2026), copia en el proyecto (`planning-publicaciones`). Manda sobre cualquier plan anterior de este archivo.
 
 ## Reels
 - **21/11 (Eduardo):** en la cuadrícula del perfil Instagram recorta los reels a 3:4 (quita unos 240 px arriba y abajo) y se cortaba la primera palabra. Desde ahora el contenido del reel empieza a 340 px del borde superior (`tools/reel.py`), dentro de la zona visible en la cuadrícula. Rehechos con este ajuste los reels ya programados de PL (mar 24), MIR Ep. 01 (lun 23), hipoglucemia (jue 26) y HTA (sáb 5/12).

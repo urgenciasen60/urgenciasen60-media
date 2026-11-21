@@ -1,6 +1,6 @@
 # Planning de publicaciones · 23/11/2026 – 31/01/2027
 
-Versión 2 (22/11/2026), pendiente de que Eduardo la apruebe. Los números de ficha se fijan aquí; si una pieza no llega a tiempo, entra la siguiente aprobada y se ajusta el número antes de publicar (nunca se renumera lo ya publicado).
+Versión 3 (22/11/2026), aprobada por Eduardo. Los números de ficha se fijan aquí; si una pieza no llega a tiempo, entra la siguiente aprobada y se ajusta el número antes de publicar (nunca se renumera lo ya publicado).
 
 **Ritmo (algo cada día):**
 - **Lunes, miércoles y viernes, 21:00:** fichas y técnicas. Reel al día siguiente a las 21:00.
@@ -9,7 +9,7 @@ Versión 2 (22/11/2026), pendiente de que Eduardo la apruebe. Los números de fi
 - **Serie MIR:** domingo y miércoles a las 14:00 (el Ep. 01 ya estaba a las 20:00); reel al día siguiente a las 14:00.
 - **Sin publicación:** viernes 25/12 y viernes 1/1.
 
-**Cupos:** una guía al mes; papers, 4-5 por trimestre (3 en este periodo); 2 técnicas.
+**Cupos:** una guía al mes; papers, 4-5 por trimestre (3 en este periodo); una técnica cada 2-3 miércoles (los vídeos son costosos de producir). El miércoles de técnica no sale ficha. Las técnicas se numeran por orden de publicación: la punción lumbar es la Técnica 01 y la epistaxis la Técnica 02.
 **Revisión:** cada pieza, aprobada 5 días antes. ✔ = aprobada y programada.
 
 ## Lunes, miércoles y viernes (21:00)
@@ -17,16 +17,17 @@ Versión 2 (22/11/2026), pendiente de que Eduardo la apruebe. Los números de fi
 | Semana | Lunes | Miércoles | Viernes | Revisar antes de |
 |---|---|---|---|---|
 | 23–29 nov | ✔ Ficha 04 · Punción lumbar ¿sí o no? | ✔ Ficha 05 · Hipoglucemia | Ficha 06 · Cólico nefrítico | Cólico: lun 23 |
-| 30 nov–6 dic | Ficha 07 · Fibrilación auricular | Técnica 02 · Punción lumbar | ✔ Ficha 08 · HTA en Urgencias | FA: mié 25 · Técnica PL: vie 27 |
+| 30 nov–6 dic | Ficha 07 · Fibrilación auricular | **Técnica 01** · Punción lumbar (vídeo 17:00 + carrusel) | ✔ Ficha 08 · HTA en Urgencias | FA: mié 25 · Técnica PL: vie 27 |
 | 7–13 dic | Ficha 09 · Síncope | Ficha 10 · Código ictus | Ficha 11 · IC aguda y EAP | Todo antes del mar 8 (viaje 9-13) |
-| 14–20 dic | Ficha 12 · Agudización de EPOC | Técnica 01 · Epistaxis (render mar 15) | Ficha 13 · Vértigo (HINTS) | EPOC: mar 8 · Epistaxis: lun 14 · Vértigo: dom 13 |
+| 14–20 dic | Ficha 12 · Agudización de EPOC | **Técnica 02** · Epistaxis (vídeo 17:00 + carrusel; render mar 15) | Ficha 13 · Vértigo (HINTS) | EPOC: mar 8 · Epistaxis: lun 14 · Vértigo: dom 13 |
 | 21–27 dic | Ficha 14 · SCACEST | Ficha 15 · Cetoacidosis diabética | Navidad | SCACEST: mié 16 · CAD: vie 18 |
 | 28 dic–3 ene | Ficha 16 · Crisis epiléptica y estatus | Ficha 17 · ITU y pielonefritis | Año Nuevo | Lun 28: mié 23 · Mié 30: vie 25 |
-| 4–10 ene | Ficha 18 · TEP | Ficha 19 · Hemorragia digestiva alta | Ficha 20 · Agitación psicomotriz | Lun 4: mié 30 · Mié 6: vie 1 · Vie 8: dom 3 |
-| 11–17 ene | Ficha 21 · Neumonía: gravedad y destino | Ficha 22 · Hiponatremia | Ficha 23 · Shock: abordaje inicial | Lun 11: mié 6 · Mié 13: vie 8 · Vie 15: dom 10 |
-| 18–24 ene | Ficha 24 · Taquicardia supraventricular | Ficha 25 · Bradicardia sintomática | Ficha 26 · Sepsis (rehecha con GT-LATINFURG) | Lun 18: mié 13 · Mié 20: vie 15 · Vie 22: dom 17 |
+| 4–10 ene | Ficha 18 · TEP | **Técnica 03** · Toracocentesis (vídeo 17:00 + carrusel; render mar 5) | Ficha 19 · Hemorragia digestiva alta | TEP: mié 30 · Toracocentesis: contenido antes del mar 29/12 · HDA: dom 3 |
+| 11–17 ene | Ficha 20 · Agitación psicomotriz | Ficha 21 · Neumonía: gravedad y destino | Ficha 22 · Hiponatremia | Lun 11: mié 6 · Mié 13: vie 8 · Vie 15: dom 10 |
+| 18–24 ene | Ficha 23 · Shock: abordaje inicial | Ficha 24 · Taquicardia supraventricular | Ficha 25 · Sepsis (rehecha con GT-LATINFURG) | Lun 18: mié 13 · Mié 20: vie 15 · Vie 22: dom 17 |
+| 25–31 ene | … | **Técnica 04** · por decidir (mié 27/1) | … | |
 
-Reserva: dolor torácico (en espera de Eduardo).
+Reserva: dolor torácico (en espera de Eduardo) y bradicardia sintomática.
 
 ## Domingos (guías y papers, 21:00; reel recordatorio el domingo siguiente, 12:00)
 
@@ -70,6 +71,6 @@ PDF con los 36 casos: hacia el sábado 9/01/2027.
 
 ## Hitos
 - Ficha 10 (código ictus, mié 9/12): aviso para preparar el PDF de las 10 primeras fichas.
-- Noches de render (martes): 24/11 vídeo de la punción lumbar; 15/12 vídeo de la epistaxis.
+- Noches de render (martes): 24/11 punción lumbar; 15/12 epistaxis; 5/1 toracocentesis.
 - Viaje de Eduardo del 9 al 13/12: síncope, código ictus, IC aguda, EPOC, Paper 01 y MIR 06–07 aprobados antes del martes 8.
 - Carga de revisión: unas 3 fichas por semana más 2 episodios MIR y, cada dos semanas, una guía o un paper.
