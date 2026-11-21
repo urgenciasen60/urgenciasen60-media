@@ -15,7 +15,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 02 (reel) | Hiperpotasemia, reel de 26 s | `hiperpotasemia/` | Publicada | Jueves 19/11/2026, 21:00 |
 | — | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
 | 08 | HTA en Urgencias: ¿200/110? No corras (9 diapos + reel «¿220 y a casa?») | `hta/` | **Programada** vie 4/12 21:00 (carrusel) y sáb 5/12 21:00 (reel) | — |
-| 06 | Sepsis: la primera hora (+ reel) | `borradores/sepsis/` | Pendiente de revisión (antes del mié 25; sale vie 27) | — |
+| 06 | Sepsis: la primera hora (+ reel) | `sepsis/` | **Programada** vie 27/11 21:00 (carrusel) y sáb 28/11 21:00 (reel) | Aprobada por Eduardo el 21/11 |
 | 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
 | 07 | Cólico nefrítico | `borradores/colico-nefritico/` | Pendiente de revisión (antes del vie 27; sale lun 30) | — |
 | 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | **Programada** mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
