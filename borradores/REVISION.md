@@ -126,3 +126,4 @@ Dudas y discrepancias:
 - «pH < 7,25: valora intubación y UCI» es de GesEPOC; la ERS/ATS no fija un pH mínimo para intentar la VMNI.
 - Parámetros iniciales de VMNI (IPAP/EPAP): ninguna fuente leída los da; no se incluyen.
 - Criterios de ingreso: tabla 9 de GesEPOC (se omiten PaCO2 > 50 sin hipercapnia previa, comorbilidad y soporte domiciliario por espacio).
+- 21/11 (Eduardo): añadir dosis de hidrocortisona y noradrenalina y ejemplos de antibiótico (sin dosis). Dosis tomadas del protocolo basado en SSC 2021 (Michigan Medicine, NCBI Bookshelf NBK598311): NA inicio 0,05–0,15 µg/kg/min; vasopresina 0,03 UI/min cuando NA 0,25–0,5; hidrocortisona 50 mg/6 h si NA ≥ 4 h. Antibióticos: ejemplos genéricos [VERIFICAR con la guía antimicrobiana del HUPM (guia.implemento.es)].
