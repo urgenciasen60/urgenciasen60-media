@@ -137,3 +137,4 @@ Dudas y discrepancias:
 - Diferencia con la guía HUPM: fluidos (HUPM, primeros 30 min; aquí 3 h, como SSC y GT). Decide Eduardo.
 - Texto leído hasta ~200000 de 219060 caracteres (el resto son referencias); la Figura 3 (algoritmo) no es legible.
 - Pregunta: ¿franja azul para Guía y Paper?
+- 23/11 (Eduardo): fluidos de la Guía 01 a 3 h (SSC y GT-LATINFURG); se trata como errata la cifra de 30 min de la guía HUPM. Corrección del editor de la SSC (Intensive Care Med 2026;52:1411-3, doi:10.1007/s00134-026-08410-9) leída en la ficha del repositorio de UMC Utrecht: solo corrige apellidos de cuatro autores; no toca recomendaciones.
