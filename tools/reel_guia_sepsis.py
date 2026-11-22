@@ -2,18 +2,16 @@ import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from reel import *
 ROOT=os.path.dirname(HERE); BL="#0B4F9E"
 sp=lambda h: f'<div style="height:{h}px"></div>'
-ficha="file://"+os.path.join(ROOT,"borradores","guia-01-sepsis","urgenciasen60-guia-sepsis-2026-11.jpg")
+portada="file://"+os.path.join(ROOT,"borradores","guia-01-sepsis","urgenciasen60-guia-sepsis-2026-1.jpg")
 S=[
- (BL,[kicker("GUÍA 01")+sp(10)+big("SEPSIS<br>2026",300),big("PASO A PASO<br>EN TU GUARDIA",140,Y)],[2]),
- (W,[kicker("1 · DETECTA",G)+sp(20)+big("CÓDIGO<br>SEPSIS",230,BL),txt("Infección + qSOFA ≥ 2, SIRS ≥ 2 o NEWS-2 ≥ 5",62)+sp(16)+txt("El qSOFA solo no basta",58,G)],[1,2]),
- (BL,[kicker("LAS ESCALAS")+sp(20)+big("QSOFA<br>SIRS<br>NEWS-2",230,Y),txt("Criterios en el carrusel. Guárdalo.",60)],[1,2]),
- (K,[kicker("2 · LACTATO")+sp(20)+big("≥ 2 MMOL/L",190,Y),txt("En el triaje. Repítelo",64)+sp(16)+txt("Hemocultivos antes del antibiótico",60)],[1,2]),
- (W,[kicker("3 · ANTIBIÓTICO",G)+sp(20)+f'<div style="{A};font-size:220px;white-space:nowrap;color:{BL}">EN 1 HORA</div>',txt("Shock o sepsis probable. Hasta 3 h si es solo posible",60)+sp(16)+txt("Sin foco: ceftriaxona",60,BL)],[1,2]),
- (BL,[kicker("4 · FLUIDOS")+sp(20)+big("30 ML/KG",250,Y),txt("Cristaloide balanceado en 3 h",66)+sp(16)+txt("Reevalúa. Sin almidones",58,"#DCE6F5")],[1,2]),
- (W,[kicker("5 · NORADRENALINA",G)+sp(20)+big("0,05–0,15",220,BL),txt("µg/kg/min, por vía periférica",64)+sp(16)+txt("Objetivo PAM ≥ 65 mmHg",64)],[1,2]),
- (K,[kicker("6 · SI PERSISTE")+sp(20)+big("AVISA<br>A UCI",230,Y),txt("Hidrocortisona 50 mg/6 h IV",64)],[1,2]),
- (BL,[kicker("Y SIEMPRE")+sp(20)+big("CONTROLA<br>EL FOCO",220,Y),txt("En las primeras 6 horas",66)],[1,2]),
- (K,[big("GUÍA 01",130,Y),f'<img src="{ficha}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Guárdala.",50)],[3]),
+ (BL,[kicker("GUÍA 01")+sp(10)+big("SEPSIS<br>2026",270),big("LA GUÍA<br>DE URGENCIAS",125,Y)],[2]),
+ (W,[kicker("LA FUENTE",G)+sp(20)+big("GT-<br>LATINFURG",230,BL),txt("INFURG-SEMES · Emergencias 2026",60)],[1,2]),
+ (BL,[kicker("1 · DETECTA")+sp(20)+big("DESDE EL<br>TRIAJE",230,Y),txt("Escalas sencillas que activan el código sepsis",62)],[1,2]),
+ (K,[kicker("2 · EL TIEMPO MANDA")+sp(20)+big("PRIMERA<br>HORA",230,Y),txt("Lactato, cultivos y antibiótico",62)+sp(16)+txt("Elige el antibiótico según el foco",60,Y)],[1,2]),
+ (BL,[kicker("3 · REANIMA")+sp(20)+big("FLUIDOS Y<br>NORADRE&shy;NALINA",200,Y),txt("Sin esperar a la vía central, con un objetivo claro",62)],[1,2]),
+ (W,[kicker("4 · SI NO RESPONDE",G)+sp(20)+big("AVISA A UCI<br>Y CONTROLA<br>EL FOCO",190,BL)],[1,2]),
+ (BL,[kicker("EVITA")+sp(20)+big("CINCO<br>ERRORES",250,Y),txt("Los que más se repiten en la guardia",62)],[1,2]),
+ (K,[big("GUÍA 01",130,Y),f'<img src="{portada}" style="width:500px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Guárdalo.",50)],[3]),
 ]
 import wave
 VOZ=os.environ.get("VOZ","/tmp/loc")

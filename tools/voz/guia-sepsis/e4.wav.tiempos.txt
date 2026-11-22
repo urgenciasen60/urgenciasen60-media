@@ -1,3 +1,0 @@
-0.0	Antibiótico en una hora si hay shock o sepsis probable.
-3.37	Hasta tres horas, si la sepsis es solo posible.
-6.65	Sin foco, ceftriaxona.
