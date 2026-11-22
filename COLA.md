@@ -21,7 +21,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | **Programada** mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
 | Técnica 02 | Epistaxis: de la compresión al taponamiento (+ reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (prototipo de la familia Técnica) | — |
 | Técnica 01 | Punción lumbar (+ reel) | `borradores/tecnica-puncion-lumbar/` | Pendiente de revisión (vídeo v4 el mar 24; revisar antes del lun 30; sale mié 2/12) | — |
-| Guía 01 | Sepsis en Urgencias 2026 (GT-LATINFURG), 11 diapositivas (azul de familia, con qSOFA y SIRS) + reel-resumen de 49 s con locución (voz D) | `borradores/guia-01-sepsis/` | Pendiente de revisión de Eduardo antes del mié 25/11; sale dom 29/11 21:00, reel dom 6/12 12:00 | Familia Guía = azul entera; Paper = violeta (confirmado por Eduardo el 22/11) |
+| Guía 01 | Sepsis en Urgencias 2026 (GT-LATINFURG), 11 diapositivas (azul de familia, con qSOFA y SIRS) + reel-resumen de 49 s con locución (voz D) | `borradores/guia-01-sepsis/` | Pendiente de revisión de Eduardo antes del mié 25/11; sale dom 29/11 21:00, reel dom 6/12 12:00 | Familia Guía = azul entera; Paper = violeta #962AF5 (22/11) |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
 | 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | **Programada** lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
 | 09 | Fibrilación auricular en Urgencias | `borradores/fibrilacion-auricular/` | Pendiente de revisión (18/11) | — |
@@ -76,3 +76,4 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - Carrusel de 7: portada, caso 1, pausa, solución 1, caso 2, solución 2, clave MIR. Reel: `tools/reel_mir_ep01.py` como modelo (caso → «piensa» 3 s → respuesta), con la música del canal.
 
 **Regla de reels (22/11, Eduardo):** el reel es un gancho a la publicación, no un resumen de datos. Explica de qué va la pieza, sin dosis ni cifras sueltas, y remite al carrusel o a la ficha («elige el antibiótico según el foco» en vez de «ceftriaxona»). Aplica a todos los reels nuevos.
+**Locución (22/11, Eduardo):** qSOFA se lee «quicksofa»; SIRS y UCI, tal cual (se escriben así en el texto de locución, sin deletrear).
