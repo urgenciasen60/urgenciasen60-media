@@ -1,0 +1,3 @@
+Antibiótico en una hora si hay shock o sepsis probable.
+Hasta tres horas, si la sepsis es solo posible.
+Sin foco, ceftriaxona.

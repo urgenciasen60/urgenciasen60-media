@@ -1,0 +1,3 @@
+0.0	Primero, detecta.
+1.59	Sospecha de infección y uno de estos criterios: cusofa de dos o más, sirs de dos o más, o news dos de cinco o más.
+7.95	El cusofa, solo, no basta.

@@ -1,0 +1,3 @@
+Primero, detecta.
+Sospecha de infección y uno de estos criterios: cusofa de dos o más, sirs de dos o más, o news dos de cinco o más.
+El cusofa, solo, no basta.
