@@ -76,4 +76,4 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - Carrusel de 7: portada, caso 1, pausa, solución 1, caso 2, solución 2, clave MIR. Reel: `tools/reel_mir_ep01.py` como modelo (caso → «piensa» 3 s → respuesta), con la música del canal.
 
 **Regla de reels (22/11, Eduardo):** el reel es un gancho a la publicación, no un resumen de datos. Explica de qué va la pieza, sin dosis ni cifras sueltas, y remite al carrusel o a la ficha («elige el antibiótico según el foco» en vez de «ceftriaxona»). Aplica a todos los reels nuevos.
-**Locución (22/11, Eduardo):** qSOFA se lee «quicksofa»; SIRS y UCI, tal cual (se escriben así en el texto de locución, sin deletrear).
+**Locución (22/11, Eduardo):** qSOFA se lee «quicksofa»; SIRS, tal cual; UCI se escribe «uci» en minúscula en el texto de locución (en mayúsculas Piper la deletrea).
