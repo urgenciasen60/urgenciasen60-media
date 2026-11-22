@@ -4,12 +4,15 @@ Y="#FFD60A"; K="#111111"; R="#D7141A"; G="#4A4A4A"
 FONT=os.path.join(os.path.dirname(os.path.abspath(__file__)),"fonts","anton-latin-400-normal.woff2")
 A="font-family: Anton, sans-serif; line-height: 1.02"
 B="#0B4F9E"
-def page(n,total,tema,body,cover=False,ficha=None,strip=None,fam="FICHA",dark=False):
+def page(n,total,tema,body,cover=False,ficha=None,strip=None,fam="FICHA",dark=False,famc=None):
     """strip: color de la franja superior (rojo por defecto; negro = Técnica; azul B = Paper/Guía). fam: FICHA, TÉCNICA, PAPER, GUÍA."""
     strip = strip or R
     bg = Y if cover else "#FFFFFF"; fb = K if cover else Y; ff = Y if cover else K
     fg=K; tb=K; tf="#FFF"
     if dark: bg=K; fg="#FFFFFF"; fb=Y; ff=K; tb=Y; tf=K   # portada negra: familia Técnica
+    if famc:   # familia con color propio (Guía): portada y pie en el color de familia
+        strip=famc; bg=famc if cover else "#FFFFFF"; fg="#FFFFFF" if cover else K
+        fb="#FFFFFF" if cover else famc; ff=famc if cover else "#FFFFFF"
     right = f"{fam} {ficha}" if ficha else f"{n} / {total}"
     last = "Guárdalo" if ficha else "Desliza →"
     return f'''<!doctype html><html><head><meta charset="utf-8"><style>@font-face{{font-family:Anton;src:url("file://{FONT}") format("woff2")}}body{{margin:0}}</style></head><body>

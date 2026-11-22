@@ -10,7 +10,7 @@ FONT=os.path.join(HERE,"fonts","anton-latin-400-normal.woff2")
 Y="#FFD60A"; K="#111111"; R="#D7141A"; G="#4A4A4A"; W="#FFFFFF"
 A="font-family:Anton,sans-serif;line-height:1.02"
 THEME={  # fondo: (texto, acento, secundario, fondo etiqueta, texto etiqueta)
- Y:(K,R,K,K,W), W:(K,R,G,K,W), R:(W,Y,W,K,W), K:(W,Y,"#CFCFCF",Y,K)}
+ "#0B4F9E":(W,Y,"#DCE6F5",W,"#0B4F9E"), Y:(K,R,K,K,W), W:(K,R,G,K,W), R:(W,Y,W,K,W), K:(W,Y,"#CFCFCF",Y,K)}
 def big(t,size,color=None): return f'<div style="{A};font-size:{size}px;{"color:"+color if color else ""}">{t}</div>'
 def txt(t,size=64,color=None,weight=800): return f'<div style="max-width:800px;font-size:{size}px;font-weight:{weight};line-height:1.2;{"color:"+color if color else ""}">{t}</div>'
 def kicker(t,color=None): return f'<div style="font-size:46px;font-weight:800;letter-spacing:7px;{"color:"+color if color else ""}">{t}</div>'
