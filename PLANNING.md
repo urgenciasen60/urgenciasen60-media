@@ -33,8 +33,8 @@ Reserva: dolor torácico (en espera de Eduardo) y bradicardia sintomática.
 
 | Domingo | 21:00 | 12:00 (reel recordatorio) | Revisar antes de |
 |---|---|---|---|
-| 29/11 | **Guía 01** · Sepsis en Urgencias 2026 (GT-LATINFURG) | — | mié 25 |
-| 6/12 | — | Reel Guía 01 | (va con la guía) |
+| 29/11 | ✔ **Guía 01** · Sepsis en Urgencias 2026 (GT-LATINFURG) | — | — |
+| 6/12 | — | ✔ Reel Guía 01 | — |
 | 13/12 | **Paper 01** · Ensayo BEST (bougie en trauma grave) | — | mar 8 (viaje) |
 | 20/12 | **Guía 02** · ERC 2025: qué cambia en la RCP | Reel Paper 01 | mar 15 |
 | 27/12 | — | Reel Guía 02 | — |
