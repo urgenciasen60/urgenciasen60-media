@@ -15,13 +15,13 @@ L={
  (Y,[kicker("Y SIEMPRE")+sp(30)+big("CONTROLA EL FOCO",210,R),txt("Hemocultivos antes del antibiótico, sin retrasarlo",62)],[(1,1.6),(2,2.6)]),
  fin("sepsis","sepsis","FICHA 04")]),
 "epistaxis":("EPISTAXIS","urgenciasen60-tecnica-epistaxis-reel.mp4",[
- (K,[kicker("TÉCNICA 01")+sp(20)+big("EPISTAXIS",250,Y),big("CINCO PASOS,<br>EN ORDEN",170)],[(2,3.2)]),
+ (K,[kicker("TÉCNICA 02")+sp(20)+big("EPISTAXIS",250,Y),big("CINCO PASOS,<br>EN ORDEN",170)],[(2,3.2)]),
  (Y,[f'<div style="{A};font-size:420px;line-height:.9;color:{R}">1</div>'+big("COMPRIME",230),txt("Tercio inferior de la nariz, firme, 5 minutos o más",66)+sp(20)+txt("Sentado y con la cabeza hacia delante",58)],[(1,1.6),(2,3.0)]),
  (W,[f'<div style="{A};font-size:420px;line-height:.9;color:{R}">2</div>'+big("VASOCONS&shy;TRICTOR",190),txt("Algodón con anestésico local y vasoconstrictor, 5–10 min",64)],[(1,1.6),(2,2.6)]),
  (K,[f'<div style="{A};font-size:420px;line-height:.9;color:{Y}">3</div>'+big("BUSCA EL PUNTO",210),txt("Rinoscopia anterior con buena luz, sin coágulos",64)],[(1,1.6),(2,2.4)]),
  (R,[f'<div style="{A};font-size:420px;line-height:.9;color:{Y}">4</div>'+big("CAUTERIZA",230),txt("Nitrato de plata solo en el punto. Nunca los dos lados del tabique",62)],[(1,1.6),(2,2.8)]),
  (Y,[f'<div style="{A};font-size:420px;line-height:.9;color:{R}">5</div>'+big("TAPONA",260),txt("Si persiste o no ves el punto. Reabsorbible si toma antitrombóticos",62)],[(1,1.6),(2,2.8)]),
- fin("tecnica-epistaxis","tecnica-epistaxis","TÉCNICA 01")]),
+ fin("tecnica-epistaxis","tecnica-epistaxis","TÉCNICA 02")]),
 "pl":("PUNCIÓN LUMBAR","urgenciasen60-tecnica-puncion-lumbar-reel.mp4",[   # rehecho 25/11: solo técnica, gancho al vídeo y al carrusel
  (K,[kicker("TÉCNICA 01")+sp(20)+big("PUNCIÓN LUMBAR",215,Y),big("PASO A<br>PASO",190)],[(2,3.2)]),
  (Y,[kicker("POSICIÓN")+sp(30)+big("TODO EMPIEZA AQUÍ",200,R),txt("Decúbito lateral, en flexión, con la espalda en el borde",62)],[(1,1.6),(2,3.0)]),

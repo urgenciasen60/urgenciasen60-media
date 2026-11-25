@@ -23,8 +23,13 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
 - [VERIFICAR] La dosis IV (10–25 g; 100–250 ml al 10 % o 20–50 ml al 50 %) y los criterios de observación NO salen de la ADA: son práctica habitual. Necesita una fuente española (¿protocolo SEMES-Diabetes o el de vuestro hospital?).
 - Preguntas: ¿qué pauta IV usáis (glucosmón al 33 % o al 50 %)?; ¿horas de observación con sulfonilureas?
 
-## Técnica 01 · Epistaxis (`tecnica-epistaxis/`, con reel) — prototipo de la familia Técnica
+## Técnica 02 · Epistaxis (`tecnica-epistaxis/`, con reel) — prototipo de la familia Técnica
 - Fuentes: Tunkel DE, Anne S, Payne SC, et al. Clinical practice guideline: nosebleed (epistaxis). Otolaryngol Head Neck Surg. 2020;162(1 Suppl):S1-38. doi:10.1177/0194599819890327 [VERIFICAR DOI]; protocolo de Urgencias de La Rioja para el algodón con anestésico y vasoconstrictor.
+- 25/11 (vídeo v2, 60 s sin voz). Dudas para Eduardo:
+  - La compresión la hace el propio paciente con su mano (con guante se veía como un bulto). ¿Bien así?
+  - Corte sagital de elaboración propia sobre la cabeza del modelo: proporciones aproximadas, no medidas en imagen real. El área de Kiesselbach se sitúa en el tercio anteroinferior del tabique.
+  - «Paralelo al suelo de la fosa» sigue marcado [VERIFICAR] en el guion: es técnica habitual, no enunciado de la guía.
+  - El reel solo se ha renumerado; sigue teniendo cifras y no cumple aún la regla del 22/11 (gancho sin datos). Lo rehago cuando apruebes el contenido.
 - Preguntas: ¿añadimos el ácido tranexámico tópico (la guía de 2020 no lo recoge)?; ¿nombramos materiales genéricos (esponja expansible, gasa orillada)?; ¿os convence la portada negra y la numeración de pasos como seña de la familia?
 
 ## Técnica 02 · Punción lumbar (`tecnica-puncion-lumbar/`, con reel)
