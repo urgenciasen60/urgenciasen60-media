@@ -69,6 +69,8 @@ Fuente: «Manejo de la epistaxis», sesión general del Servicio ORL del HU Ála
 | Balón posterior de 2 cámaras | Epistat® |
 | Varilla de nitrato de plata | Argenpal® |
 
+En el HUPM hay Merocel, Surgicel, Spongostan y Argenpal; no hay Nasopore. En la v3 se usan solo esos cuatro más el balón; Nasopore queda fuera.
+
 Fármacos (anestésico tópico, ácido tranexámico, pomada antibiótica): solo con su nombre genérico.
 
 Regla para la v3, por defecto mientras Eduardo no diga otra cosa: en pantalla, nombre genérico seguido de «tipo Merocel®» en letra pequeña. La marca nunca va sola ni como recomendación.
