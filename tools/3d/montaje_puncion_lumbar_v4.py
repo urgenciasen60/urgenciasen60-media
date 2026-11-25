@@ -73,7 +73,11 @@ for k in range(0, len(OVL), 12):
     out = f"ovl_{k}.mp4"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", cur]+ins+["-filter_complex", ";".join(fcx), "-map", last, "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", out], check=True); cur = out
 subprocess.run(["python3", f"{REPO}/tools/musica.py", "musica.wav", str(END)], check=True, capture_output=True)
+# versión con locución (música baja) y versión sin voz (solo subtítulos y música, a volumen normal)
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", cur, "-i", "/home/claude/v3d/pl_voz.wav", "-i", "musica.wav", "-filter_complex",
   f"[1:a]loudnorm=I=-16:TP=-1.5,apad[v];[2:a]volume=0.08,afade=t=out:st={END-2.5:.2f}:d=2.5[m];[v][m]amix=inputs=2:duration=first:normalize=0[a]",
   "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", str(END), "urgenciasen60-tecnica-puncion-lumbar-video60.mp4"], check=True)
+subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", cur, "-i", "musica.wav", "-filter_complex",
+  f"[1:a]loudnorm=I=-16:TP=-1.5,afade=t=in:st=0:d=0.8,afade=t=out:st={END-2.5:.2f}:d=2.5[a]",
+  "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", str(END), "urgenciasen60-tecnica-puncion-lumbar-video60-sin-voz.mp4"], check=True)
 print("hecho", END)

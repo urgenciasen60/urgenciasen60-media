@@ -58,6 +58,7 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
   - El paño cubre pelvis y glúteos y deja libre la línea de crestas; en la vista transparente solo se ven columna, sacro y palas ilíacas.
   - Gotas de LCR transparentes (líquido claro), una por segundo. ¿Prefieres un tubo de muestras debajo?
   - Quité las pausas largas de la locución para llegar a 60 s (mismo texto); el reel del día siguiente no se ha rehecho.
+  - 25/11: añadido el tubo de muestras y guante mate; dos versiones (con locución / sin voz, solo subtítulos y música). ¿Cuál publicamos?
   - Carrusel renumerado de «Técnica 02» a «Técnica 01» (solo cambia el número), según `PLANNING.md`.
 
 ## Ficha 05 · Crisis de asma (rehecha 18/11)

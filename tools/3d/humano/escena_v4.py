@@ -71,12 +71,16 @@ YEL = M("amarillo", (1.0, 0.72, 0.0), 0.45, e=0.35); RED = M("rojo", (0.50, 0.0,
 BED = M("camilla", (0.003, 0.003, 0.0035), 0.62); bn = tex(BED, "ShaderNodeTexNoise", 260, 3); bump(BED, bn.outputs["Fac"], 0.06, 0.0006)
 DRAPE = M("pano", (0.025, 0.12, 0.22), 0.85); DRAPE.node_tree.nodes["Principled BSDF"].inputs["Sheen Weight"].default_value = 0.35
 wv = tex(DRAPE, "ShaderNodeTexWave", 900); bump(DRAPE, wv.outputs["Fac"], 0.08, 0.0003)
-GLOVE = M("guante", (0.74, 0.75, 0.76), 0.38, sss=0.04); gn = tex(GLOVE, "ShaderNodeTexNoise", 700, 2); bump(GLOVE, gn.outputs["Fac"], 0.04, 0.0002)
+GLOVE = M("guante", (0.50, 0.51, 0.52), 0.68, sss=0.04); bsdf(GLOVE).inputs["Specular IOR Level"].default_value = 0.25   # guante mate (25/11)
+gn = tex(GLOVE, "ShaderNodeTexNoise", 700, 2); bump(GLOVE, gn.outputs["Fac"], 0.08, 0.0002)
 STEEL = M("acero", (0.92, 0.92, 0.95), 0.12, metal=1.0); HUBM = M("cono", (1.0, 0.80, 0.08), 0.22); HUBM2 = M("cono_fiador", (1.0, 0.86, 0.25), 0.3)
 SCLERA = M("esclera", (0.85, 0.82, 0.78), 0.15); IRIS = M("iris", (0.16, 0.09, 0.05), 0.2); PUPIL = M("pupila", (0.0, 0.0, 0.0), 0.05)
 LCR = bpy.data.materials.new("lcr"); LCR.use_nodes = True; lb = bsdf(LCR)
 lb.inputs["Base Color"].default_value = (0.95, 0.97, 1.0, 1); lb.inputs["Transmission Weight"].default_value = 1.0
 lb.inputs["Roughness"].default_value = 0.02; lb.inputs["IOR"].default_value = 1.335
+PLAST = bpy.data.materials.new("tubo"); PLAST.use_nodes = True; pb = bsdf(PLAST)
+pb.inputs["Base Color"].default_value = (0.90, 0.92, 0.95, 1); pb.inputs["Transmission Weight"].default_value = 0.85; pb.inputs["Roughness"].default_value = 0.20; pb.inputs["IOR"].default_value = 1.49
+LABEL = M("etiqueta", (0.88, 0.88, 0.86), 0.7); CAPM = M("tapon_rojo", (0.55, 0.02, 0.03), 0.4)
 
 # ---------- esqueleto lumbar y pelvis: se modela sobre la malla neutra y se deforma con los cambios de las articulaciones
 sk = json.load(open(humano.D+"rigs/default.mhskel"))
@@ -312,20 +316,45 @@ if A and A[0] == "anim":
             p1 = hubend+Vector((0.17, 0.035, 0.02)); t1 = hubend+Vector((0, 0.006, -0.035))
             if "catch" not in globals():
                 globals()["catch"] = area(hubend+Vector((0.12, 0.08, 0.06)), hubend, 1.2, (1.0, 0.95, 0.9), 0.04)
+            catch.data.energy = 0.0 if u < 0.34 else 1.2
             if u < 0.34:                 # 1.º plano: aguja en vertical, la mano tira del fiador hacia arriba
                 mid = P45+dirv*0.135; aim(mid+Vector((0.36, 0.0, 0.03)), mid, 50, dirv, focus=mid)
             else:                        # 2.º plano: el cono de cerca y las gotas cayendo
-                k = ease(min(1, (u-0.34)/0.2)); aim(p0.lerp(p1, 0.6+0.4*k), t0.lerp(t1, 0.6+0.4*k), 50+6*k, Vector((0, 0, 1)), focus=hubend)
+                k = ease(min(1, (u-0.34)/0.2)); aim(p0.lerp(p1, 0.6+0.4*k), t0.lerp(t1, 0.6+0.4*k), 50+6*k, Vector((0, 0, 1)), focus=hubend-Vector((0, 0, 0.025)))
             if "drops" not in globals():
                 globals()["drops"] = []
                 for i in range(6):
                     bpy.ops.mesh.primitive_uv_sphere_add(radius=0.0027, location=AWAY, segments=24, ring_count=12); o = bpy.context.object
                     o.data.materials.append(LCR); bpy.ops.object.shade_smooth(); drops.append(o)
+            # tubo de muestras estéril bajo el cono (25/11): recoge las gotas y el nivel sube
+            drip = hubend+dirv*0.0015; MOUTH = drip+Vector((0, 0, -0.018)); TL = 0.085; TR = 0.0065
+            if "tube" not in globals():
+                bpy.ops.mesh.primitive_cylinder_add(radius=TR, depth=TL, location=MOUTH-Vector((0, 0, TL/2)), vertices=48, end_fill_type='NOTHING'); tb = bpy.context.object
+                bpy.ops.object.mode_set(mode='EDIT'); bpy.ops.mesh.select_all(action='DESELECT'); bpy.ops.object.mode_set(mode='OBJECT')
+                for vv in tb.data.vertices: vv.select = vv.co.z < 0
+                bpy.ops.object.mode_set(mode='EDIT'); bpy.ops.mesh.fill_grid(); bpy.ops.object.mode_set(mode='OBJECT')
+                sd2 = tb.modifiers.new("g", "SOLIDIFY"); sd2.thickness = 0.0008
+                tb.data.materials.append(PLAST); bpy.ops.object.shade_smooth()
+                bpy.ops.mesh.primitive_cylinder_add(radius=TR+0.0002, depth=0.032, location=MOUTH-Vector((0, 0, 0.072)), vertices=48, end_fill_type='NOTHING'); lbl = bpy.context.object
+                lbl.data.materials.append(LABEL); bpy.ops.object.shade_smooth()
+                bpy.ops.mesh.primitive_cylinder_add(radius=TR-0.0009, depth=1.0, location=AWAY, vertices=48); lq = bpy.context.object
+                lq.data.materials.append(LCR); bpy.ops.object.shade_smooth()
+                bpy.ops.mesh.primitive_torus_add(major_radius=TR-0.0002, minor_radius=0.0006, location=AWAY, major_segments=48, minor_segments=12); rm = bpy.context.object
+                rm.data.materials.append(M("borde_tubo", (0.92, 0.93, 0.94), 0.3)); bpy.ops.object.shade_smooth()
+                globals().update(tube=tb, label=lbl, liq=lq, rim=rm)
+            show = u >= 0.34
+            tube.location = MOUTH-Vector((0, 0, TL/2)) if show else AWAY; label.location = MOUTH-Vector((0, 0, 0.072)) if show else AWAY
+            rim.location = MOUTH-Vector((0, 0, 0.0004)) if show else AWAY
+            landed = 0; surf = lambda n: MOUTH.z-TL+0.040+0.0012*n
             for i, o in enumerate(drops):
                 t = (u-0.36)*DUR-i*1.0          # segundos desde que empieza a gotear (una gota por segundo)
                 if t < 0: o.location = AWAY; continue
                 grow = min(1, t/0.75); fall = max(0, t-0.75)
+                z = drip.z-0.0022*grow-0.5*9.8*fall*fall
+                if z < surf(landed): o.location = AWAY; landed += 1; continue
                 o.scale = (grow, grow, grow*(1.0+0.6*min(1, fall*4)))
-                o.location = hubend+dirv*0.0015+Vector((0, 0, -0.0022*grow-0.5*9.8*fall*fall))
+                o.location = Vector((drip.x, drip.y, z))
+            h = surf(landed)-(MOUTH.z-TL+0.0008)
+            liq.scale = (1, 1, h); liq.location = Vector((MOUTH.x, MOUTH.y, MOUTH.z-TL+0.0008+h/2)) if show else AWAY
         save(f"{od}/{f:03d}.jpg"); print(kind, f, flush=True)
     print("ok", kind, a0, a1, flush=True)
