@@ -52,6 +52,13 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
 - 18/11: Eduardo confirma hemocultivos antes de la TC, infección local y anticoagulación como contraindicaciones, cifras y solo adultos. Cifras de la guía ABN 2026 (Dodd KC, et al. Periprocedural antithrombotic management for lumbar puncture: ABN 2026 guideline update) y AABB (50.000/µl).
 - 18/11: añadidas diapositivas de antiagregados y anticoagulados (Ficha 08 pasa a 9 diapositivas). Fuente: Dodd KC, Ahmed F, Desborough M, Dobson R, Emsley HCA, Rizvi K, Chhetri SK. Periprocedural antithrombotic management for lumbar puncture: Association of British Neurologists 2026 guideline update (corrección oct 2026). [VERIFICAR] La guía es inconsistente entre texto (P2Y12 3–7 días) y tabla (clopidogrel 5–7, ticagrelor 3–5, prasugrel 7); se usa la tabla. «Acenocumarol hasta INR < 1,5» es extrapolación de la recomendación para warfarina.
 - 18/11 (tarde): Eduardo pide ficha práctica, una sola guía (la más conservadora) y sin comparativas. Rehecha a 7 diapositivas: indicaciones, TC previa (criterios IDSA, los más amplios), antibiótico, contraindicaciones (plaquetas < 50.000/µl, INR ≥ 1,5), antitrombóticos (ABN 2026). [VERIFICAR] Indicaciones (meningitis/encefalitis, HSA con TC normal, Guillain-Barré, HII) redactadas sin fuente consultada en esta sesión.
+- 24/11 (vídeo v4, 60 s). Dudas para Eduardo:
+  - Corte sagital: grosores y distancias aproximados de un adulto delgado (piel 3 mm, subcutáneo 17 mm, espacio subaracnoideo a unos 6,7 cm), no medidos en una imagen real. ¿Te parecen razonables o quieres otra referencia?
+  - Aguja del corte dibujada a 12° en sentido craneal y algo más gruesa que una de 22 G para que se vea en el móvil.
+  - El paño cubre pelvis y glúteos y deja libre la línea de crestas; en la vista transparente solo se ven columna, sacro y palas ilíacas.
+  - Gotas de LCR transparentes (líquido claro), una por segundo. ¿Prefieres un tubo de muestras debajo?
+  - Quité las pausas largas de la locución para llegar a 60 s (mismo texto); el reel del día siguiente no se ha rehecho.
+  - Carrusel renumerado de «Técnica 02» a «Técnica 01» (solo cambia el número), según `PLANNING.md`.
 
 ## Ficha 05 · Crisis de asma (rehecha 18/11)
 - Fuente: GEMA 5.5 (2025), cap. 4: tabla 4.2 (gravedad), tabla 4.3 (dosis), tabla 4.4 (ingreso), págs. 101-112. Protocolo HUPM (sesión de Eduardo y Gemma Cubero) como contraste.

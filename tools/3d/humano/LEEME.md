@@ -5,3 +5,4 @@
 - `huesos.py`: pelvis y columna lumbar modeladas para el plano de transparencia (línea de Tuffier en L4, z=0.155 en reposo).
 - `mano.py`: mano derecha del mismo modelo, en pinza, con guante blanco.
 - `escena.py`: escena de punción lumbar (planos fijos: `stills`; animaciones: `anim … orbit|aguja|gotas`).
+- `escena_v4.py`: punción lumbar v4 (24/11): varón joven musculado (`humano.MACHO`), piel realista, paño quirúrgico simulado, fiador extraíble y gotas de LCR (`stills`; `anim … intro|orbit|aguja|lcr`). Requiere `pip install bpy` y MakeHuman con `targets/macrodetails`.

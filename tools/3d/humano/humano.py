@@ -4,15 +4,31 @@ import bpy, json, math
 import numpy as np
 from mathutils import Vector, Matrix, Quaternion
 D="/home/claude/mh/makehuman/data/"
-def load_obj():
+# Objetivos macro CC0 de MakeHuman. Por defecto, malla neutra (v3, epistaxis); la PL v4 usa MACHO (varón joven musculado, decisión de Eduardo 18/11)
+TARGETS=[]
+MACHO=[("caucasian-male-young.target",1.0),
+         ("universal-male-young-averagemuscle-averageweight.target",0.25),
+         ("universal-male-young-maxmuscle-averageweight.target",0.75)]
+_CACHE={}
+def load_obj(targets=None):
+    targets=TARGETS if targets is None else targets
+    key=tuple(targets)
+    if key in _CACHE: V,F=_CACHE[key]; return V.copy(),F
     V=[];F=[];grp=None
     for l in open(D+"3dobjs/base.obj"):
-        if l.startswith("v "): x,y,z=map(float,l.split()[1:4]); V.append((x,-z,y))
+        if l.startswith("v "): V.append(list(map(float,l.split()[1:4])))
         elif l.startswith("g "): grp=l.split()[1]
         elif l.startswith("f ") and grp=="body": F.append([int(t.split("/")[0])-1 for t in l.split()[1:]])
-    return np.array(V)*0.1, F
-def build(pose, name="humano", extras=()):
-    V,F=load_obj()
+    V=np.array(V)
+    for t,w in targets:
+        for l in open(D+"targets/macrodetails/"+t):
+            if l[:1].isdigit():
+                p=l.split(); V[int(p[0])]+=w*np.array(list(map(float,p[1:4])))
+    V=np.stack([V[:,0],-V[:,2],V[:,1]],1)*0.1
+    _CACHE[key]=(V,F); return V.copy(), F
+BREAST=0.022   # aplanado del pecho del modelo neutro; escena_v4 lo pone a 0
+def build(pose, name="humano", extras=(), targets=None):
+    V,F=load_obj(targets)
     used=sorted({i for f in F for i in f}); remap={o:n for n,o in enumerate(used)}
     me=bpy.data.meshes.new(name); me.from_pydata([tuple(V[i]) for i in used],[],[[remap[i] for i in f] for f in F]); me.update()
     ob=bpy.data.objects.new(name,me); bpy.context.collection.objects.link(ob)
@@ -72,7 +88,7 @@ def build(pose, name="humano", extras=()):
         if g:
             for v in me.vertices:
                 for ge in v.groups:
-                    if ge.group==g.index and ge.weight>0.05: v.co.y+=0.022*ge.weight
+                    if ge.group==g.index and ge.weight>0.05: v.co.y+=BREAST*ge.weight
     sub=ob.modifiers.new("s","SUBSURF"); sub.levels=1; sub.render_levels=2
     for p in me.polygons: p.use_smooth=True
     return ob, {k:Vector(v) for k,v in J.items()}
