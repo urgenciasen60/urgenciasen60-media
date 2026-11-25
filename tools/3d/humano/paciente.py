@@ -130,7 +130,7 @@ def _fit_proxy(mhclo, V_raw):
     P = np.stack([P[:, 0], -P[:, 2], P[:, 1]], 1)*0.1
     return P, Fp, VTp, FTp
 def _raw_from(V): return np.stack([V[:, 0], V[:, 2], -V[:, 1]], 1)/0.1
-def crear(pose, name="paciente", ropa=True, pelo=True):
+def crear(pose, name="paciente", ropa=True, pelo=True, camiseta=True, extras=()):
     humano.TARGETS = TARGETS; humano.BREAST = 0.0
     V, F = humano.load_obj(); used = sorted({i for f in F for i in f}); REST = V[used]
     # ojos high-poly ajustados a la malla y unidos al hueso de la cabeza
@@ -145,7 +145,7 @@ def crear(pose, name="paciente", ropa=True, pelo=True):
     nt.links.new(uvn.outputs["UV"], it.inputs["Vector"]); nt.links.new(it.outputs["Color"], _bsdf(em).inputs["Base Color"])
     me.materials.append(em)
     for p in me.polygons: p.use_smooth = True
-    ob, J = humano.build(pose, name=name, extras=[(eyes, "head")])
+    ob, J = humano.build(pose, name=name, extras=[(eyes, "head")]+list(extras))
     me = ob.data
     # UV de la malla base
     VT, FT = _uv_body(); uvl = me.uv_layers.new(name="UV")
@@ -172,7 +172,7 @@ def crear(pose, name="paciente", ropa=True, pelo=True):
         barba.data[i].value = f
     out = {"ob": ob, "eyes": eyes, "J": J, "REST": REST, "dom": dom, "eyec": Vector(eyec)}
     if pelo: out.update(_pelo(ob, REST, eyeL, eyeR, dom))
-    if ropa: out.update(_ropa(ob, dom, REST, jr("neck01")))
+    if ropa: out.update(_ropa(ob, dom, REST, jr("neck01"), camiseta))
     return out
 def _vgroup(ob, name, weights):
     g = ob.vertex_groups.new(name=name)
@@ -227,7 +227,7 @@ def _pelo(ob, REST, eyeL, eyeR, dom):
         g = _vgroup(ob, "ceja_"+side, w)
         brows.append(_hair_system(ob, "ceja_"+side, g, 520, 0.0075, 5, BM, align=(0.0085*sx, 0, 0.0035), normal=0.30, rnd=0.15, radius=0.000032, clump=0.3))
     return {"hair_scalp": scalp, "hair_brows": brows}
-def _ropa(ob, dom, REST_, NB):
+def _ropa(ob, dom, REST_, NB, camiseta=True):
     me = ob.data; ob.data.update()
     TOP = ("spine01", "spine02", "spine03", "spine04", "spine05", "clavicle.L", "clavicle.R", "shoulder01.L", "shoulder01.R",
            "breast.L", "breast.R", "upperarm01.L", "upperarm01.R")
@@ -255,7 +255,7 @@ def _ropa(ob, dom, REST_, NB):
     def neck_ok(i):
         x, y, z = REST_[i]; front = max(0.0, -(y-nb[1])/0.07); lat = max(0.0, 1-(x/0.085)**2)
         return z < nb[2]-0.004-0.040*min(1, front)*lat
-    top = shell("camiseta", TOP+("neck01",), 0.006, (0.05, 0.08, 0.13), keep=neck_ok)
+    top = shell("camiseta", TOP+("neck01",), 0.006, (0.05, 0.08, 0.13), keep=neck_ok) if camiseta else None
     bot = shell("pantalon", BOT, 0.007, (0.035, 0.035, 0.04))
     # calzado: piel oscura sobre los pies
     shoe = mat("calzado", (0.02, 0.018, 0.016), 0.35); ob.data.materials.append(shoe); k = len(ob.data.materials)-1

@@ -29,6 +29,12 @@ L={
  (R,[kicker("AGUJA")+sp(30)+big("LÍNEA MEDIA",230),txt("Despacio, hasta notar el resalte",62,Y)],[(1,1.6),(2,3.0)]),
  (K,[kicker("Y AL FINAL")+sp(30)+big("¿SALE LCR?",230,Y),txt("Qué hacer antes de retirar la aguja, en el vídeo",62)],[(1,1.6),(2,3.0)]),
  (K,[big("TÉCNICA 01",130,Y),f'<img src="file://{os.path.join(ROOT,"tecnica-puncion-lumbar","urgenciasen60-tecnica-puncion-lumbar-7.jpg")}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Vídeo y carrusel en el perfil",50)],[(3,6.0)])]),
+"tora":("TORACOCENTESIS","urgenciasen60-tecnica-toracocentesis-reel.mp4",[   # 25/11: gancho al vídeo y al carrusel (regla del 22/11)
+ (K,[kicker("TÉCNICA 03")+sp(20)+big("TORACOCENTESIS",140,Y),big("PASO A<br>PASO",190)],[(2,3.2)]),
+ (Y,[kicker("ANTES DE PINCHAR")+sp(30)+big("ECO PRIMERO",215,R),txt("Marca el punto en la misma posición en la que vas a pinchar",62)],[(1,1.6),(2,3.0)]),
+ (W,[kicker("DÓNDE",G)+sp(30)+big("ENCIMA DE LA COSTILLA",180,R),txt("Por debajo de cada costilla va el paquete vasculonervioso",62)],[(1,1.8),(2,3.0)]),
+ (R,[kicker("Y SOBRE TODO")+sp(30)+big("SABER PARAR",220),txt("Cuándo y cuánto, en el carrusel",62,Y)],[(1,1.6),(2,3.0)]),
+ (K,[big("TÉCNICA 03",130,Y),f'<img src="file://{os.path.join(ROOT,"borradores","tecnica-toracocentesis","urgenciasen60-tecnica-toracocentesis-7.jpg")}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Vídeo y carrusel en el perfil",50)],[(3,6.0)])]),
 }
 k=sys.argv[1]; tema,name,S=L[k]
 print(build(S,tema,os.path.abspath(sys.argv[2]),name,frames_only=(len(sys.argv)>3)))

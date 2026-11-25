@@ -214,3 +214,15 @@ Dudas:
 - No se nombra el dispositivo supraglótico preferido (la guía prefiere uno concreto frente al tubo laríngeo) para evitar marcas.
 - Diapositiva 10 «¿Qué cambia?» resume la tabla 1 de la guía (cambios de énfasis).
 - Reel de 46 s con la voz del canal (locución en `tools/voz/guia-sva/`); «ERC» se lee «Consejo Europeo de Resucitación» y «4H y 4T» como «cuatro hache y cuatro te».
+
+## Técnica 03 · Toracocentesis (`tecnica-toracocentesis/`, con reel y vídeo de 60 s sin voz) — 25/11
+
+Fuentes leídas a texto completo: Asciak R, et al. BTS Clinical Statement on pleural procedures. Thorax. 2023;78(Suppl 3):s43-s68. doi:10.1136/thorax-2022-219371 · Botana Rial M, et al. Diagnosis and treatment of pleural effusion. SEPAR update 2022. Arch Bronconeumol. 2023;59(1):27-35. doi:10.1016/j.arbres.2022.09.017 · Thomsen TW, et al. Thoracentesis. N Engl J Med. 2006;355(15):e16. doi:10.1056/NEJMvcm053812
+
+Dudas para Eduardo:
+- Sitio: la BTS pide «triángulo de seguridad, directamente encima de una costilla» y evitar el abordaje posterior porque ahí el paquete no queda cubierto por la costilla. He escrito «lateral o posterolateral, nunca pegado a la columna» con el paciente sentado e inclinado. ¿Te parece bien así o prefieres «línea axilar media-posterior»?
+- La BTS pide hacerlo en sala dedicada y en horario laborable salvo urgencias; no lo he puesto porque en Urgencias no aplica igual.
+- Anticoagulación (ficha): electiva, warfarina suspendida 5 días con INR ≤ 1,5 y ACOD 24-48 h; en urgencia, valorar riesgo-beneficio. La BTS no da umbral de plaquetas. ¿Lo dejamos en la ficha?
+- Dosis de lidocaína al 1 %: hasta 3 mg/kg (máx. 250 mg = 25 ml), como la BTS (alguno usa hasta 4,5 mg/kg).
+- Vídeo: no hay imagen ecográfica. Una simulada no daba la talla; si me pasas un clip tuyo de derrame (con signo de la columna y pulmón flotando), lo inserto en el paso 1.
+- Corte de la pared torácica de elaboración propia: grosores aproximados; vena, arteria y nervio de arriba abajo bajo cada costilla.

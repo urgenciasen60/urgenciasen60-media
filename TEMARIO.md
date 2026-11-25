@@ -42,7 +42,7 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 8 | Hipoglucemia | Ficha | Ficha 07, pendiente de revisión |
 | 9 | Síncope: estratificación del riesgo | Ficha | Ficha 10, pendiente de revisión |
 | 10 | Código ictus | Ficha | Ficha 11, pendiente de revisión |
-| 11 | Epistaxis y taponamiento nasal | Técnica | Técnica 01, pendiente de revisión |
+| 11 | Epistaxis y taponamiento nasal | Técnica | Técnica 02, pendiente de revisión |
 | 12 | Insuficiencia cardiaca aguda y edema agudo de pulmón | Ficha | Ficha 12, pendiente de revisión |
 | 13 | Exacerbación de EPOC | Ficha | Ficha 13, pendiente de revisión |
 | 14 | Vértigo periférico frente a central (HINTS) | Ficha | Ficha 13 (planning), pendiente de revisión |
@@ -71,12 +71,12 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 37 | Cefalea: banderas rojas | Ficha | |
 | 38 | Intoxicación por paracetamol | Ficha | |
 | 39 | Abstinencia alcohólica | Ficha | |
-| 40 | Punción lumbar | Técnica | Técnica 02, pendiente de revisión |
+| 40 | Punción lumbar | Técnica | Técnica 01, programada (mié 2/12) |
 | 41 | SCASEST | Ficha | |
 | 42 | Celulitis y fascitis necrotizante | Ficha | |
 | 43 | Meningitis aguda | Ficha | |
 | 44 | Taquicardia ventricular | Ficha | |
-| 45 | Toracocentesis | Técnica | |
+| 45 | Toracocentesis | Técnica | Técnica 03, pendiente de revisión |
 | 46 | Gastroenteritis y deshidratación | Ficha | |
 | 47 | Retención aguda de orina | Ficha | |
 | 48 | Hipopotasemia | Ficha | |

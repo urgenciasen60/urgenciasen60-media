@@ -72,7 +72,7 @@ cur = "base.mp4"
 for k in range(0, len(OVL), 12):
     batch = OVL[k:k+12]; ins = []; fcx = []; last = "[0:v]"
     for j, (p, a, b) in enumerate(batch):
-        ins += ["-i", p]; tag = f"[v{j}]"; fcx.append(f"{last}[{j+1}:v]overlay=enable='between(t,{a:.2f},{b:.2f})'{tag}"); last = tag
+        ins += ["-i", p]; tag = f"[v{j}]"; fcx.append(f"{last}[{j+1}:v]overlay=enable='between(t,{a:.3f},{b-0.034:.3f})'{tag}"); last = tag
     out = f"ovl_{k}.mp4"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", cur]+ins+["-filter_complex", ";".join(fcx), "-map", last, "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", out], check=True); cur = out
 subprocess.run(["python3", f"{REPO}/tools/musica.py", "musica.wav", str(END)], check=True, capture_output=True)
