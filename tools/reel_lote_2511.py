@@ -9,6 +9,13 @@ def fin(carpeta,slug,sello,n=7):
     if not os.path.exists(f): f=os.path.join(ROOT,carpeta,f"urgenciasen60-{slug}-{n}.jpg")
     return (K,[big(sello,130,Y),f'<img src="file://{f}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Completa en el perfil. Guárdala.",50)],[(3,6.0)])
 L={
+"sva":("SVA ADULTO","urgenciasen60-algoritmo-sva-reel.mp4",[
+ (Y,[kicker("ALGORITMO 01 · ERC 2025")+sp(20)+big("SOPORTE VITAL AVANZADO",160),big("LA FV FINA TAMBIÉN SE DESCARGA",120,R)],[(2,3.6)]),
+ (W,[kicker("1 · LO QUE MÁS PESA",G)+sp(30)+big("COMPRIME BIEN",210,R),txt("Pausas mínimas: carga el desfibrilador mientras comprimes",60)],[(1,1.8),(2,3.0)]),
+ (R,[kicker("2 · ¿DESFIBRILABLE?")+sp(30)+big("DESCARGA Y COMPRIME",180),txt("Sin mirar el pulso. El ritmo, a los dos minutos",60,Y)],[(1,1.8),(2,3.0)]),
+ (K,[kicker("3 · ¿NO DESFIBRILABLE?")+sp(30)+big("ADRENALINA YA",200,Y),txt("Lo antes posible, sin esperar",64)],[(1,1.8),(2,2.8)]),
+ (Y,[kicker("4 · MIENTRAS TANTO")+sp(30)+big("4H Y 4T",260,R),txt("Busca la causa: es lo que cambia el pronóstico",62)],[(1,1.8),(2,3.0)]),
+ fin("algoritmo-sva","algoritmo-sva","ALGORITMO 01")]),
 "vih":("PPE VIH","urgenciasen60-vih-ppe-reel.mp4",[
  (Y,[kicker("1 DE DICIEMBRE · DÍA MUNDIAL DEL VIH")+sp(20)+big("PROFILAXIS POSEXPOSICIÓN",150),big("EL RELOJ YA CORRE",140,R)],[(2,3.4)]),
  (W,[kicker("1 · CUÁNDO",G)+sp(30)+big("CUANTO ANTES",200,R),txt("Las primeras horas cuentan. No esperes a la fuente",62)],[(1,1.8),(2,3.0)]),

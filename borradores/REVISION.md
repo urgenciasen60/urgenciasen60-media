@@ -198,3 +198,13 @@ Dudas:
 - «Evita los bloqueantes neuromusculares» tal cual el consenso 2020; ¿matizamos que en la secuencia rápida se usa uno de acción corta?
 - Conducción: 6 meses sin crisis tras una primera crisis (turismo), Orden PRE/2356/2010. Comprobar que no haya cambios posteriores del Anexo IV.
 - Eclampsia/sulfato de magnesio: fuera de la ficha (no está en las fuentes leídas).
+
+## Algoritmo 01 · SVA del adulto, ERC 2025 (`algoritmo-sva/`), 25/11
+Serie nueva «Algoritmo» (numeración propia) para cubrir el lun 30/11 sin renumerar fichas ya programadas. Siguientes candidatos: bradicardia, taquicardias, anafilaxia.
+Fuentes: Soar J, Böttiger BW, Carli P, et al. European Resuscitation Council Guidelines 2025 Adult Advanced Life Support. Resuscitation. 2025;215 Suppl 1:110769. doi:10.1016/j.resuscitation.2025.110769. Greif R, et al. ERC Guidelines 2025 Executive Summary. Resuscitation. 2025;215 Suppl 1:110770. doi:10.1016/j.resuscitation.2025.110770. Smyth MA, et al. ERC 2025 Adult BLS. doi:10.1016/j.resuscitation.2025.110771. Nolan JP, et al. ERC-ESICM 2025 Post-Resuscitation Care. doi:10.1016/j.resuscitation.2025.110809. Texto leído en una copia del capítulo en inglés y en la traducción de la AESP-RCP (no oficial; no hay traducción del CERCP).
+Dudas:
+- [VERIFICAR DATO CLÍNICO] La lista de 4H y 4T está dentro de la figura 2 (imagen) y no se pudo extraer como texto; se usa la lista clásica del ERC (hipoxia, hipovolemia, hipo/hiperpotasemia y metabólicas, hipo/hipertermia; trombosis, neumotórax a tensión, taponamiento, tóxicos). Comprobar en la figura.
+- Tras la RCE: PAM > 65 (el resumen ejecutivo dice «por encima de 60–65»); fiebre: mantener ≤ 37,5 °C en el paciente en coma (puesto como «evita la fiebre»). Normocapnia y ECG de 12 derivaciones están en la figura, no confirmados en texto.
+- Dosis del fibrinolítico en el TEP: no aparece en lo leído; solo «RCP 60–90 min tras el fibrinolítico».
+- No se nombra el dispositivo supraglótico preferido (la guía prefiere uno concreto frente al tubo laríngeo) para evitar marcas.
+- Novedades ERC 2025 frente a 2021: son de énfasis (FV fina, colocación del parche, capnografía obligatoria, IV antes que IO, no calcio/bicarbonato/corticoides, cambio de vector, sin golpe precordial). Encajan mejor en la Guía 02 (dom 20/12).
