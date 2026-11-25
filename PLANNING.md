@@ -1,6 +1,6 @@
 # Planning de publicaciones · 23/11/2026 – 31/01/2027
 
-Versión 5 (25/11/2026). Cambio sobre la v4, decidido por Eduardo en el hilo de contenido: la Ficha 07 pasa a ser **PPE al VIH** y se publica el **martes 1/12** (Día Mundial del VIH), con una historia de Instagram unas horas antes. La fibrilación auricular, que era la Ficha 07 del lun 30/11, pasa al primer hueco libre (lun 25/1, Ficha 26); no se renumera nada más. El lun 30/11 lo ocupa el Algoritmo 01 (SVA adulto, ERC 2025), primera pieza de una serie de algoritmos con numeración propia para no renumerar fichas. Versión 4 (23/11/2026): el EAP pasa a ser la Ficha 09 y Síncope la Ficha 11; Ep. 15 y 16 de la serie MIR ajustan sus remisiones; los borradores de sepsis quedan aparcados a final de enero; ningún paper está elegido todavía. Los números de ficha se fijan aquí; si una pieza no llega a tiempo, entra la siguiente aprobada y se ajusta el número antes de publicar (nunca se renumera lo ya publicado). El orden de publicación no es prioritario: manda tener lo aprobado a tiempo.
+Versión 5 (25/11/2026). Cambio sobre la v4, decidido por Eduardo en el hilo de contenido: la Ficha 07 pasa a ser **PPE al VIH** y se publica el **martes 1/12** (Día Mundial del VIH), con una historia de Instagram unas horas antes. La fibrilación auricular, que era la Ficha 07 del lun 30/11, pasa al primer hueco libre (lun 25/1, Ficha 26); no se renumera nada más. El lun 30/11 lo ocupa la Guía 02 (SVA del adulto, ERC 2025), adelantada desde el dom 20/12 para no renumerar fichas; el dom 20/12 pasa a la Guía 03. Versión 4 (23/11/2026): el EAP pasa a ser la Ficha 09 y Síncope la Ficha 11; Ep. 15 y 16 de la serie MIR ajustan sus remisiones; los borradores de sepsis quedan aparcados a final de enero; ningún paper está elegido todavía. Los números de ficha se fijan aquí; si una pieza no llega a tiempo, entra la siguiente aprobada y se ajusta el número antes de publicar (nunca se renumera lo ya publicado). El orden de publicación no es prioritario: manda tener lo aprobado a tiempo.
 
 **Este hilo es solo el programa del canal:** estado, qué está listo y qué falta por validar. No se crea contenido aquí. Si se pide, recordar a Eduardo que el contenido va en otro hilo.
 
@@ -19,7 +19,7 @@ Versión 5 (25/11/2026). Cambio sobre la v4, decidido por Eduardo en el hilo de 
 | Semana | Lunes | Miércoles | Viernes | Revisar antes de |
 |---|---|---|---|---|
 | 23–29 nov | ✔ Ficha 04 · Punción lumbar ¿sí o no? | ✔ Ficha 05 · Hipoglucemia | ✔ Ficha 06 · Cólico nefrítico | — |
-| 30 nov–6 dic | **Algoritmo 01 · SVA adulto (ERC 2025)** (serie nueva, numeración propia; reel mar 1/12 12:00). **Martes 1/12: Ficha 07 · PPE al VIH** (historia 17:00 + carrusel 21:00; reel propuesto mié 2/12 12:00) | ✔ **Técnica 01** · Punción lumbar (vídeo 17:00 + carrusel 21:00; reel jue 3/12) | ✔ Ficha 08 · HTA en Urgencias | SVA: mié 25/11 (como muy tarde jue 26) · VIH: jue 26/11 (como muy tarde vie 27) |
+| 30 nov–6 dic | **Guía 02 · SVA del adulto, ERC 2025** (carrusel de 11; reel recordatorio dom 13/12 12:00). **Martes 1/12: Ficha 07 · PPE al VIH** (historia 17:00 + carrusel 21:00; reel propuesto mié 2/12 12:00) | ✔ **Técnica 01** · Punción lumbar (vídeo 17:00 + carrusel 21:00; reel jue 3/12) | ✔ Ficha 08 · HTA en Urgencias | SVA: mié 25/11 (como muy tarde jue 26) · VIH: jue 26/11 (como muy tarde vie 27) |
 | 7–13 dic | ✔ Ficha 09 · IC aguda y EAP | Ficha 10 · Código ictus | Ficha 11 · Síncope | Todo antes del mar 8 (viaje 9-13) |
 | 14–20 dic | Ficha 12 · Agudización de EPOC | **Técnica 02** · Epistaxis (vídeo 17:00 + carrusel; render mar 15) | Ficha 13 · Vértigo (HINTS) | EPOC: mar 8 · Epistaxis: lun 14 · Vértigo: dom 13 |
 | 21–27 dic | Ficha 14 · SCACEST | Ficha 15 · Cetoacidosis diabética | Navidad | SCACEST: mié 16 · CAD: vie 18 |
@@ -41,14 +41,14 @@ Papers: ninguno elegido por Eduardo a 23/11. Los nombres de abajo son candidatos
 |---|---|---|---|
 | 29/11 | ✔ **Guía 01** · Sepsis en Urgencias 2026 (GT-LATINFURG). Carrusel de 11 diapositivas, validado y programado el 23/11 | — | — |
 | 6/12 | — | ✔ Reel Guía 01 (49 s, con locución), programado el 23/11 | — |
-| 13/12 | **Paper 01** · por elegir (candidato propuesto: ensayo BEST, bougie en trauma grave) | — | mar 8 (viaje) |
-| 20/12 | **Guía 02** · ERC 2025: qué cambia en la RCP | Reel Paper 01 | mar 15 |
-| 27/12 | — | Reel Guía 02 | — |
+| 13/12 | **Paper 01** · por elegir (candidato propuesto: ensayo BEST, bougie en trauma grave) | Reel Guía 02 (SVA) | mar 8 (viaje) |
+| 20/12 | **Guía 03** · por decidir (la ERC 2025 de SVA se adelantó al lun 30/11 como Guía 02) | Reel Paper 01 | mar 15 |
+| 27/12 | — | Reel Guía 03 | — |
 | 3/1 | **Paper 02** · por elegir (candidato propuesto: PRESC1SE-MI; falta el PDF) | — | lun 28/12 |
 | 10/1 | — | Reel Paper 02 | — |
 | 17/1 | **Paper 03** · por elegir (2026, de médico de puerta) | — | mar 12/1 |
-| 24/1 | **Guía 03** · por decidir (ESC 2025 pericarditis/miocarditis o ACC/AHA 2025 SCA, a confirmar) | Reel Paper 03 | mar 19/1 |
-| 31/1 | — | Reel Guía 03 | — |
+| 24/1 | **Guía 04** · por decidir (ESC 2025 pericarditis/miocarditis o ACC/AHA 2025 SCA, a confirmar) | Reel Paper 03 | mar 19/1 |
+| 31/1 | — | Reel Guía 04 | — |
 
 Colores de familia: Ficha = amarillo; Técnica = negro; Serie MIR = verde quirófano; Guía = azul #0B4F9E (franja, portada y pie); Paper = violeta #962AF5 (decidido el 22/11, aún sin aplicar en los generadores). Los reels siguen la regla del 22/11: gancho que cuenta de qué va la pieza, sin dosis ni cifras sueltas.
 
