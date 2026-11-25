@@ -45,10 +45,10 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 11 | Epistaxis y taponamiento nasal | Técnica | Técnica 01, pendiente de revisión |
 | 12 | Insuficiencia cardiaca aguda y edema agudo de pulmón | Ficha | Ficha 12, pendiente de revisión |
 | 13 | Exacerbación de EPOC | Ficha | Ficha 13, pendiente de revisión |
-| 14 | Vértigo periférico frente a central (HINTS) | Ficha | |
-| 15 | SCACEST | Ficha | |
-| 16 | Cetoacidosis diabética | Ficha | |
-| 17 | Crisis epiléptica y estatus | Ficha | |
+| 14 | Vértigo periférico frente a central (HINTS) | Ficha | Ficha 13 (planning), pendiente de revisión |
+| 15 | SCACEST | Ficha | Ficha 14 (planning), pendiente de revisión |
+| 16 | Cetoacidosis diabética | Ficha | Ficha 15 (planning), pendiente de revisión |
+| 17 | Crisis epiléptica y estatus | Ficha | Ficha 16 (planning), pendiente de revisión |
 | 18 | Infección urinaria y pielonefritis | Ficha | |
 | 19 | Tromboembolismo pulmonar | Ficha | |
 | 20 | Hemorragia digestiva alta | Ficha | |
@@ -92,6 +92,8 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 58 | Ventilación mecánica no invasiva: cómo empezar | Técnica | |
 | 59 | Vía intraósea | Técnica | |
 | 60 | Fármacos vasoactivos | Fármaco | |
+
+**Fuera de orden:** especial «PPE al VIH» por el Día Mundial del VIH (1/12/2026), borrador del 25/11.
 
 ## Fase B: muy frecuentes o graves (después de la Fase A)
 

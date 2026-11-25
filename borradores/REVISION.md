@@ -146,3 +146,54 @@ Dudas y discrepancias:
 - Texto leído hasta ~200000 de 219060 caracteres (el resto son referencias); la Figura 3 (algoritmo) no es legible.
 - Pregunta: ¿franja azul para Guía y Paper?
 - 23/11 (Eduardo): fluidos de la Guía 01 a 3 h (SSC y GT-LATINFURG); se trata como errata la cifra de 30 min de la guía HUPM. Corrección del editor de la SSC (Intensive Care Med 2026;52:1411-3, doi:10.1007/s00134-026-08410-9) leída en la ficha del repositorio de UMC Utrecht: solo corrige apellidos de cuatro autores; no toca recomendaciones.
+
+# Lote del 25/11/2026 (petición de Eduardo: nueva serie de fichas + VIH por el 1/12)
+Todas con franja roja (estilo de las fichas ya publicadas) y reel en formato gancho (regla del 22/11: sin dosis ni cifras). Números según el planning v4.
+
+## Especial VIH · Profilaxis posexposición (`vih-ppe/`)
+Enfoque: decisión de guardia (PPE) con un guiño al diagnóstico oportunista (las 6 situaciones de SEMES) en la diapositiva 6.
+Fuentes: GeSIDA/GEHEP-SEIMC, SEIP, SEMPSPGS. Documento de consenso sobre la profilaxis posexposición ocupacional y no ocupacional al VIH, VHB y VHC en adultos y niños. Actualización 2025 (sustituye al de 2015; sin DOI). Calpe Delgado P, et al. Enferm Infecc Microbiol Clin. 2025;43:496-503. doi:10.1016/j.eimc.2025.04.001 (las 6 situaciones de «Deja tu huella»). Contraste: CDC 2025 nPEP (MMWR Recomm Rep 2025;74(1). doi:10.15585/mmwr.rr7401a1).
+Dudas:
+- [VERIFICAR DATO CLÍNICO] El documento 2025 se leyó con una herramienta que resume por tramos (el proxy bloqueó el PDF en bruto). Conviene que Eduardo confirme en el PDF: ventana (2/12/72 h), tabla 4.2 de indicaciones, pautas de la tabla 6.1 y la nota de agresión sexual.
+- Embarazo: discrepancia interna en lo leído (raltegravir + TDF/FTC en el cap. 5.3 frente a dolutegravir «de elección» en la tabla 6.1). En la ficha solo dice «comenta con Infecciosas».
+- Insuficiencia renal: el documento no fija alternativa a tenofovir disoproxilo; misma solución.
+- Anticoncepción de emergencia: no aparece en las partes leídas; no se ha incluido. ¿La añadimos (con otra fuente) en la diapositiva 6?
+- ¿Quieres que la ficha incluya los riesgos por exposición (anal receptivo 1/90, pinchazo 1/333…)? Hoy no caben.
+- Fecha y número: no está en el planning. Opción natural, mar 1/12 a las 14:00 (libre). Sin número de ficha para no renumerar lo ya programado.
+
+## Ficha 13 · Vértigo agudo (`vertigo/`)
+Fuentes: Edlow JA, et al. GRACE-3. Acad Emerg Med. 2023;30(5):442-86. doi:10.1111/acem.14728. Vanni S, et al. Intern Emerg Med. 2024;19:1181-202. doi:10.1007/s11739-024-03664-x. Martín-Enguix D, et al. Med Fam SEMERGEN. 2024;50:102114. doi:10.1016/j.semerg.2023.102114. Klein AL, et al. JACEP Open. 2026;7(6):100532. doi:10.1016/j.acepjo.2026.100532.
+Dudas:
+- No hay documento SEMES/SEN de vértigo en urgencias en abierto; la única española es SEMERGEN (Primaria).
+- Grados de marcha 0–3 (GRACE-3, tabla 3). RM con difusión < 48 h: falsamente normal en el 10–22 %.
+- Corticoide en la neuritis: sin dosis (ninguna guía la recomienda con fuerza). Sedante vestibular 3–5 días (GRACE-3); SEMERGEN dice 72 h como máximo.
+- «Espontáneo: piensa también en AIT»: GRACE-3 también incluye migraña vestibular y Ménière; ¿lo ampliamos?
+
+## Ficha 14 · SCACEST (`scacest/`)
+Fuentes: Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-826. doi:10.1093/eurheartj/ehad191. Grupo de Trabajo de la SEC. Comentarios a la guía ESC 2023 sobre SCA. Rev Esp Cardiol. 2024;77(3):201-5. doi:10.1016/j.rec.2023.11.006. Ficha técnica AEMPS de tenecteplasa.
+Dudas:
+- [VERIFICAR DATO CLÍNICO] No se ha leído el suplemento de la ESC 2023: enoxaparina con fibrinólisis (por eso no aparece), lista de contraindicaciones de la fibrinólisis y tabla de dosis de tenecteplasa de la guía (se usa la de la ficha técnica).
+- Media dosis de tenecteplasa en > 75 años: la guía la apoya (STREAM-2); la ficha técnica solo pide precaución. Puesto como «valora».
+- Ventana de fibrinólisis: 12 h en la guía frente a 6 h en la ficha técnica de tenecteplasa.
+- Pretratamiento con P2Y12: IIb en la ESC; la SEC lo discute. Puesto como «sigue tu código infarto».
+- Patrón de De Winter y 5.ª Definición Universal del IAM (2026): no verificados; no incluidos.
+- ¿Quieres los tiempos de tu código infarto (Andalucía) o los dejamos genéricos?
+
+## Ficha 15 · Cetoacidosis diabética (`cetoacidosis/`)
+Fuentes: Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care. 2024;47(8):1257-75. doi:10.2337/dci24-0032. JBDS-IP. The management of diabetic ketoacidosis in adults (revisión 2021; algoritmo 2023).
+Dudas:
+- No hay protocolo español (SED/SEEN/SEMES) de CAD del adulto con texto completo localizable: se sigue el consenso internacional 2024.
+- Discrepancias con JBDS: bicarbonato diagnóstico < 15 (JBDS) frente a < 18; 1 l en la primera hora (JBDS) frente a 500–1000 ml/h 2–4 h; potasio 40 mmol/l si 3,5–5,5 (JBDS) frente a 20–30 mmol/l si < 5. ¿Cuál usáis en vuestra urgencia?
+- Bicarbonato si pH < 7,0: el consenso da 100 mmol en 400 ml cada 2 h; no se ha puesto la dosis.
+- Pauta SC en la CAD leve-moderada: sin dosis en la fuente; no incluida.
+
+## Ficha 16 · Estado epiléptico (`estado-epileptico/`)
+Fuentes: García Morales I, et al. Documento de consenso para el tratamiento del paciente con crisis epiléptica urgente (SEEP-SEN-SEMES). Emergencias. 2020;32:353-62. Alonso Avilés R, et al. Manejo del estado epiléptico en urgencias. Emergencias. 2026;38:200-8. doi:10.55633/s3me/045.2026. Kapur J, et al. ESETT. N Engl J Med. 2019;381:2103-13. doi:10.1056/NEJMoa1905795. Orden PRE/2356/2010 (conducción).
+Dudas:
+- Diazepam IV: máx. 10 mg (Emergencias 2026) frente a 20 mg (consenso 2020). Puesto «máx. 10 mg por dosis».
+- Levetiracetam 60 mg/kg (Emergencias 2026, ESETT) frente a 30–60 mg/kg (consenso 2020). Lacosamida 200–400 mg (2026) frente a 6 mg/kg (2020).
+- Ketamina: tercera línea preferente en 2020, cuarta en 2026. En la ficha va junto a midazolam y propofol.
+- [VERIFICAR DATO CLÍNICO] Dosis de tiamina, pruebas concretas de la primera crisis y criterios de TC: no confirmados en texto completo (no se dan cifras).
+- «Evita los bloqueantes neuromusculares» tal cual el consenso 2020; ¿matizamos que en la secuencia rápida se usa uno de acción corta?
+- Conducción: 6 meses sin crisis tras una primera crisis (turismo), Orden PRE/2356/2010. Comprobar que no haya cambios posteriores del Anexo IV.
+- Eclampsia/sulfato de magnesio: fuera de la ficha (no está en las fuentes leídas).

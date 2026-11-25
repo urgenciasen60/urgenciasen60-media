@@ -31,6 +31,11 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 11 | Código ictus: la primera hora (+ reel) | `borradores/codigo-ictus/` | Pendiente de revisión (20/11) | — |
 | 09 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** lun 7/12 21:00 (carrusel) y mar 8/12 21:00 (reel) | Aprobada por Eduardo el 20/11 |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |
+| Especial VIH | PPE al VIH en Urgencias (Día Mundial del VIH, 1/12) + reel | `borradores/vih-ppe/` | Pendiente de revisión (25/11). Sin número de ficha: se numera si entra en el libro | Propuesta: mar 1/12 (ver planning) |
+| 13 | Vértigo agudo: periférico o central (HINTS) + reel | `borradores/vertigo/` | Pendiente de revisión (25/11) | Planning: vie 18/12 |
+| 14 | SCACEST: el reloj empieza en el ECG + reel | `borradores/scacest/` | Pendiente de revisión (25/11) | Planning: lun 21/12 |
+| 15 | Cetoacidosis diabética + reel | `borradores/cetoacidosis/` | Pendiente de revisión (25/11) | Planning: mié 23/12 |
+| 16 | Estado epiléptico y primera crisis + reel | `borradores/estado-epileptico/` | Pendiente de revisión (25/11) | Planning: lun 28/12 |
 
 Próximo número libre: Ficha 14 (borradores; al publicarse se renumeran por orden: la siguiente publicada tras la 09 será la 10), Técnica 03, Guía 02, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
