@@ -57,6 +57,22 @@ Fuente: «Manejo de la epistaxis», sesión general del Servicio ORL del HU Ála
     - Si resangra: cabeza hacia delante y compresión firme.
     - La charla propone un algodón con agua oxigenada. [VERIFICAR: no figura en las guías; no ponerlo].
 
+## Material: nombre genérico y marca de ejemplo
+
+| Genérico | Marca de ejemplo |
+|---|---|
+| Esponja expandible (PVA) | Merocel® |
+| Esponja de gelatina reabsorbible | Spongostan® |
+| Matriz reabsorbible (poliuretano) | Nasopore® |
+| Celulosa oxidada | Surgicel® |
+| Balón anterior (5,5 / 7,5 cm) y doble balón | Rapid Rhino® |
+| Balón posterior de 2 cámaras | Epistat® |
+| Varilla de nitrato de plata | Argenpal® |
+
+Fármacos (anestésico tópico, ácido tranexámico, pomada antibiótica): solo con su nombre genérico.
+
+Regla para la v3, por defecto mientras Eduardo no diga otra cosa: en pantalla, nombre genérico seguido de «tipo Merocel®» en letra pequeña. La marca nunca va sola ni como recomendación.
+
 ## Cambios respecto a v2
 
 - Abrir con la postura y la compresión correctas: inclinado hacia delante. Mostrar el error de la hiperextensión como gancho.
