@@ -22,13 +22,13 @@ L={
  (R,[f'<div style="{A};font-size:420px;line-height:.9;color:{Y}">4</div>'+big("CAUTERIZA",230),txt("Nitrato de plata solo en el punto. Nunca los dos lados del tabique",62)],[(1,1.6),(2,2.8)]),
  (Y,[f'<div style="{A};font-size:420px;line-height:.9;color:{R}">5</div>'+big("TAPONA",260),txt("Si persiste o no ves el punto. Reabsorbible si toma antitrombóticos",62)],[(1,1.6),(2,2.8)]),
  fin("tecnica-epistaxis","tecnica-epistaxis","TÉCNICA 01")]),
-"pl":("PUNCIÓN LUMBAR","urgenciasen60-tecnica-puncion-lumbar-reel.mp4",[
- (K,[kicker("TÉCNICA 02")+sp(20)+big("PUNCIÓN LUMBAR",215,Y),big("ANTES DE<br>PINCHAR",170)],[(2,3.2)]),
- (R,[big("¿TC PRIMERO?",230),txt("Bajo nivel de consciencia, focalidad o papiledema",62,Y)+sp(22)+txt("Crisis reciente, inmunodepresión, 60 años o más",58)],[(1,1.8),(2,3.2)]),
- (W,[kicker("REFERENCIA",G)+sp(30)+big("L3–L4<br>O L4–L5",250,R),txt("La línea entre las crestas ilíacas cruza la apófisis de L4",62)],[(1,1.8),(2,3.0)]),
- (Y,[kicker("POSICIÓN")+sp(30)+big("FLEXIÓN MÁXIMA",220,R),txt("Decúbito lateral, rodillas al pecho, sin rotar hombros ni caderas",62)],[(1,1.6),(2,3.0)]),
- (K,[kicker("AGUJA")+sp(30)+big("LÍNEA MEDIA, AL OMBLIGO",190,Y),txt("Avanza despacio. Fiador puesto al avanzar y al retirar",62)],[(1,1.6),(2,3.0)]),
- fin("tecnica-puncion-lumbar","tecnica-puncion-lumbar","TÉCNICA 02")]),
+"pl":("PUNCIÓN LUMBAR","urgenciasen60-tecnica-puncion-lumbar-reel.mp4",[   # rehecho 25/11: solo técnica, gancho al vídeo y al carrusel
+ (K,[kicker("TÉCNICA 01")+sp(20)+big("PUNCIÓN LUMBAR",215,Y),big("PASO A<br>PASO",190)],[(2,3.2)]),
+ (Y,[kicker("POSICIÓN")+sp(30)+big("TODO EMPIEZA AQUÍ",200,R),txt("Decúbito lateral, en flexión, con la espalda en el borde",62)],[(1,1.6),(2,3.0)]),
+ (W,[kicker("REFERENCIA",G)+sp(30)+big("BUSCA LAS CRESTAS",210,R),txt("La línea que las une te dice dónde pinchar",62)],[(1,1.8),(2,3.0)]),
+ (R,[kicker("AGUJA")+sp(30)+big("LÍNEA MEDIA",230),txt("Despacio, hasta notar el resalte",62,Y)],[(1,1.6),(2,3.0)]),
+ (K,[kicker("Y AL FINAL")+sp(30)+big("¿SALE LCR?",230,Y),txt("Qué hacer antes de retirar la aguja, en el vídeo",62)],[(1,1.6),(2,3.0)]),
+ (K,[big("TÉCNICA 01",130,Y),f'<img src="file://{os.path.join(ROOT,"tecnica-puncion-lumbar","urgenciasen60-tecnica-puncion-lumbar-7.jpg")}" style="width:560px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.6)">',txt("Vídeo y carrusel en el perfil",50)],[(3,6.0)])]),
 }
 k=sys.argv[1]; tema,name,S=L[k]
 print(build(S,tema,os.path.abspath(sys.argv[2]),name,frames_only=(len(sys.argv)>3)))
