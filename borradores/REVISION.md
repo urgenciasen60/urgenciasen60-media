@@ -150,7 +150,8 @@ Dudas y discrepancias:
 # Lote del 25/11/2026 (petición de Eduardo: nueva serie de fichas + VIH por el 1/12)
 Todas con franja roja (estilo de las fichas ya publicadas) y reel en formato gancho (regla del 22/11: sin dosis ni cifras). Números según el planning v4.
 
-## Especial VIH · Profilaxis posexposición (`vih-ppe/`)
+## Ficha 07 · Profilaxis posexposición al VIH (`vih-ppe/`)
+- 25/11 (Eduardo): ficha normal, no especial. Sale el mar 1/12 como Ficha 07; la FA pasa al lun 25/1 (Ficha 26). Historia de Instagram unas horas antes avisando del Día Mundial y de la ficha (`urgenciasen60-vih-ppe-historia.jpg`, propuesta 17:00).
 Enfoque: decisión de guardia (PPE) con un guiño al diagnóstico oportunista (las 6 situaciones de SEMES) en la diapositiva 6.
 Fuentes: GeSIDA/GEHEP-SEIMC, SEIP, SEMPSPGS. Documento de consenso sobre la profilaxis posexposición ocupacional y no ocupacional al VIH, VHB y VHC en adultos y niños. Actualización 2025 (sustituye al de 2015; sin DOI). Calpe Delgado P, et al. Enferm Infecc Microbiol Clin. 2025;43:496-503. doi:10.1016/j.eimc.2025.04.001 (las 6 situaciones de «Deja tu huella»). Contraste: CDC 2025 nPEP (MMWR Recomm Rep 2025;74(1). doi:10.15585/mmwr.rr7401a1).
 Dudas:
@@ -159,7 +160,7 @@ Dudas:
 - Insuficiencia renal: el documento no fija alternativa a tenofovir disoproxilo; misma solución.
 - Anticoncepción de emergencia: no aparece en las partes leídas; no se ha incluido. ¿La añadimos (con otra fuente) en la diapositiva 6?
 - ¿Quieres que la ficha incluya los riesgos por exposición (anal receptivo 1/90, pinchazo 1/333…)? Hoy no caben.
-- Fecha y número: no está en el planning. Opción natural, mar 1/12 a las 14:00 (libre). Sin número de ficha para no renumerar lo ya programado.
+- Reel: el mié 2/12 a las 21:00 está ocupado por la Técnica 01; propuesta mié 2/12 a las 12:00.
 
 ## Ficha 13 · Vértigo agudo (`vertigo/`)
 Fuentes: Edlow JA, et al. GRACE-3. Acad Emerg Med. 2023;30(5):442-86. doi:10.1111/acem.14728. Vanni S, et al. Intern Emerg Med. 2024;19:1181-202. doi:10.1007/s11739-024-03664-x. Martín-Enguix D, et al. Med Fam SEMERGEN. 2024;50:102114. doi:10.1016/j.semerg.2023.102114. Klein AL, et al. JACEP Open. 2026;7(6):100532. doi:10.1016/j.acepjo.2026.100532.

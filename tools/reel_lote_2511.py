@@ -15,7 +15,7 @@ L={
  (R,[kicker("2 · A QUIÉN")+sp(30)+big("DEPENDE DE LA FUENTE",170),txt("Con carga viral indetectable, no hace falta",62,Y)],[(1,1.8),(2,3.0)]),
  (K,[kicker("3 · QUÉ")+sp(30)+big("UN MES",260,Y),txt("Una pauta de tres fármacos, a veces en un solo comprimido",60)],[(1,1.8),(2,3.0)]),
  (Y,[kicker("4 · Y ADEMÁS")+sp(30)+big("HEPATITIS B E ITS",170,R),txt("Y aprovecha para pedir la serología del VIH a quien la necesita",58)],[(1,1.8),(2,3.2)]),
- fin("vih-ppe","vih-ppe","ESPECIAL VIH")]),
+ fin("vih-ppe","vih-ppe","FICHA 07")]),
 "vertigo":("VÉRTIGO AGUDO","urgenciasen60-vertigo-reel.mp4",[
  (Y,[big("VÉRTIGO AGUDO",180),big("UN TAC NORMAL NO DESCARTA UN ICTUS",120,R)],[(2,3.6)]),
  (W,[kicker("1 · EL TIEMPO",G)+sp(30)+big("¿CUÁNTO DURA?",200,R),txt("Continuo, al moverse o espontáneo: cada uno se estudia distinto",60)],[(1,1.8),(2,3.2)]),

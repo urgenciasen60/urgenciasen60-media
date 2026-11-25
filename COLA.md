@@ -24,14 +24,14 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | Guía 01 | Sepsis en Urgencias 2026 (GT-LATINFURG), 11 diapositivas + reel 49 s | `borradores/guia-01-sepsis/` | **Programada** dom 29/11 21:00 (carrusel) y dom 6/12 12:00 (reel) | Validada por Eduardo el 23/11 |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
 | 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | **Programada** lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
-| 09 | Fibrilación auricular en Urgencias | `borradores/fibrilacion-auricular/` | Pendiente de revisión (18/11) | — |
+| 26 (antes 07/09) | Fibrilación auricular en Urgencias | `borradores/fibrilacion-auricular/` | Pendiente de revisión (18/11) | Movida al lun 25/1/2027 (cede el puesto de Ficha 07 al VIH, 25/11) |
 | 10 | Síncope: estratificación del riesgo | `borradores/sincope/` | Pendiente de revisión (18/11) | — |
 | MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | **Programada** dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
 | MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | **Programada** mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) | Aprobada por Eduardo el 20/11; imágenes reales CC BY 4.0 (Rx: Baker et al., JETEM 2016; TC: Florim et al., Insights Imaging 2018). Eduardo rechazó las imágenes sintéticas: «o imagen real o sin imagen» |
 | 11 | Código ictus: la primera hora (+ reel) | `borradores/codigo-ictus/` | Pendiente de revisión (20/11) | — |
 | 09 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** lun 7/12 21:00 (carrusel) y mar 8/12 21:00 (reel) | Aprobada por Eduardo el 20/11 |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |
-| Especial VIH | PPE al VIH en Urgencias (Día Mundial del VIH, 1/12) + reel | `borradores/vih-ppe/` | Pendiente de revisión (25/11). Sin número de ficha: se numera si entra en el libro | Propuesta: mar 1/12 (ver planning) |
+| 07 | PPE al VIH en Urgencias (Día Mundial del VIH) + reel + historia de Instagram | `borradores/vih-ppe/` | Pendiente de revisión (25/11) | Prevista mar 1/12: historia IG 17:00, carrusel 21:00 (IG + TikTok); reel propuesto mié 2/12 12:00 |
 | 13 | Vértigo agudo: periférico o central (HINTS) + reel | `borradores/vertigo/` | Pendiente de revisión (25/11) | Planning: vie 18/12 |
 | 14 | SCACEST: el reloj empieza en el ECG + reel | `borradores/scacest/` | Pendiente de revisión (25/11) | Planning: lun 21/12 |
 | 15 | Cetoacidosis diabética + reel | `borradores/cetoacidosis/` | Pendiente de revisión (25/11) | Planning: mié 23/12 |
@@ -49,7 +49,7 @@ Próximo número libre: Ficha 14 (borradores; al publicarse se renumeran por ord
 - Producidas hoy tres fichas de la Fase A con su reel: 11 código ictus, 12 IC aguda/EAP y 13 EPOC.
 - 20/11: Eduardo aprueba la IC aguda/EAP. Para respetar el plan rehecho (sepsis vie 27, cólico lun 30, técnica PL mié 2/12), elige programarla el lun 7/12; por orden de publicación pasa a ser la **Ficha 09**.
 
-**Planning vigente:** `PLANNING.md` (versión 3, aprobada el 22/11/2026), copia en el proyecto (`planning-publicaciones`). Manda sobre cualquier plan anterior de este archivo.
+**Planning vigente:** `PLANNING.md` (versión 5, 25/11/2026), copia en el proyecto (`planning-publicaciones`). Manda sobre cualquier plan anterior de este archivo.
 
 ## Reels
 - **21/11 (Eduardo):** en la cuadrícula del perfil Instagram recorta los reels a 3:4 (quita unos 240 px arriba y abajo) y se cortaba la primera palabra. Desde ahora el contenido del reel empieza a 340 px del borde superior (`tools/reel.py`), dentro de la zona visible en la cuadrícula. Rehechos con este ajuste los reels ya programados de PL (mar 24), MIR Ep. 01 (lun 23), hipoglucemia (jue 26) y HTA (sáb 5/12).
