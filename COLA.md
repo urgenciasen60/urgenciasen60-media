@@ -32,7 +32,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 09 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** lun 7/12 21:00 (carrusel) y mar 8/12 21:00 (reel) | Aprobada por Eduardo el 20/11 |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |
 | 07 | PPE al VIH en Urgencias (Día Mundial del VIH) + reel + historia de Instagram | `borradores/vih-ppe/` | Pendiente de revisión (25/11) | Prevista mar 1/12: historia IG 17:00, carrusel 21:00 (IG + TikTok); reel propuesto mié 2/12 12:00 |
-| Guía 02 | Soporte vital avanzado del adulto: guías ERC 2025 (11 diapositivas + reel de 46 s con locución) | `borradores/guia-02-sva/` | Pendiente de revisión (25/11) | Prevista lun 30/11 21:00 (carrusel); reel recordatorio dom 13/12 12:00 |
+| Guía 02 | Soporte vital avanzado del adulto: guías ERC 2025 (11 diapositivas + reel de 46 s sin voz) | `guia-02-sva/` | **Programada** lun 30/11 21:00 (carrusel) y dom 13/12 12:00 (reel recordatorio) | Aprobada por Eduardo el 25/11 |
 | 13 | Vértigo agudo: periférico o central (HINTS) + reel | `borradores/vertigo/` | Pendiente de revisión (25/11) | Planning: vie 18/12 |
 | 14 | SCACEST: el reloj empieza en el ECG + reel | `borradores/scacest/` | Pendiente de revisión (25/11) | Planning: lun 21/12 |
 | 15 | Cetoacidosis diabética + reel | `borradores/cetoacidosis/` | Pendiente de revisión (25/11) | Planning: mié 23/12 |
@@ -85,5 +85,6 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - Ritmo: domingo 20:00 y miércoles 14:00 (carrusel); reel al día siguiente a las 14:00 (lunes y jueves). Las fichas siguen a las 21:00.
 - Carrusel de 7: portada, caso 1, pausa, solución 1, caso 2, solución 2, clave MIR. Reel: `tools/reel_mir_ep01.py` como modelo (caso → «piensa» 3 s → respuesta), con la música del canal.
 
+**Sin voz (25/11, Eduardo):** a partir de ahora ningún reel ni vídeo lleva locución: solo música del canal y textos en pantalla a modo de subtítulos.
 **Regla de reels (22/11, Eduardo):** el reel es un gancho a la publicación, no un resumen de datos. Explica de qué va la pieza, sin dosis ni cifras sueltas, y remite al carrusel o a la ficha («elige el antibiótico según el foco» en vez de «ceftriaxona»). Aplica a todos los reels nuevos.
 **Locución (22/11, Eduardo):** qSOFA se lee «quicksofa»; SIRS, tal cual; UCI se escribe «uci» en minúscula en el texto de locución (en mayúsculas Piper la deletrea).

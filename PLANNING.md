@@ -19,7 +19,7 @@ Versión 5 (25/11/2026). Cambio sobre la v4, decidido por Eduardo en el hilo de 
 | Semana | Lunes | Miércoles | Viernes | Revisar antes de |
 |---|---|---|---|---|
 | 23–29 nov | ✔ Ficha 04 · Punción lumbar ¿sí o no? | ✔ Ficha 05 · Hipoglucemia | ✔ Ficha 06 · Cólico nefrítico | — |
-| 30 nov–6 dic | **Guía 02 · SVA del adulto, ERC 2025** (carrusel de 11; reel recordatorio dom 13/12 12:00). **Martes 1/12: Ficha 07 · PPE al VIH** (historia 17:00 + carrusel 21:00; reel propuesto mié 2/12 12:00) | ✔ **Técnica 01** · Punción lumbar (vídeo 17:00 + carrusel 21:00; reel jue 3/12) | ✔ Ficha 08 · HTA en Urgencias | SVA: mié 25/11 (como muy tarde jue 26) · VIH: jue 26/11 (como muy tarde vie 27) |
+| 30 nov–6 dic | ✔ **Guía 02 · SVA del adulto, ERC 2025** (carrusel de 11; reel recordatorio dom 13/12 12:00). **Martes 1/12: Ficha 07 · PPE al VIH** (historia 17:00 + carrusel 21:00; reel propuesto mié 2/12 12:00) | ✔ **Técnica 01** · Punción lumbar (vídeo 17:00 + carrusel 21:00; reel jue 3/12) | ✔ Ficha 08 · HTA en Urgencias | SVA: mié 25/11 (como muy tarde jue 26) · VIH: jue 26/11 (como muy tarde vie 27) |
 | 7–13 dic | ✔ Ficha 09 · IC aguda y EAP | Ficha 10 · Código ictus | Ficha 11 · Síncope | Todo antes del mar 8 (viaje 9-13) |
 | 14–20 dic | Ficha 12 · Agudización de EPOC | **Técnica 02** · Epistaxis (vídeo 17:00 + carrusel; render mar 15) | Ficha 13 · Vértigo (HINTS) | EPOC: mar 8 · Epistaxis: lun 14 · Vértigo: dom 13 |
 | 21–27 dic | Ficha 14 · SCACEST | Ficha 15 · Cetoacidosis diabética | Navidad | SCACEST: mié 16 · CAD: vie 18 |
@@ -41,7 +41,7 @@ Papers: ninguno elegido por Eduardo a 23/11. Los nombres de abajo son candidatos
 |---|---|---|---|
 | 29/11 | ✔ **Guía 01** · Sepsis en Urgencias 2026 (GT-LATINFURG). Carrusel de 11 diapositivas, validado y programado el 23/11 | — | — |
 | 6/12 | — | ✔ Reel Guía 01 (49 s, con locución), programado el 23/11 | — |
-| 13/12 | **Paper 01** · por elegir (candidato propuesto: ensayo BEST, bougie en trauma grave) | Reel Guía 02 (SVA) | mar 8 (viaje) |
+| 13/12 | **Paper 01** · por elegir (candidato propuesto: ensayo BEST, bougie en trauma grave) | ✔ Reel Guía 02 (SVA, sin voz) | mar 8 (viaje) |
 | 20/12 | **Guía 03** · por decidir (la ERC 2025 de SVA se adelantó al lun 30/11 como Guía 02) | Reel Paper 01 | mar 15 |
 | 27/12 | — | Reel Guía 03 | — |
 | 3/1 | **Paper 02** · por elegir (candidato propuesto: PRESC1SE-MI; falta el PDF) | — | lun 28/12 |
@@ -50,7 +50,7 @@ Papers: ninguno elegido por Eduardo a 23/11. Los nombres de abajo son candidatos
 | 24/1 | **Guía 04** · por decidir (ESC 2025 pericarditis/miocarditis o ACC/AHA 2025 SCA, a confirmar) | Reel Paper 03 | mar 19/1 |
 | 31/1 | — | Reel Guía 04 | — |
 
-Colores de familia: Ficha = amarillo; Técnica = negro; Serie MIR = verde quirófano; Guía = azul #0B4F9E (franja, portada y pie); Paper = violeta #962AF5 (decidido el 22/11, aún sin aplicar en los generadores). Los reels siguen la regla del 22/11: gancho que cuenta de qué va la pieza, sin dosis ni cifras sueltas.
+Colores de familia: Ficha = amarillo; Técnica = negro; Serie MIR = verde quirófano; Guía = azul #0B4F9E (franja, portada y pie); Paper = violeta #962AF5 (decidido el 22/11, aún sin aplicar en los generadores). Los reels siguen la regla del 22/11: gancho que cuenta de qué va la pieza, sin dosis ni cifras sueltas. Desde el 25/11, sin voz: solo música y textos en pantalla.
 
 ## Serie Cuenta atrás MIR (14:00; examen sábado 23/01/2027)
 
