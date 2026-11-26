@@ -31,6 +31,14 @@ Nada de este lote está programado. Cada bloque recoge la fuente, lo que NO pude
   - «Paralelo al suelo de la fosa» sigue marcado [VERIFICAR] en el guion: es técnica habitual, no enunciado de la guía.
   - El reel solo se ha renumerado; sigue teniendo cifras y no cumple aún la regla del 22/11 (gancho sin datos). Lo rehago cuando apruebes el contenido.
 - Preguntas: ¿añadimos el ácido tranexámico tópico (la guía de 2020 no lo recoge)?; ¿nombramos materiales genéricos (esponja expansible, gasa orillada)?; ¿os convence la portada negra y la numeración de pasos como seña de la familia?
+- 26/11 (vídeo v3, rehecho tras «no me gusta nada» la v2). Modelo principal: sesión «Manejo de la epistaxis», ORL HU Álava (notas en `tecnica-epistaxis/REFERENCIA-ORL-ALAVA.md`).
+  - Cambios:
+    - Sin el modelo 3D del paciente: postura, compresión, corte de la fosa y rinoscopia pasan a ilustración vectorial animada (`tools/svg_epistaxis.py`), porque las manos del modelo 3D no resultaban creíbles.
+    - Material real modelado en 3D (`tools/3d/material_epistaxis.py`): bandeja, esponja que se hidrata y expande, gelatina y celulosa, balón que se hincha con jeringa de aire, varillas de nitrato.
+    - En pantalla, solo etiqueta, paso y subtítulo, con la marca como ejemplo pequeño («tipo Merocel®»), según lo que pidió Eduardo el 25/11.
+  - Ácido tranexámico tópico fuera: el ensayo NoPAC (Reuben A, et al. Ann Emerg Med 2021;77:631-40; 496 pacientes) no redujo la necesidad de taponamiento (43,7 % frente a 41,3 %).
+  - Duda: la guía AAO-HNS 2020 (KAS 3b) pide reabsorbible con anticoagulantes o antiagregantes. La sesión de Álava acepta el no reabsorbible si solo hay anticoagulación. El vídeo sigue la guía.
+  - Carrusel: diapositiva 4 corregida («no lo ves» no equivale a epistaxis posterior); diapositiva 6 con las tres opciones de taponamiento y marcas de ejemplo.
 
 ## Técnica 02 · Punción lumbar (`tecnica-puncion-lumbar/`, con reel)
 - Fuentes: criterios de TC previa de Hasbun R, et al. N Engl J Med. 2001;345(24):1727-33; técnica de Ellenby MS, et al. N Engl J Med. 2006;355(13):e12. Consultadas a través de resúmenes docentes, no del original. [VERIFICAR páginas]
