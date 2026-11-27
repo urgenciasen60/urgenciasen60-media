@@ -49,7 +49,7 @@ El estilo es siempre el mismo (amarillo, negro y rojo; Anton e Inter; portada am
 | 15 | SCACEST | Ficha | Ficha 14 (planning), pendiente de revisión |
 | 16 | Cetoacidosis diabética | Ficha | Ficha 15 (planning), pendiente de revisión |
 | 17 | Crisis epiléptica y estatus | Ficha | Ficha 16 (planning), pendiente de revisión |
-| 18 | Infección urinaria y pielonefritis | Ficha | |
+| 18 | Infección urinaria y pielonefritis | Ficha | Ficha 17 (planning), pendiente de revisión (27/11) |
 | 19 | Tromboembolismo pulmonar | Ficha | |
 | 20 | Hemorragia digestiva alta | Ficha | |
 | 21 | Crisis hipertensiva frente a emergencia hipertensiva | Ficha | |

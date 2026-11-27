@@ -16,19 +16,19 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | — | Dolor torácico: seis causas que no se pueden escapar | `borradores/dolor-toracico/` | En espera (Eduardo la revisará; no programar ni contar con ella) | — |
 | 08 | HTA en Urgencias: ¿200/110? No corras (9 diapos + reel «¿220 y a casa?») | `hta/` | **Programada** vie 4/12 21:00 (carrusel) y sáb 5/12 21:00 (reel) | — |
 | 25 | Sepsis: la primera hora (+ reel) | `sepsis/` | Aprobada el 21/11; en reserva hasta el vie 22/1 (rehacer con GT-LATINFURG). Desprogramada el 22/11 | — |
-| 03 | Crisis de asma (+ reel) | `asma/` | **Programada** vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
+| 03 | Crisis de asma (+ reel) | `asma/` | Publicada | vie 20/11 21:00 (carrusel) y sáb 21/11 21:00 (reel) | — |
 | 06 | Cólico nefrítico (+ reel) | `colico-nefritico/` | **Programada** vie 27/11 21:00 (carrusel) y sáb 28/11 21:00 (reel) | Aprobada por Eduardo el 22/11 (base EAU 2026) |
-| 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | **Programada** mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
+| 05 | Hipoglucemia (+ reel) | `hipoglucemia/` | Publicada | mié 25/11 21:00 (carrusel) y jue 26/11 21:00 (reel) | — |
 | Técnica 03 | Toracocentesis: con eco y encima de la costilla (vídeo 60 s sin voz + carrusel + reel) | `borradores/tecnica-toracocentesis/` | Pendiente de revisión (hecho el 25/11; sale mié 6/1 según `PLANNING.md`) | — |
 | Técnica 02 | Epistaxis: de la compresión al taponamiento (vídeo 60 s sin voz + carrusel + reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (vídeo v2 hecho el 25/11; sale mié 16/12 según `PLANNING.md`) | — |
 | Técnica 01 | Punción lumbar: vídeo 60 s sin voz + carrusel + reel | `tecnica-puncion-lumbar/` | **Programada** mié 2/12 17:00 (vídeo), mié 2/12 21:00 (carrusel) y jue 3/12 21:00 (reel) | Aprobada por Eduardo el 25/11 (versión sin voz, con tubo y guante mate) |
 | Guía 01 | Sepsis en Urgencias 2026 (GT-LATINFURG), 11 diapositivas + reel 49 s | `borradores/guia-01-sepsis/` | **Programada** dom 29/11 21:00 (carrusel) y dom 6/12 12:00 (reel) | Validada por Eduardo el 23/11 |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
-| 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | **Programada** lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
+| 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | Publicada | lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
 | 26 (antes 07/09) | Fibrilación auricular en Urgencias | `borradores/fibrilacion-auricular/` | Pendiente de revisión (18/11) | Movida al lun 25/1/2027 (cede el puesto de Ficha 07 al VIH, 25/11) |
 | 10 | Síncope: estratificación del riesgo | `borradores/sincope/` | Pendiente de revisión (18/11) | — |
-| MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | **Programada** dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
-| MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | **Programada** mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) | Aprobada por Eduardo el 20/11; imágenes reales CC BY 4.0 (Rx: Baker et al., JETEM 2016; TC: Florim et al., Insights Imaging 2018). Eduardo rechazó las imágenes sintéticas: «o imagen real o sin imagen» |
+| MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | Publicada | dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
+| MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | Publicada | mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) | Aprobada por Eduardo el 20/11; imágenes reales CC BY 4.0 (Rx: Baker et al., JETEM 2016; TC: Florim et al., Insights Imaging 2018). Eduardo rechazó las imágenes sintéticas: «o imagen real o sin imagen» |
 | MIR 03 | Cuenta atrás MIR · Ep. 03: politrauma (xABCDE y shock hemorrágico) + reel | `borradores/mir-ep03/` | Pendiente de validar (25/11); casos en `CASOS.md` | Prevista dom 29/11 14:00 (carrusel) y lun 30/11 14:00 (reel) |
 | MIR 04 | Cuenta atrás MIR · Ep. 04: shock séptico y perfiles hemodinámicos + reel (remite a la Guía 01) | `borradores/mir-ep04/` | Pendiente de validar (25/11); casos en `CASOS.md` | Prevista mié 2/12 14:00 (carrusel) y jue 3/12 14:00 (reel) |
 | 11 | Código ictus: la primera hora (+ reel) | `borradores/codigo-ictus/` | Pendiente de revisión (20/11) | — |
@@ -40,8 +40,9 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 14 | SCACEST: el reloj empieza en el ECG + reel | `borradores/scacest/` | Pendiente de revisión (25/11) | Planning: lun 21/12 |
 | 15 | Cetoacidosis diabética + reel | `borradores/cetoacidosis/` | Pendiente de revisión (25/11) | Planning: mié 23/12 |
 | 16 | Estado epiléptico y primera crisis + reel | `borradores/estado-epileptico/` | Pendiente de revisión (25/11) | Planning: lun 28/12 |
+| 17 | Pielonefritis e ITU febril (clasificación EAU 2025: localizada o sistémica) + reel | `borradores/pielonefritis/` | Pendiente de revisión (27/11) | Planning: mié 30/12 |
 
-Próximo número libre: Ficha 14 (borradores; al publicarse se renumeran por orden: la siguiente publicada tras la 09 será la 10), Técnica 03, Guía 03, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
+Próximo número libre: Ficha 18 (según `PLANNING.md`; borradores; al publicarse se renumeran por orden: la siguiente publicada tras la 09 será la 10), Técnica 03, Guía 03, Paper 02. Las dudas clínicas de cada borrador están en `borradores/REVISION.md`.
 
 ## Aviso del 18/11/2026 (ejecución programada)
 - Ninguna pieza en estado «Aprobada» sin programar. Publicaciones cubiertas hasta el jue 26/11 (reel de hipoglucemia). **Desde el vie 27/11 no hay nada aprobado.**
@@ -52,6 +53,12 @@ Próximo número libre: Ficha 14 (borradores; al publicarse se renumeran por ord
 - Para cubrirlos, aprobar por este orden: Técnica 02 PL (vie 27/11; falta el vídeo v4), Ficha 04 sepsis (lun 30/11) y Ficha 06 cólico nefrítico (mié 2/12).
 - Producidas hoy tres fichas de la Fase A con su reel: 11 código ictus, 12 IC aguda/EAP y 13 EPOC.
 - 20/11: Eduardo aprueba la IC aguda/EAP. Para respetar el plan rehecho (sepsis vie 27, cólico lun 30, técnica PL mié 2/12), elige programarla el lun 7/12; por orden de publicación pasa a ser la **Ficha 09**.
+
+## Aviso del 27/11/2026 (ejecución programada)
+- Ninguna pieza «Aprobada» sin programar (la sepsis del 21/11 sigue en reserva, como borrador en Metricool el 22-23/1). Metricool coincide con esta cola.
+- Marcadas como publicadas: asma, PL ¿sí o no?, hipoglucemia, MIR 01 y MIR 02. El cólico nefrítico sale hoy a las 21:00.
+- Fichas y técnicas cubiertas hasta el **mar 8/12** (reel del EAP). **Desde el mié 9/12 no hay nada aprobado** (viaje de Eduardo del 9 al 13/12). Huecos más próximos: VIH (mar 1/12), MIR 03 (dom 29/11) y MIR 04 (mié 2/12).
+- 13 piezas pendientes de revisión: esta semana se produce solo una, la Ficha 17 (pielonefritis), siguiente de la Fase A.
 
 **Planning vigente:** `PLANNING.md` (versión 5, 25/11/2026), copia en el proyecto (`planning-publicaciones`). Manda sobre cualquier plan anterior de este archivo.
 
