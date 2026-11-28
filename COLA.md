@@ -29,12 +29,12 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 10 | Síncope: estratificación del riesgo | `borradores/sincope/` | Pendiente de revisión (18/11) | — |
 | MIR 01 | Cuenta atrás MIR · Ep. 01: ECG (BAV completo y taquicardia de QRS estrecho) + reel | `mir-ep01/` | Publicada | dom 22/11 20:00 (carrusel) y lun 23/11 14:00 (reel) | Aprobada por Eduardo el 18/11 |
 | MIR 02 | Cuenta atrás MIR · Ep. 02: abdomen agudo (úlcera perforada e isquemia mesentérica con gas portal) + reel | `mir-ep02/` | Publicada | mié 25/11 14:00 (carrusel) y jue 26/11 14:00 (reel) | Aprobada por Eduardo el 20/11; imágenes reales CC BY 4.0 (Rx: Baker et al., JETEM 2016; TC: Florim et al., Insights Imaging 2018). Eduardo rechazó las imágenes sintéticas: «o imagen real o sin imagen» |
-| MIR 03 | Cuenta atrás MIR · Ep. 03: politrauma (xABCDE y shock hemorrágico) + reel | `borradores/mir-ep03/` | Pendiente de validar (25/11); casos en `CASOS.md` | Prevista dom 29/11 14:00 (carrusel) y lun 30/11 14:00 (reel) |
-| MIR 04 | Cuenta atrás MIR · Ep. 04: shock séptico y perfiles hemodinámicos + reel (remite a la Guía 01) | `borradores/mir-ep04/` | Pendiente de validar (25/11); casos en `CASOS.md` | Prevista mié 2/12 14:00 (carrusel) y jue 3/12 14:00 (reel) |
+| MIR 03 | Cuenta atrás MIR · Ep. 03: politrauma (xABCDE y shock hemorrágico) + reel | `borradores/mir-ep03/` | **Programada** dom 29/11 14:00 (carrusel) y lun 30/11 14:00 (reel) | Aprobada por Eduardo el 28/11 |
+| MIR 04 | Cuenta atrás MIR · Ep. 04: shock séptico y perfiles hemodinámicos + reel (remite a la Guía 01) | `borradores/mir-ep04/` | **Programada** mié 2/12 14:00 (carrusel) y jue 3/12 14:00 (reel) | Aprobada por Eduardo el 28/11 |
 | 11 | Código ictus: la primera hora (+ reel) | `borradores/codigo-ictus/` | Pendiente de revisión (20/11) | — |
 | 09 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** lun 7/12 21:00 (carrusel) y mar 8/12 21:00 (reel) | Aprobada por Eduardo el 20/11 |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |
-| 07 | PPE al VIH en Urgencias (Día Mundial del VIH) + reel + historia de Instagram | `borradores/vih-ppe/` | Pendiente de revisión (25/11) | Prevista mar 1/12: historia IG 17:00, carrusel 21:00 (IG + TikTok); reel propuesto mié 2/12 12:00 |
+| 07 | PPE al VIH en Urgencias (Día Mundial del VIH) + reel + historia de Instagram | `borradores/vih-ppe/` | **Programada** mar 1/12 17:00 (historia IG) y 21:00 (carrusel); reel mié 2/12 12:00 | Aprobada por Eduardo el 28/11 |
 | Guía 02 | Soporte vital avanzado del adulto: guías ERC 2025 (11 diapositivas + reel de 46 s sin voz) | `guia-02-sva/` | **Programada** lun 30/11 21:00 (carrusel) y dom 13/12 12:00 (reel recordatorio) | Aprobada por Eduardo el 25/11 |
 | 13 | Vértigo agudo: periférico o central (HINTS) + reel | `borradores/vertigo/` | Pendiente de revisión (25/11) | Planning: vie 18/12 |
 | 14 | SCACEST: el reloj empieza en el ECG + reel | `borradores/scacest/` | Pendiente de revisión (25/11) | Planning: lun 21/12 |

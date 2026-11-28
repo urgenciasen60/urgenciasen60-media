@@ -9,23 +9,21 @@ def port(ep):
     if not os.path.exists(p): p=os.path.join(ROOT,f"mir-ep{ep}",f"urgenciasen60-mir-ep{ep}-1.jpg")
     return "file://"+p
 PIENSA=(K, [big("PIENSA", 300, Y), txt("3 segundos", 80)], [(2, 3.0)])
-def fin(ep): return (MG, [big("¿CUÁNTAS ACERTASTE?", 130, Y), f'<img src="{port(ep)}" style="width:440px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.5)">', txt("Solución justificada en el carrusel del perfil", 50)], [(3, 4.5)])
+def fin(ep): return (MG, [big("¿CUÁNTAS ACERTASTE?", 130, Y), f'<img src="{port(ep)}" style="width:440px;display:block;box-shadow:0 24px 70px rgba(0,0,0,.5)">', txt("Solución justificada en el carrusel del perfil", 50)], [(3, 4.0)])
 E={
 "03":[
- (MG, [kicker("CUENTA ATRÁS MIR · EP. 03", Y) + sp(24) + big("2 CASOS DE<br>POLITRAUMA", 200), txt("Pausa el vídeo si necesitas pensar", 64, Y)], [(2, 3.0)]),
- (W, [kicker("CASO 5", G) + sp(20) + big("SANGRA A CHORRO", 120, R), txt("Moto · habla · TA 88/50 · herida pulsátil en el muslo", 56), txt("¿Intubas, torniquete o TC?", 60)], [(2, 2.4), (3, 3.0)]),
+ (W, [kicker("CASO 5", G) + sp(20) + big("SANGRA A CHORRO", 120, R), txt("Moto · habla · TA 88/50 · herida pulsátil en el muslo", 56), txt("¿Intubas, torniquete o TC?", 60)], [(2, 2.8), (3, 3.0)]),
  PIENSA,
  (Y, [kicker("RESPUESTA") + sp(24) + big("TORNIQUETE", 190, R), txt("La x va antes que la A: primero se para la hemorragia exanguinante", 60)], [(1, 1.4), (2, 3.0)]),
- (W, [kicker("CASO 6", G) + sp(20) + big("FAST POSITIVO E INESTABLE", 110, R), txt("Colisión · TA 78/40 · líquido en Morison · no responde a fluidos", 56), txt("¿TC o quirófano?", 64)], [(2, 2.4), (3, 3.0)]),
+ (W, [kicker("CASO 6", G) + sp(20) + big("FAST POSITIVO E INESTABLE", 110, R), txt("Colisión · TA 78/40 · líquido en Morison · no responde a fluidos", 56), txt("¿TC o quirófano?", 64)], [(2, 2.8), (3, 3.0)]),
  PIENSA,
  (Y, [kicker("RESPUESTA") + sp(24) + big("QUIRÓFANO", 210, R), txt("Control de daños, tranexámico, sangre pronto y poco cristaloide", 60)], [(1, 1.4), (2, 3.0)]),
  fin("03")],
 "04":[
- (MG, [kicker("CUENTA ATRÁS MIR · EP. 04", Y) + sp(24) + big("2 CASOS<br>DE SHOCK", 200), txt("Pausa el vídeo si necesitas pensar", 64, Y)], [(2, 3.0)]),
- (W, [kicker("CASO 7", G) + sp(20) + big("SIGUE HIPOTENSA", 130, R), txt("Sepsis urinaria · ya ha recibido fluidos · sin vía central", 56), txt("¿Esperas a la central?", 64)], [(2, 2.4), (3, 3.0)]),
+ (W, [kicker("CASO 7", G) + sp(20) + big("SIGUE HIPOTENSA", 130, R), txt("Sepsis urinaria · ya ha recibido fluidos · sin vía central", 56), txt("¿Esperas a la central?", 64)], [(2, 2.8), (3, 3.0)]),
  PIENSA,
  (Y, [kicker("RESPUESTA") + sp(24) + big("NORADRE&shy;NALINA YA", 170, R).replace("line-height:1.02","line-height:1.12"), txt("Por vía periférica, con antibiótico en la primera hora", 60)], [(1, 1.4), (2, 3.0)]),
- (W, [kicker("CASO 8", G) + sp(20) + big("PVC ALTA, POAP NORMAL", 116, R), txt("Operado de cadera · disnea brusca · gasto bajo", 56), txt("¿Qué tipo de shock es?", 64)], [(2, 2.4), (3, 3.0)]),
+ (W, [kicker("CASO 8", G) + sp(20) + big("PVC ALTA, POAP NORMAL", 116, R), txt("Operado de cadera · disnea brusca · gasto bajo", 56), txt("¿Qué tipo de shock es?", 64)], [(2, 2.8), (3, 3.0)]),
  PIENSA,
  (Y, [kicker("RESPUESTA") + sp(24) + big("OBSTRUCTIVO", 175, R), txt("TEP masivo: el problema está antes del ventrículo izquierdo", 60)], [(1, 1.4), (2, 3.0)]),
  fin("04")],

@@ -5,7 +5,7 @@ from reel import *
 from PIL import Image
 sp=lambda h: f'<div style="height:{h}px"></div>'
 blocks=[kicker("1 DE DICIEMBRE")+sp(20)+big("DÍA MUNDIAL<br>DEL VIH",135),
- txt("¿Pinchazo accidental o sexo de riesgo en la guardia? La Ficha 07 va de profilaxis posexposición al VIH.",50,weight=700),
+ txt("¿Pinchazo o sexo de riesgo? ¿PPE sí o no? Cómo decidirlo, en la Ficha 07.",50,weight=700),
  big("HOY, 21:00",150,R)]
 out=os.path.abspath(sys.argv[1]); png=out[:-4]+".png"
 shot(html(Y,blocks,3,"FICHA 07"),png)

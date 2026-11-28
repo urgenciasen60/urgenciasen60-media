@@ -5,9 +5,9 @@ EP="EP. 04"; DIAS="52 DÍAS"
 P=[]
 P.append(page(f'''<div style="display:flex;gap:26px;align-items:center"><img src="{LOGO}" style="width:150px;height:150px">
 <div style="border:5px solid {Y};padding:12px 24px"><div style="color:{Y};font-size:26px;font-weight:800;letter-spacing:4px">FALTAN</div><div style="{A};font-size:64px">{DIAS}</div></div></div>
-<div style="{A};font-size:200px;line-height:.98">2 CASOS<br>MIR</div>
-<div style="{A};font-size:66px">SHOCK: <span style="color:{Y}">¿DE QUÉ TIPO ES?</span></div>
-<div style="font-size:34px;font-weight:500;margin-top:-6px">Shock séptico y perfiles hemodinámicos · ¿Cuántos aciertas?</div>''', "EP. 04 · CASOS 07-08", "Responde y desliza →", green=True))
+<div style="{A};font-size:128px;line-height:1.05">TA 78/42 DESPUÉS DE LOS FLUIDOS</div>
+<div style="{A};font-size:92px;color:{Y}">¿ESPERAS A LA VÍA CENTRAL?</div>
+<div style="font-size:34px;font-weight:500">2 casos MIR de shock</div>''', "EP. 04 · CASOS 07-08", "Responde y desliza →", green=True))
 P.append(page(f'''<div style="font-size:31px;line-height:1.4">Mujer de 74 años con fiebre, disuria y confusión. Tras <b>30 ml/kg de cristaloide balanceado</b> sigue con <b>TA 78/42</b>, FC 118 y <b>lactato 5 mmol/l</b>. Todavía no tiene vía central.</div>
 <div style="{A};font-size:44px">¿QUÉ ES LO MÁS ADECUADO?</div>
 {opts([("A", "Dopamina por vía periférica hasta que se coloque la vía central"), ("B", "Noradrenalina ya, por vía periférica, con objetivo de PAM 65 mmHg, y antibiótico en la primera hora tras los hemocultivos"), ("C", "Más bolos de cristaloide hasta normalizar el lactato antes de empezar el vasopresor"), ("D", "Esperar a la vía central para empezar la noradrenalina por el riesgo de extravasación")], 29)}''', "CASO 7 · 2/7", "Comenta A, B, C o D y desliza →"))
@@ -27,7 +27,7 @@ P.append(page(f'''<div style="font-size:31px;line-height:1.4">Varón de 66 años
 <div style="{A};font-size:44px">¿QUÉ TIPO DE SHOCK ES MÁS PROBABLE?</div>
 {opts([("A", "Hipovolémico"), ("B", "Cardiogénico por fallo del ventrículo izquierdo"), ("C", "Obstructivo por tromboembolismo pulmonar masivo"), ("D", "Distributivo (séptico)")], 30)}''', "CASO 8 · 5/7", "Comenta A, B, C o D y desliza →"))
 P.append(page(sol("C", "PVC ALTA CON POAP NORMAL:<br>OBSTRUCTIVO",
- "Gasto bajo y resistencias altas: el corazón no bombea suficiente. La clave está en las presiones: la <b>PVC está alta</b> pero la <b>POAP es normal</b>, así que el problema está <b>antes del ventrículo izquierdo</b>. En un operado reciente con disnea brusca, lo primero es el <b>TEP masivo</b>.",
+ "Gasto bajo con resistencias altas. La clave está en las presiones: la <b>PVC está alta</b> pero la <b>POAP es normal</b>, así que el problema está <b>antes del ventrículo izquierdo</b>. En un operado reciente con disnea brusca, lo primero es el <b>TEP masivo</b>.",
  [("A", "En el hipovolémico, la PVC y la POAP están bajas."),
   ("B", "En el fallo del ventrículo izquierdo, la POAP está alta."),
   ("D", "En el distributivo, las resistencias están bajas y el gasto suele ser normal o alto.")],

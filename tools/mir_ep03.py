@@ -5,9 +5,9 @@ EP="EP. 03"; DIAS="55 DÍAS"
 P=[]
 P.append(page(f'''<div style="display:flex;gap:26px;align-items:center"><img src="{LOGO}" style="width:150px;height:150px">
 <div style="border:5px solid {Y};padding:12px 24px"><div style="color:{Y};font-size:26px;font-weight:800;letter-spacing:4px">FALTAN</div><div style="{A};font-size:64px">{DIAS}</div></div></div>
-<div style="{A};font-size:200px;line-height:.98">2 CASOS<br>MIR</div>
-<div style="{A};font-size:66px">POLITRAUMA: <span style="color:{Y}">¿QUÉ VA PRIMERO?</span></div>
-<div style="font-size:34px;font-weight:500;margin-top:-6px">Evaluación primaria y shock hemorrágico · ¿Cuántos aciertas?</div>''', "EP. 03 · CASOS 05-06", "Responde y desliza →", green=True))
+<div style="{A};font-size:128px;line-height:1.05">TA 88/50 Y EL MUSLO SANGRA A CHORRO</div>
+<div style="{A};font-size:92px;color:{Y}">¿INTUBAS PRIMERO?</div>
+<div style="font-size:34px;font-weight:500">2 casos MIR de politrauma</div>''', "EP. 03 · CASOS 05-06", "Responde y desliza →", green=True))
 P.append(page(f'''<div style="font-size:31px;line-height:1.4">Varón de 32 años, accidente de moto. Llega <b>hablando con frases cortas</b>, GCS 14, FR 28, SatO2 93 % con oxígeno, <b>TA 88/50, FC 128</b>. Tiene una herida en la cara interna del muslo derecho con <b>sangrado pulsátil</b> que empapa los apósitos.</div>
 <div style="{A};font-size:44px">¿QUÉ HACES PRIMERO?</div>
 {opts([("A", "Intubación orotraqueal por el riesgo de que se deteriore la vía aérea"), ("B", "Controlar la hemorragia: compresión directa y torniquete proximal a la herida"), ("C", "Collarín cervical rígido y TC de cuerpo entero antes de cualquier maniobra"), ("D", "Dos litros de cristaloide para recuperar una PAS de 120 mmHg")], 29)}''', "CASO 5 · 2/7", "Comenta A, B, C o D y desliza →"))
@@ -25,7 +25,7 @@ P.append(page(f'''<div style="font-size:31px;line-height:1.4">Mujer de 45 años,
 <div style="{A};font-size:44px">¿QUÉ AFIRMACIÓN ES CORRECTA?</div>
 {opts([("A", "Antes de operar, TC toracoabdominal con contraste para localizar la lesión"), ("B", "Ácido tranexámico, transfusión precoz, hipotensión permisiva y quirófano para control de daños"), ("C", "Más cristaloide hasta una PAS de 120 mmHg y después decidir"), ("D", "Un FAST negativo habría descartado la lesión abdominal")], 29)}''', "CASO 6 · 5/7", "Comenta A, B, C o D y desliza →"))
 P.append(page(sol("B", "INESTABLE + FAST POSITIVO:<br>QUIRÓFANO",
- "Shock hemorrágico que no responde y <b>sangrado abdominal</b> en la eFAST: control quirúrgico inmediato (cirugía de <b>control de daños</b>), sin pasar por la TC. Mientras, <b>ácido tranexámico</b> 1 g en 10 min (dentro de las 3 primeras horas) y 1 g en 8 h, hemoderivados pronto (plasma y hematíes, fibrinógeno si &lt; 1,5 g/l) y <b>PAS objetivo de 80-90 mmHg</b>.",
+ "Shock hemorrágico que no responde y <b>sangrado abdominal</b> en la eFAST: control quirúrgico inmediato (cirugía de <b>control de daños</b>), sin pasar por la TC. Mientras, <b>ácido tranexámico</b> 1 g en 10 min (dentro de las 3 primeras horas) y 1 g en 8 h, hemoderivados pronto (plasma y hematíes, fibrinógeno si ≤ 1,5 g/l) y <b>PAS objetivo de 80-90 mmHg</b>.",
  [("A", "La TC es para el paciente estable o estabilizable. En shock que no responde, retrasa el control del sangrado."),
   ("C", "Más cristaloide diluye la coagulación y aumenta el sangrado: se restringe."),
   ("D", "La eFAST es poco sensible (en torno al 74 %): si es negativa y la sospecha persiste, hay que seguir buscando.")],
