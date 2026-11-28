@@ -1,0 +1,19 @@
+Sepsis 2026: lactato en el triaje y antibiótico en la primera hora si hay shock o sepsis probable.
+
+1. Detecta desde el triaje: código sepsis con qSOFA, SIRS o NEWS-2. El qSOFA, nunca solo.
+2. Lactato en el triaje, hemocultivos y antibiótico en la primera hora si hay shock o sepsis probable.
+3. Fluidos balanceados y noradrenalina sin esperar a la vía central.
+4. Si no responde, avisa a UCI. Y controla el foco en las primeras 6 horas.
+
+Las escalas, las dosis y los errores frecuentes están en el carrusel. La última imagen es la ficha de la Guía 01. Guárdala y envíasela a quien tenga guardia.
+
+¿Activáis el código sepsis desde el triaje en vuestra urgencia? Os leo.
+
+Fuentes:
+· Julián-Jiménez A, et al. Recomendaciones del GT-LATINFURG para la identificación y atención inicial del paciente con infección grave y sepsis en los servicios de urgencias. Emergencias. 2026;38:27-63.
+· Prescott HC, Antonelli M, Alhazzani W, et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2026. Crit Care Med. 2026. doi:10.1097/CCM.0000000000007075
+· Guía antimicrobiana del HU Puerta del Mar.
+
+Contenido formativo para profesionales sanitarios. No sustituye a los protocolos de tu centro ni al juicio clínico.
+
+#medicinadeurgencias #urgencias #MIR #residentes #sepsis

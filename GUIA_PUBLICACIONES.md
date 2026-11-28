@@ -17,6 +17,7 @@ Se revisa cada mes con una auditoría y un estudio de tendencias nuevos. Si choc
 En noviembre, el 78 % de quien abre un reel se fue antes de los 3 s.
 
 - El primer segundo enseña el problema clínico, no el título: el ECG, la cifra que engaña o la decisión pendiente. Nunca abrir con «Ficha 05» ni con el nombre del tema solo.
+- **Excepción (Eduardo, 28/11): las Guías** resumen un documento existente y pueden abrir con su título, en la portada del carrusel y en el primer plano del reel. El resto de reglas se les aplica igual.
 - El gancho dura 3 s o menos y no lleva saludos ni dosis (regla de reels del 22/11).
 - Fórmulas que funcionan en el nicho (usar una por pieza):
   1. **Caso de guardia con una decisión de destino**: «Son las 4 de la mañana… ¿alta?». Incluye el dato que engaña: troponina normal, ECG trampa.
