@@ -49,8 +49,8 @@ La familia MIR tiene menos de 5 piezas por formato, así que no saco conclusione
 
 ## Horarios
 
-- **Instagram:** Metricool no tiene aún datos de mejor hora (todo a cero, por ser una cuenta nueva). Seguimos con las 20:00 y la franja de las 13:00 para la serie MIR.
-- **TikTok:** Metricool marca máximos a las 10:00 y a las 18:00, sobre todo miércoles y jueves. Las 20:00 rinden en torno al 65 % del máximo. No tenemos 5 publicaciones por franja para comparar con datos propios, así que no cambiaría el horario: probaría las 18:00 durante dos semanas en TikTok.
+- **Instagram:** Metricool no tiene aún datos de mejor hora (todo a cero, por ser una cuenta nueva). Seguimos con las 21:00 y las 14:00 de la serie MIR (Metricool exporta las horas en UTC: 20:03 UTC son las 21:03 en Madrid).
+- **TikTok:** Metricool marca máximos a las 10:00 y a las 18:00, sobre todo miércoles y jueves. Las 21:00, nuestra hora actual, rinden en torno al 45 % del máximo. No tenemos 5 publicaciones por franja para comparar con datos propios, así que no cambiaría el horario: probaría las 18:00 durante dos semanas en TikTok.
 
 ## Tres decisiones para diciembre
 

@@ -97,5 +97,7 @@ Cada carrusel aprobado tendrá un reel del mismo tema (unos 20 s; título arriba
 - Carrusel de 7: portada, caso 1, pausa, solución 1, caso 2, solución 2, clave MIR. Reel: `tools/reel_mir_ep01.py` como modelo (caso → «piensa» 3 s → respuesta), con la música del canal.
 
 **Sin voz (25/11, Eduardo):** a partir de ahora ningún reel ni vídeo lleva locución: solo música del canal y textos en pantalla a modo de subtítulos.
+**Guía de publicaciones (28/11):** toda pieza nueva sigue `GUIA_PUBLICACIONES.md` (ganchos, temas, formatos, pie de foto y horarios), basada en `investigacion/auditoria-2026-11.md` y `investigacion/tendencias-2026-11.md`. Prueba de TikTok a las 18:00: pendiente de que Eduardo la apruebe.
+
 **Regla de reels (22/11, Eduardo):** el reel es un gancho a la publicación, no un resumen de datos. Explica de qué va la pieza, sin dosis ni cifras sueltas, y remite al carrusel o a la ficha («elige el antibiótico según el foco» en vez de «ceftriaxona»). Aplica a todos los reels nuevos.
 **Locución (22/11, Eduardo):** qSOFA se lee «quicksofa»; SIRS, tal cual; UCI se escribe «uci» en minúscula en el texto de locución (en mayúsculas Piper la deletrea).
