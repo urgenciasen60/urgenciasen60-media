@@ -1,7 +1,7 @@
 import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from reel import *
 T="HTA EN URGENCIAS"; ROOT=os.path.dirname(HERE)
-ficha="file://"+os.path.join(ROOT,"hta","urgenciasen60-hta-9.jpg")
+ficha="file://"+os.path.join(ROOT,"hta-v2","urgenciasen60-hta-7.jpg")
 sp=lambda h: f'<div style="height:{h}px"></div>'
 S=[
  (Y,[big("¿220 DE<br>SISTÓLICA?",190),big("¿LO MANDAS A CASA?",120,R)],[(1,1.8),(2,2.4)]),
