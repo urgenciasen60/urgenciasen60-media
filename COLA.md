@@ -22,7 +22,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | Técnica 03 | Toracocentesis: con eco y encima de la costilla (vídeo 60 s sin voz + carrusel + reel) | `borradores/tecnica-toracocentesis/` | Pendiente de revisión (hecho el 25/11; sale mié 6/1 según `PLANNING.md`) | — |
 | Técnica 02 | Epistaxis: de la compresión al taponamiento (vídeo 60 s sin voz + carrusel + reel) | `borradores/tecnica-epistaxis/` | Pendiente de revisión (vídeo v2 hecho el 25/11; sale mié 16/12 según `PLANNING.md`) | — |
 | Técnica 01 | Punción lumbar: vídeo 60 s sin voz + carrusel + reel | `tecnica-puncion-lumbar/` | **Programada** mié 2/12 17:00 (vídeo), mié 2/12 21:00 (carrusel) y jue 3/12 21:00 (reel) | Aprobada por Eduardo el 25/11 (versión sin voz, con tubo y guante mate) |
-| Guía 01 | Sepsis en Urgencias 2026 (GT-LATINFURG), 11 diapositivas + reel 49 s | `borradores/guia-01-sepsis/` | **Programada** dom 29/11 21:00 (carrusel) y dom 6/12 12:00 (reel) | Validada por Eduardo el 23/11 |
+| Guía 01 | Sepsis en Urgencias 2026 (GT-LATINFURG), 11 diapositivas + reel 49 s | `borradores/guia-01-sepsis/` | **Programada** dom 29/11 21:00 (carrusel: Metricool solo TikTok; Instagram lo publica Eduardo a mano, 28/11) y dom 6/12 12:00 (reel) | Validada por Eduardo el 23/11 |
 | Paper 01 | Ensayo BEST: bougie o fiador en el trauma grave | `borradores/paper-best/` | En biblioteca (Eduardo prefiere de momento papers de médico de puerta) | — |
 | 04 | Punción lumbar: ¿sí o no? (+ reel) | `puncion-lumbar-indicaciones/` | Publicada | lun 23/11 21:00 (carrusel) y mar 24/11 21:00 (reel) | — |
 | 26 (antes 07/09) | Fibrilación auricular en Urgencias | `borradores/fibrilacion-auricular/` | Pendiente de revisión (18/11) | Movida al lun 25/1/2027 (cede el puesto de Ficha 07 al VIH, 25/11) |
@@ -35,7 +35,7 @@ Ritmo de publicación: lunes, miércoles y viernes a las 21:00 (Europe/Madrid), 
 | 09 (antes 12) | IC aguda y edema agudo de pulmón (8 diapos + reel; revisada con el consenso ESC/EuSEM 2026) | `ica-eap/` | **Programada** lun 7/12 21:00 (carrusel) y mar 8/12 21:00 (reel) | Aprobada por Eduardo el 20/11 |
 | 13 | Agudización de EPOC (+ reel) | `borradores/epoc/` | Pendiente de revisión (20/11) | — |
 | 07 | PPE al VIH en Urgencias (Día Mundial del VIH) + reel + historia de Instagram | `borradores/vih-ppe/` | **Programada** mar 1/12 17:00 (historia IG) y 21:00 (carrusel); reel mié 2/12 12:00 | Aprobada por Eduardo el 28/11 |
-| Guía 02 | Soporte vital avanzado del adulto: guías ERC 2025 (11 diapositivas + reel de 46 s sin voz) | `guia-02-sva/` | **Programada** lun 30/11 21:00 (carrusel) y dom 13/12 12:00 (reel recordatorio) | Aprobada por Eduardo el 25/11 |
+| Guía 02 | Soporte vital avanzado del adulto: guías ERC 2025 (11 diapositivas + reel de 46 s sin voz) | `guia-02-sva/` | **Programada** lun 30/11 21:00 (carrusel: Metricool solo TikTok; Instagram lo publica Eduardo a mano, 28/11) y dom 13/12 12:00 (reel recordatorio) | Aprobada por Eduardo el 25/11 |
 | 13 | Vértigo agudo: periférico o central (HINTS) + reel | `borradores/vertigo/` | Pendiente de revisión (25/11) | Planning: vie 18/12 |
 | 14 | SCACEST: el reloj empieza en el ECG + reel | `borradores/scacest/` | Pendiente de revisión (25/11) | Planning: lun 21/12 |
 | 15 | Cetoacidosis diabética + reel | `borradores/cetoacidosis/` | Pendiente de revisión (25/11) | Planning: mié 23/12 |
